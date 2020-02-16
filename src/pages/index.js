@@ -26,16 +26,6 @@ const IndexPage = ({ data: { allContentfulSwiper } }) => {
     }
   }
 
-  const carouselParams = {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    containerClass: 'damn',
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    }
-  }
-
   return (
     <Layout>
       <SEO title="Home"/>
