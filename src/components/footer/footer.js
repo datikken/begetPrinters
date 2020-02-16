@@ -15,16 +15,24 @@ const Footer = ({ siteTitle }) => (
                     <span>Контактная информация</span>
                 </div>
                 <div className="footer_wrapper-item_tel">
-                    <div className="footer_wrapper-item_tel-icon"></div>
+                    <div className="footer_wrapper-item_tel-icon">
+                      <img src={'/header/contact.svg'} alt="Telephone"/>
+                    </div>
                     <span>8 800 555 33 22</span>
                 </div>
                 <div className="footer_wrapper-item_adress">
                     <span>149390 Россия, Москва, ул. Набережные челны, д. 123,<br/> корпус 56, строение 88, подъезд 6, офис 987</span>
                 </div>
                 <div className="footer_wrapper-item_social">
-                    <div className="footer_wrapper-item_social_facebook"></div>
-                    <div className="footer_wrapper-item_social_email"></div>
-                    <div className="footer_wrapper-item_social_instagram"></div>
+                    <div className="footer_wrapper-item_social_facebook">
+                      <img src={'/social/facebook.svg'} alt="Facebook"/>
+                    </div>
+                    <div className="footer_wrapper-item_social_email">
+                      <img src={'/social/mail.svg'} alt="Email"/>
+                    </div>
+                    <div className="footer_wrapper-item_social_instagram">
+                      <img src={'/social/instagram.svg'} alt="Instagramm"/>
+                    </div>
                 </div>
             </div>
 

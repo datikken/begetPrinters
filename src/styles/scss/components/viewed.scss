@@ -57,12 +57,10 @@
         margin-left: 16px;
         @include bg(contain, center);
         cursor: pointer;
-        background-image: url("/img/unnecessary/viewed_product.png");
         border: none;
         @include breakpoint($phone) {
           margin-left: 0;
           width: initial;
-          // border: 1px solid #e9e9ea;
         }
 
         max-width: 100px;
@@ -72,6 +70,11 @@
         box-sizing: border-box;
         margin-bottom: 20px;
         flex-basis: 50%;
+        @include flex(center, center, no-wrap);
+
+        img {
+          width: 100%;
+        }
       }
 
       &_text {

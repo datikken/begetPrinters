@@ -20,7 +20,9 @@ const News = () => (
           </div>
 
           <div className="news_wrapper-block-item_image">
-            <div className="news_wrapper-block-item_image-inner"></div>
+            <div className="news_wrapper-block-item_image-inner">
+              <img src={'/news/item.png'} alt="News"/>
+            </div>
           </div>
         </div>
 
@@ -35,7 +37,9 @@ const News = () => (
           </div>
 
           <div className="news_wrapper-block-item_image">
-            <div className="news_wrapper-block-item_image-inner"></div>
+            <div className="news_wrapper-block-item_image-inner">
+              <img src={'/news/item.png'} alt="News"/>
+            </div>
           </div>
         </div>
 
@@ -50,7 +54,9 @@ const News = () => (
           </div>
 
           <div className="news_wrapper-block-item_image">
-            <div className="news_wrapper-block-item_image-inner"></div>
+            <div className="news_wrapper-block-item_image-inner">
+              <img src={'/news/item.png'} alt="News"/>
+            </div>
           </div>
         </div>
 
@@ -65,7 +71,9 @@ const News = () => (
           </div>
 
           <div className="news_wrapper-block-item_image">
-            <div className="news_wrapper-block-item_image-inner"></div>
+            <div className="news_wrapper-block-item_image-inner">
+              <img src={'/news/item.png'} alt="News"/>
+            </div>
           </div>
         </div>
 
@@ -80,7 +88,9 @@ const News = () => (
           </div>
 
           <div className="news_wrapper-block-item_image">
-            <div className="news_wrapper-block-item_image-inner"></div>
+            <div className="news_wrapper-block-item_image-inner">
+              <img src={'/news/item.png'} alt="News"/>
+            </div>
           </div>
         </div>
 
@@ -95,7 +105,9 @@ const News = () => (
           </div>
 
           <div className="news_wrapper-block-item_image">
-            <div className="news_wrapper-block-item_image-inner"></div>
+            <div className="news_wrapper-block-item_image-inner">
+              <img src={'/news/item.png'} alt="News"/>
+            </div>
           </div>
         </div>
 
@@ -110,7 +122,9 @@ const News = () => (
           </div>
 
           <div className="news_wrapper-block-item_image">
-            <div className="news_wrapper-block-item_image-inner"></div>
+            <div className="news_wrapper-block-item_image-inner">
+              <img src={'/news/item.png'} alt="News"/>
+            </div>
           </div>
         </div>
 
@@ -125,7 +139,9 @@ const News = () => (
           </div>
 
           <div className="news_wrapper-block-item_image">
-            <div className="news_wrapper-block-item_image-inner"></div>
+            <div className="news_wrapper-block-item_image-inner">
+              <img src={'/news/item.png'} alt="News"/>
+            </div>
           </div>
         </div>
       </div>

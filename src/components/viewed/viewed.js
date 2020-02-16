@@ -8,7 +8,9 @@ const Viewed = () => (
       </div>
 
       <div className="viewed_wrapper-item">
-        <div className="viewed_wrapper-item_image"></div>
+        <div className="viewed_wrapper-item_image">
+          <img src={'/viewed/viewed_product.png'} alt=""/>
+        </div>
         <div className="viewed_wrapper-item_text">
           <div className="viewed_wrapper-item_text-heading">
             <span>Тонер картридж</span><br/>
@@ -20,7 +22,9 @@ const Viewed = () => (
         </div>
       </div>
       <div className="viewed_wrapper-item">
-        <div className="viewed_wrapper-item_image"></div>
+        <div className="viewed_wrapper-item_image">
+          <img src={'/viewed/viewed_product.png'} alt=""/>
+        </div>
         <div className="viewed_wrapper-item_text">
           <div className="viewed_wrapper-item_text-heading">
             <span>Тонер картридж</span><br/>
@@ -32,7 +36,9 @@ const Viewed = () => (
         </div>
       </div>
       <div className="viewed_wrapper-item">
-        <div className="viewed_wrapper-item_image"></div>
+        <div className="viewed_wrapper-item_image">
+          <img src={'/viewed/viewed_product.png'} alt=""/>
+        </div>
         <div className="viewed_wrapper-item_text">
           <div className="viewed_wrapper-item_text-heading">
             <span>Тонер картридж</span><br/>
@@ -44,7 +50,9 @@ const Viewed = () => (
         </div>
       </div>
       <div className="viewed_wrapper-item">
-        <div className="viewed_wrapper-item_image"></div>
+        <div className="viewed_wrapper-item_image">
+          <img src={'/viewed/viewed_product.png'} alt=""/>
+        </div>
         <div className="viewed_wrapper-item_text">
           <div className="viewed_wrapper-item_text-heading">
             <span>Тонер картридж</span><br/>
@@ -56,7 +64,9 @@ const Viewed = () => (
         </div>
       </div>
       <div className="viewed_wrapper-item">
-        <div className="viewed_wrapper-item_image"></div>
+        <div className="viewed_wrapper-item_image">
+          <img src={'/viewed/viewed_product.png'} alt=""/>
+        </div>
         <div className="viewed_wrapper-item_text">
           <div className="viewed_wrapper-item_text-heading">
             <span>Тонер картридж</span><br/>
@@ -68,7 +78,9 @@ const Viewed = () => (
         </div>
       </div>
       <div className="viewed_wrapper-item">
-        <div className="viewed_wrapper-item_image"></div>
+        <div className="viewed_wrapper-item_image">
+          <img src={'/viewed/viewed_product.png'} alt=""/>
+        </div>
         <div className="viewed_wrapper-item_text">
           <div className="viewed_wrapper-item_text-heading">
             <span>Тонер картридж</span><br/>

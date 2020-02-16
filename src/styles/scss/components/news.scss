@@ -123,11 +123,10 @@
           background: #fff;
 
           &-inner {
-            width: 74%;
-            height: 65%;
             @include bg(contain, center);
-            background-image: url("/img/unnecessary/item.png");
-            max-height: 80px;
+            img {
+              padding-top: 10px;
+            }
           }
         }
         &_inner {

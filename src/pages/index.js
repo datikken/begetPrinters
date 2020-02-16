@@ -23,7 +23,17 @@ const IndexPage = ({ data: { allContentfulSwiper } }) => {
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
-    },
+    }
+  }
+
+  const carouselParams = {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    containerClass: 'damn',
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    }
   }
 
   return (
@@ -32,14 +42,13 @@ const IndexPage = ({ data: { allContentfulSwiper } }) => {
 
       <Helmet>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css"/>
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600&display=swap" rel="stylesheet"/>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"/>
       </Helmet>
 
       <Swiper {...params}>
         {allContentfulSwiper.edges.map(({ node }) => (
           <SwiperImage
-            key={node.id}
+            key={node.image.file.url}
             node={{ ...node, url: `${node.image.file.url}` }}
           />
         ))}
@@ -48,19 +57,20 @@ const IndexPage = ({ data: { allContentfulSwiper } }) => {
       </Swiper>
 
       <div className="columns desktop-layout">
+
         <div className="left_column">
           <News/>
           <Banner/>
           <Viewed/>
         </div>
-        <div className="main_column">
 
+        <div className="main_column">
           <Sales/>
           <SalesSlider/>
           <SalesEco/>
           <SalesBest/>
-
         </div>
+
       </div>
 
     </Layout>
