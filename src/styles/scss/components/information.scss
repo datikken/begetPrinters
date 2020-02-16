@@ -79,22 +79,16 @@
         &:nth-child(2) {
           margin-left: 10px;
         }
-        .payment {
-          background-image: url("/img/icons/payment.svg");
-        }
-        .delivery {
-          background-image: url("/img/icons/delivery.svg");
-        }
-        .guaranty {
-          background-image: url("/img/icons/guaranty.svg");
-        }
 
         &-icon {
-          min-height: 40px;
-          min-width: 40px;
           @include bg(contain, center);
           position: relative;
           top: -13px;
+
+          img {
+            min-height: 40px;
+            min-width: 40px;
+          }
         }
         &-heading {
           font-family: $semifont;

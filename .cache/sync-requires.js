@@ -6,8 +6,10 @@ const preferDefault = m => m && m.default || m
 
 exports.components = {
   "component---src-templates-product-js": hot(preferDefault(require("/Users/tikken/Sites/printers/site/src/templates/product.js"))),
+  "component---cache-dev-404-page-js": hot(preferDefault(require("/Users/tikken/Sites/printers/site/.cache/dev-404-page.js"))),
   "component---src-pages-404-js": hot(preferDefault(require("/Users/tikken/Sites/printers/site/src/pages/404.js"))),
   "component---src-pages-contacts-js": hot(preferDefault(require("/Users/tikken/Sites/printers/site/src/pages/contacts.js"))),
-  "component---src-pages-index-js": hot(preferDefault(require("/Users/tikken/Sites/printers/site/src/pages/index.js")))
+  "component---src-pages-index-js": hot(preferDefault(require("/Users/tikken/Sites/printers/site/src/pages/index.js"))),
+  "component---src-pages-information-js": hot(preferDefault(require("/Users/tikken/Sites/printers/site/src/pages/information.js")))
 }
 
