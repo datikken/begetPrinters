@@ -2,43 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a907cee3-879e-4b25-8b5f-13f28197c30d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/contacts/contacts_content.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/map/map.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.cache/async-requires.js" beforeDir="false" afterPath="$PROJECT_DIR$/.cache/async-requires.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/contacts/contacts_timing.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.cache/redux.state" beforeDir="false" afterPath="$PROJECT_DIR$/.cache/redux.state" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.cache/sync-requires.js" beforeDir="false" afterPath="$PROJECT_DIR$/.cache/sync-requires.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icons/alot.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/icons/alot.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icons/arrow_right.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/icons/arrow_right.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icons/arrow_right_black.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/icons/arrow_right_black.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icons/arrow_right_white.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/icons/arrow_right_white.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icons/black_arrow.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/icons/black_arrow.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icons/bullet.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/icons/bullet.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icons/cart_delete.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/icons/cart_delete.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icons/delivery.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/icons/delivery.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icons/details_btn.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/icons/details_btn.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icons/facebook.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/icons/facebook.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icons/feedback.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/icons/feedback.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icons/guaranty.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/icons/guaranty.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icons/instagram.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/icons/instagram.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icons/like.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/icons/like.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icons/location.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/icons/location.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icons/mail.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/icons/mail.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icons/ok.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/icons/ok.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icons/ok2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/icons/ok2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icons/payment.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/icons/payment.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icons/product_cart.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/icons/product_cart.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icons/rub.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/icons/rub.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icons/rubFat.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/icons/rubFat.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icons/tel.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/icons/tel.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icons/telegram.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/icons/telegram.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icons/telephone.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/icons/telephone.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icons/timing.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/icons/timing.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icons/vk.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/icons/vk.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/contacts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/contacts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/contacts/contacts_content.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contacts/contacts_content.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/map/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/map/map.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -73,25 +41,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contacts_content.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/contacts/contacts_content.js">
+      <file leaf-file-name="map.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/map/map.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="53" column="67" lean-forward="true" selection-start-line="53" selection-start-column="67" selection-end-line="53" selection-end-column="67" />
+            <state relative-caret-position="165">
+              <caret line="11" column="31" lean-forward="true" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
               <folding>
-                <element signature="e#0#29#0" expanded="true" />
+                <element signature="e#0#25#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/header/header.js">
+      <file leaf-file-name="contacts_content.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/contacts/contacts_content.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="11" column="26" selection-end-line="70" />
+            <state relative-caret-position="675">
+              <caret line="45" selection-start-line="45" selection-end-line="45" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contacts_timing.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/contacts/contacts_timing.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="104">
+              <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/styles/scss/components/footer/footer.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="945">
+              <caret line="89" column="59" lean-forward="true" selection-start-line="89" selection-start-column="59" selection-end-line="89" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer_categories.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/styles/scss/components/footer/footer_categories.scss">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -142,9 +136,10 @@
         <option value="$PROJECT_DIR$/src/styles/scss/components/viewed.scss" />
         <option value="$PROJECT_DIR$/src/pages/index.js" />
         <option value="$PROJECT_DIR$/src/styles/scss/utils/classes.scss" />
-        <option value="$PROJECT_DIR$/src/components/map/map.js" />
         <option value="$PROJECT_DIR$/src/pages/contacts.js" />
+        <option value="$PROJECT_DIR$/src/components/contacts/contacts_timing.js" />
         <option value="$PROJECT_DIR$/src/components/contacts/contacts_content.js" />
+        <option value="$PROJECT_DIR$/src/components/map/map.js" />
       </list>
     </option>
   </component>
@@ -197,12 +192,55 @@
               <item name="site" type="b2602c69:ProjectViewProjectNode" />
               <item name="site" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="map" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="site" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="site" type="b2602c69:ProjectViewProjectNode" />
               <item name="site" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="styles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="site" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="styles" type="462c0819:PsiDirectoryNode" />
+              <item name="scss" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="site" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="styles" type="462c0819:PsiDirectoryNode" />
+              <item name="scss" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="site" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="styles" type="462c0819:PsiDirectoryNode" />
+              <item name="scss" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="footer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="site" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="site" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="icons" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -377,10 +415,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/pages/contacts.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/swiper/swiper.js" />
     <entry file="file://$PROJECT_DIR$/gatsby-config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="339">
@@ -574,13 +608,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/scss/components/footer/footer.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/scss/components/news.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="106">
@@ -641,16 +668,6 @@
         <state relative-caret-position="-608" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/map/map.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="76" selection-start-line="9" selection-start-column="76" selection-end-line="9" selection-end-column="76" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/scss/utils/classes.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="637">
@@ -668,10 +685,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/scss/components/footer/footer.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="89" column="59" lean-forward="true" selection-start-line="89" selection-start-column="59" selection-end-line="89" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/header/header.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="11" column="26" selection-end-line="70" />
+          <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/scss/components/footer/footer_categories.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/contacts/contacts_timing.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/contacts/contacts_content.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -685,12 +729,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/contacts/contacts_content.js">
+    <entry file="file://$PROJECT_DIR$/src/components/map/map.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="53" column="67" lean-forward="true" selection-start-line="53" selection-start-column="67" selection-end-line="53" selection-end-column="67" />
+        <state relative-caret-position="165">
+          <caret line="11" column="31" lean-forward="true" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
           <folding>
-            <element signature="e#0#29#0" expanded="true" />
+            <element signature="e#0#25#0" expanded="true" />
           </folding>
         </state>
       </provider>
