@@ -47,7 +47,6 @@
         @include bg(cover,center);
         width: 370px;
         height: 135px;
-        background-image: url('/img/unnecessary/timer.png');
       }
       &-heading {
         span {
@@ -94,7 +93,6 @@
     &_background {
       width: 870px;
       height: 360px;
-      background-image: url('/img/unnecessary/sales_slider.png');
       @include  bg(cover, center);
     }
   }

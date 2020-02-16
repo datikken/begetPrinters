@@ -8,18 +8,22 @@ import News from "../components/news/news"
 import Banner from "../components/banner/banner"
 import Viewed from "../components/viewed/viewed"
 import Helmet from "react-helmet"
-import Swiper from 'react-id-swiper';
+import Swiper from "react-id-swiper"
+import Sales from "../components/sales/sales"
+import SalesSlider from "../components/sales/sales_slider"
+import SalesEco from "../components/sales/sales_eco"
+import SalesBest from "../components/sales/sales_best"
 
 const IndexPage = ({ data: { allContentfulSwiper } }) => {
   const params = {
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev'
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
     pagination: {
-      el: '.swiper-pagination',
-      clickable: true
-    }
+      el: ".swiper-pagination",
+      clickable: true,
+    },
   }
 
   return (
@@ -29,34 +33,19 @@ const IndexPage = ({ data: { allContentfulSwiper } }) => {
       <Helmet>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css"/>
         <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600&display=swap" rel="stylesheet"/>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"/>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"/>
       </Helmet>
 
       <Swiper {...params}>
-        {allContentfulSwiper.edges.map(({node}) => (
+        {allContentfulSwiper.edges.map(({ node }) => (
           <SwiperImage
             key={node.id}
-            node={{...node, url: `${node.image.file.url}`}}
+            node={{ ...node, url: `${node.image.file.url}` }}
           />
         ))}
-
-        <div style={{background: 'red'}}>Slide #5</div>
-        <div style={{background: 'yellow'}}>Slide #4</div>
-        <div>Slide #3</div>
-        <div>Slide #2</div>
-        <div>Slide #1</div>
-
+        <div style={{ background: "red" }}>Slide #5</div>
+        <div style={{ background: "yellow" }}>Slide #4</div>
       </Swiper>
-
-      <div className="columns mobile-layout">
-        <div className="main_column">
-
-        </div>
-        <div class="left_column">
-
-        </div>
-      </div>
 
       <div className="columns desktop-layout">
         <div className="left_column">
@@ -64,9 +53,13 @@ const IndexPage = ({ data: { allContentfulSwiper } }) => {
           <Banner/>
           <Viewed/>
         </div>
-        <div class="main_column">
-          <h1>Не переживайте,</h1>
-          <p>из-за пропажи остального контента, он обещал быть...</p>
+        <div className="main_column">
+
+          <Sales/>
+          <SalesSlider/>
+          <SalesEco/>
+          <SalesBest/>
+
         </div>
       </div>
 

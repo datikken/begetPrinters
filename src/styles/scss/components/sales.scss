@@ -27,12 +27,6 @@
               height: 160px;
               @include bg(cover, center);
             }
-          .image1 {
-            background-image: url('/img/unnecessary/item1.png');
-          }
-          .image2 {
-            background-image: url('/img/unnecessary/item2.png');
-          }
             &_info {
               font-family: $font;
               font-style: normal;
