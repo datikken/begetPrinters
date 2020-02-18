@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{rKNA:function(e,n,t){"use strict";t.r(n);var a=t("q1tI"),r=t.n(a),c=t("Bl7J"),i=t("vrFN");t("jPXZ"),t("g9RQ"),t("N4Ls");n.default=function(){return r.a.createElement(c.a,null,r.a.createElement(i.a,{title:"Cabinet"}))}}}]);
+//# sourceMappingURL=component---src-pages-cabinet-js-56ea8150c83a49af5362.js.map

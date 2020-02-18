@@ -9,7 +9,6 @@ const Cabinet = () => (
   <Layout>
     <SEO title="Cabinet" />
 
-    <h1>Личный кабинет</h1>
   </Layout>
 )
 
