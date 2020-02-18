@@ -1,7 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import "../styles/scss/main.scss"
 import { graphql } from "gatsby"
 import SwiperImage from "../components/swiper/swiperImage"
 import News from "../components/news/news"
@@ -13,6 +12,7 @@ import Sales from "../components/sales/sales"
 import SalesSlider from "../components/sales/sales_slider"
 import SalesEco from "../components/sales/sales_eco"
 import SalesBest from "../components/sales/sales_best"
+import "../styles/scss/main.scss"
 
 const IndexPage = ({ data: { allContentfulSwiper } }) => {
   const params = {

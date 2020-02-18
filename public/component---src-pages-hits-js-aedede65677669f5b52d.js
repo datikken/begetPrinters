@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[9],{"2QpT":function(e,t,n){"use strict";n.r(t);var a=n("q1tI"),r=n.n(a),c=n("Bl7J"),i=n("vrFN");n("jPXZ"),n("g9RQ"),n("N4Ls");t.default=function(){return r.a.createElement(c.a,null,r.a.createElement(i.a,{title:"Hits"}))}}}]);
+//# sourceMappingURL=component---src-pages-hits-js-aedede65677669f5b52d.js.map
