@@ -128,20 +128,20 @@ const Menu = () => (
         </div>
       </div>
       <div className="menu_wrapper-item">
-        <div className="menu_wrapper-item_tracking">
+        <Link to="/tracking" className="menu_wrapper-item_tracking">
           <div className="menu_wrapper-item_tracking_icon">
             <img src={'/menu/tracking.svg'} alt=""/>
           </div>
           <div className="menu_wrapper-item_tracking_text"><span>Трекинг заказа</span></div>
-        </div>
+        </Link>
       </div>
       <div className="menu_wrapper-item">
-        <div className="menu_wrapper-item_personal">
+        <Link to="/cabinet" className="menu_wrapper-item_personal">
           <div className="menu_wrapper-item_personal_icon">
             <img src={'/menu/login.svg'} alt=""/>
           </div>
           <div className="menu_wrapper-item_personal_text"><span>Личный кабинет</span></div>
-        </div>
+        </Link>
       </div>
       <div className="menu_wrapper-item">
         <div className="menu_wrapper-item_cart">
