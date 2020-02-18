@@ -68,6 +68,10 @@
         color: $breadcrumb;
     }
     
+    p {
+        pointer-events: none;
+    }
+    
     &:hover {
         text-decoration: none;
         color: $black;

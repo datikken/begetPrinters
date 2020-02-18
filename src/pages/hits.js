@@ -32,9 +32,10 @@ const Hits = () => (
           <Typography color="textPrimary">Хит-парад принтеров</Typography>
         </Breadcrumbs>
       </div>
-
-    <HitsHero />
+    
     <Breadcrumbs />
+    <HitsHero />
+
 
   </Layout>
 )
