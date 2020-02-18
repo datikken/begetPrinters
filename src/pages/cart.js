@@ -5,14 +5,11 @@ import MyMap from "../components/map/map"
 import ContactsContent from "../components/contacts/contacts_content"
 import "../styles/scss/main.scss"
 
-const Contacts = () => (
+const Cart = () => (
   <Layout>
-    <SEO title="Contacts" />
-
-    <MyMap />
-    <ContactsContent/>
-
+    <SEO title="Cart" />
+    <h1>Shopping cart</h1>
   </Layout>
 )
 
-export default Contacts
+export default Cart
