@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{rKNA:function(e,n,t){"use strict";t.r(n);var a=t("q1tI"),l=t.n(a),r=t("Bl7J"),c=t("vrFN"),u=t("jPXZ"),i=t("g9RQ");n.default=function(){return l.a.createElement(r.a,null,l.a.createElement(c.a,{title:"Cabinet"}),l.a.createElement(u.a,null),l.a.createElement(i.a,null))}}}]);
-//# sourceMappingURL=component---src-pages-cabinet-js-ab078e194322088c5b55.js.map

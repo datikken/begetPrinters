@@ -57,7 +57,7 @@ const Footer = ({ siteTitle }) => (
 
                         <div className="footer_cat-item_list">
                             <ul className="footer_cat-item_list-ul">
-                                <li><span><a href="/catalog">Каталог</a></span></li>
+                                <li><span><Link to="/catalog">Каталог</Link></span></li>
                                 <li><span>Лазерные принтеры</span></li>
                                 <li><span>Струйные принтеры</span></li>
                                 <li><span>Ч/Б принтеры</span></li>

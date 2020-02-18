@@ -14,7 +14,7 @@ import { Link } from "gatsby"
 const Blog = () => (
   <Layout>
     <SEO title="Blog" /> 
-    <div class="crumbs_wrap">
+    <div className="crumbs_wrap">
         <Breadcrumbs separator={<NavigateNextIcon fontSize="small" />} aria-label="breadcrumb">
           <Link color="inherit" href="/" onClick={() => {}}>
             Главная

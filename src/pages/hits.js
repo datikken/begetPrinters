@@ -24,7 +24,7 @@ const Hits = () => (
   <Layout>
     <SEO title="Hits" />
  
-      <div class="crumbs_wrap">
+      <div className="crumbs_wrap">
         <Breadcrumbs separator={<NavigateNextIcon fontSize="small" />} aria-label="breadcrumb">
           <Link color="inherit" href="/" onClick={() => {}}>
             Главная

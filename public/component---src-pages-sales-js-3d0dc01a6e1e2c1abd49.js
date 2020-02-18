@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[11],{u8tg:function(e,t,n){"use strict";n.r(t);var a=n("q1tI"),l=n.n(a),r=n("Bl7J"),u=n("vrFN");n("jPXZ"),n("g9RQ");t.default=function(){return l.a.createElement(r.a,null,l.a.createElement(u.a,{title:"Sales"}))}}}]);
-//# sourceMappingURL=component---src-pages-sales-js-3d0dc01a6e1e2c1abd49.js.map
