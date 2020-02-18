@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[12],{H7s4:function(e,n,t){"use strict";t.r(n);var a=t("q1tI"),l=t.n(a),r=t("Bl7J"),c=t("vrFN");t("jPXZ"),t("g9RQ");n.default=function(){return l.a.createElement(r.a,null,l.a.createElement(c.a,{title:"Tracking"}),l.a.createElement("h1",null,"Трэкаем заказ"))}}}]);
+//# sourceMappingURL=component---src-pages-tracking-js-54d792d991711327e9d0.js.map

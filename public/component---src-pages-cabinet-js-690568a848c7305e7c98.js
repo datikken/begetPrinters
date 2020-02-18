@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{rKNA:function(e,n,t){"use strict";t.r(n);var a=t("q1tI"),l=t.n(a),r=t("Bl7J"),c=t("vrFN");t("jPXZ"),t("g9RQ");n.default=function(){return l.a.createElement(r.a,null,l.a.createElement(c.a,{title:"Cabinet"}),l.a.createElement("h1",null,"Личный кабинет"))}}}]);
+//# sourceMappingURL=component---src-pages-cabinet-js-690568a848c7305e7c98.js.map
