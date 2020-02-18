@@ -9,9 +9,6 @@ const Contacts = () => (
   <Layout>
     <SEO title="Contacts" />
 
-    <MyMap />
-    <ContactsContent/>
-
   </Layout>
 )
 
