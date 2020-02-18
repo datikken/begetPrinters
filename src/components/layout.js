@@ -12,6 +12,7 @@ import Header from "./header/header"
 import Menu from "./menu/menu"
 import Footer from "./footer/footer"
 import Payments from "./footer/payments"
+import Subscriptions from "./subscription/subscription"
 
 const Layout = ({ children }) => {
   return (
@@ -19,6 +20,8 @@ const Layout = ({ children }) => {
       <Header siteTitle="test" />
       <Menu/>
       <main>{children}</main>
+      
+      <Subscriptions/>
       <Footer/>
       <Payments/>
     </>
