@@ -33,13 +33,13 @@ const Header = () => (
                         <Link to="/hits">Хит-парад принтеров</Link>
                     </li>
                     <li className="header_wrapper-item_menu-item">
-                        <Link to="/catalog">Акции</Link>
+                        <Link to="/sales">Акции</Link>
                     </li>
                     <li className="header_wrapper-item_menu-item">
                         <Link to="/blog">Блог</Link>
                     </li>
                     <li className="header_wrapper-item_menu-item">
-                        <Link to="/catalog">О нас</Link>
+                        <Link to="/about">О нас</Link>
                     </li>
                     <li className="header_wrapper-item_menu-item">
                         <Link to="/contacts">Контакты</Link>
