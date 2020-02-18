@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{DRkp:function(t,e,n){"use strict";n.r(e);var a=n("q1tI"),c=n.n(a),r=n("Bl7J"),l=n("vrFN");n("jPXZ"),n("g9RQ");e.default=function(){return c.a.createElement(r.a,null,c.a.createElement(l.a,{title:"Contacts"}))}}}]);
+//# sourceMappingURL=component---src-pages-catalog-js-b3861b2eb79a42c534d7.js.map

@@ -7,10 +7,7 @@ import ContactsContent from "../components/contacts/contacts_content"
 const Tracking = () => (
   <Layout>
     <SEO title="Tracking" />
-
-    <MyMap />
-    <ContactsContent/>
-
+    <h1>Трэкаем заказ</h1>
   </Layout>
 )
 

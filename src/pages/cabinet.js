@@ -8,9 +8,7 @@ const Cabinet = () => (
   <Layout>
     <SEO title="Cabinet" />
 
-    <MyMap />
-    <ContactsContent/>
-
+    <h1>Личный кабинет</h1>
   </Layout>
 )
 
