@@ -24,12 +24,14 @@ const Hits = () => (
   <Layout>
     <SEO title="Hits" />
  
-      <Breadcrumbs separator={<NavigateNextIcon fontSize="small" />} aria-label="breadcrumb">
-        <Link color="inherit" href="/" onClick={() => {}}>
-          Главная
-        </Link>
-        <Typography color="textPrimary">Хит-парад принтеров</Typography>
-      </Breadcrumbs>
+      <div class="crumbs_wrap">
+        <Breadcrumbs separator={<NavigateNextIcon fontSize="small" />} aria-label="breadcrumb">
+          <Link color="inherit" href="/" onClick={() => {}}>
+            Главная
+          </Link>
+          <Typography color="textPrimary">Хит-парад принтеров</Typography>
+        </Breadcrumbs>
+      </div>
 
     <HitsHero />
     <Breadcrumbs />
