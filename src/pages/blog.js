@@ -26,7 +26,7 @@ const Blog = ({data: {allContentfulBlogPost}}) => (
 
     {allContentfulBlogPost.edges.map(({node}) => (
        <BlogCard
-          node={{...node, slug: `posts/${node.slug}`}}
+          node={{...node, slug: `${node.slug}`}}
           key={node.id}
        />
     ))}
@@ -40,13 +40,18 @@ export const query = graphql`
   allContentfulBlogPost {
     edges {
       node {
+        title
+        createdAt
+        slug
         image {
           file {
             fileName
             url
           }
         }
-        title
+        category
+        published(difference: "")
+        created
       }
     }
   }

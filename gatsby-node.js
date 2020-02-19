@@ -11,21 +11,23 @@ exports.createPages = ({ graphql, actions }) => {
   const productTemplate = path.resolve(`src/templates/post.js`)
 
   return graphql(`
-        {
-          allContentfulBlogPost {
-                edges {
-                    node {
-                        slug
-                    }
+          {
+            allContentfulBlogPost {
+              edges {
+                node {
+                  slug
                 }
+              }
             }
-        }
+          }
     `).then(result => {
     if (result.errors) {
       throw result.errors
     }
 
-    result.data.allContentfulProduct.edges.forEach(edge => {
+    console.log(result)
+
+    result.data.allContentfulBlogPost.edges.forEach(edge => {
       createPage({
         path: `/blog/${edge.node.slug}`,
         component: productTemplate,
