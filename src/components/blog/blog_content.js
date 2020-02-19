@@ -6,10 +6,10 @@ export default function BlogContent() {
             <div className="blog_wrap">
                 <div className="blog_wrap-menu">
                     <div className="blog_wrap-menu_item">
-                        <span className="blog_wrap-menu_item-inner">картридж</span>
+                        <span className="blog_wrap-menu_item-inner">Картридж</span>
                     </div>
                     <div className="blog_wrap-menu_item">
-                        <span className="blog_wrap-menu_item-inner">принтеры</span>
+                        <span className="blog_wrap-menu_item-inner">Принтеры</span>
                     </div>
                     <div className="blog_wrap-menu_item">
                         <span className="blog_wrap-menu_item-inner">Жизнь в офисе</span>

@@ -8,11 +8,11 @@ const path = require("path")
 // You can delete this file if you're not using it
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
-  const productTemplate = path.resolve(`src/templates/product.js`)
+  const productTemplate = path.resolve(`src/templates/post.js`)
 
   return graphql(`
         {
-            allContentfulProduct {
+          allContentfulBlogPost {
                 edges {
                     node {
                         slug
@@ -27,7 +27,7 @@ exports.createPages = ({ graphql, actions }) => {
 
     result.data.allContentfulProduct.edges.forEach(edge => {
       createPage({
-        path: `/products/${edge.node.slug}`,
+        path: `/blog/${edge.node.slug}`,
         component: productTemplate,
         context: {
           slug: edge.node.slug,

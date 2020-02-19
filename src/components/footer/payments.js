@@ -10,28 +10,28 @@ const Payments = () => (
       </div>
       <div className="payments_wrap-item_inner">
         <div className="payments_wrap-item_inner-icon visa">
-          <img src={'payments/visa.svg'} alt=""/>
+          <img src={'/payments/visa.svg'} alt=""/>
         </div>
         <div className="payments_wrap-item_inner-icon paypal">
-          <img src={'payments/paypal.svg'} alt=""/>
+          <img src={'/payments/paypal.svg'} alt=""/>
         </div>
         <div className="payments_wrap-item_inner-icon mastercard">
-          <img src={'payments/mastercard.svg'} alt=""/>
+          <img src={'/payments/mastercard.svg'} alt=""/>
         </div>
         <div className="payments_wrap-item_inner-icon maestro">
-          <img src={'payments/maestro.svg'} alt=""/>
+          <img src={'/payments/maestro.svg'} alt=""/>
         </div>
         <div className="payments_wrap-item_inner-icon ebay">
-          <img src={'payments/ebay.svg'} alt=""/>
+          <img src={'/payments/ebay.svg'} alt=""/>
         </div>
         <div className="payments_wrap-item_inner-icon apple">
-          <img src={'payments/apple.svg'} alt=""/>
+          <img src={'/payments/apple.svg'} alt=""/>
         </div>
         <div className="payments_wrap-item_inner-icon google">
-          <img src={'payments/google.svg'} alt=""/>
+          <img src={'/payments/google.svg'} alt=""/>
         </div>
         <div className="payments_wrap-item_inner-icon webmoney">
-          <img src={'payments/webmoney.svg'} alt=""/>
+          <img src={'/payments/webmoney.svg'} alt=""/>
         </div>
       </div>
     </div>

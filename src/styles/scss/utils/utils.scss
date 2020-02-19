@@ -101,20 +101,20 @@
     }
   }
 }
-@mixin smenu_underline() {
+@mixin smenu_underline($width, $left) {
   &:before {
     content: "";
     position: absolute;
     width: 0;
     height: 2px;
     background: linear-gradient(90deg, #d935fd 19.91%, #3559fd 100%);
-    left: -22px;
+    left: $left;
     top: 30px;
     transition: width 0.2s;
   }
   &:hover {
     &:before {
-      width: 118%;
+      width: $width;
     }
   }
 }

@@ -1,6 +1,9 @@
 .blog {
   max-width: $layoutw;
   margin: 0 auto;
+  padding-top: 20px;
+  margin-bottom: 50px;
+
   &_wrap {
     &-menu {
       display: grid;
@@ -19,6 +22,11 @@
           line-height: 14px;
           letter-spacing: 0.02em;
           color: $dblack;
+          cursor: pointer;
+          display: block;
+          position: relative;
+          display: inline-block;
+          @include smenu_underline(100%, 0);
         }
       }
     }

@@ -1,1 +1,1 @@
-{"componentChunkName":"component---src-pages-blog-js","path":"/blog/","result":{"pageContext":{}}}
+{"componentChunkName":"component---src-pages-blog-js","path":"/blog/","result":{"data":{"allContentfulBlogPost":{"edges":[{"node":{"image":{"file":{"fileName":"blog_hero.svg","url":"//images.ctfassets.net/7teha31ppuo3/Vgrp8UVhaOA2hNUHLO3Zy/aad5c6c14c756162c921391a90cb9342/blog_hero.svg"}},"title":"Длинный заголовок, подзаголовок про статью"}}]}},"pageContext":{}}}
