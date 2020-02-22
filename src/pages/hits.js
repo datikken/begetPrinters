@@ -14,7 +14,7 @@ const Hits = () => (
  
       <div className="crumbs_wrap">
         <Breadcrumbs separator={<NavigateNextIcon fontSize="small" />} aria-label="breadcrumb">
-          <Link color="inherit" href="/" onClick={() => {}}>
+          <Link color="inherit" to="/" onClick={() => {}}>
             Главная
           </Link>
           <Typography color="textPrimary">Хит-парад принтеров</Typography>

@@ -4,6 +4,11 @@
   padding-top: 20px;
   margin-bottom: 50px;
 
+  &_article {
+    max-width: $layoutw;
+    margin: 0 auto;
+  }
+
   &_card {
     text-decoration: none;
     color: $dblack;
