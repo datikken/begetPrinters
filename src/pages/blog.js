@@ -4,7 +4,7 @@ import SEO from "../components/seo"
 import Typography from '@material-ui/core/Typography'
 import Breadcrumbs from '@material-ui/core/Breadcrumbs'
 import NavigateNextIcon from '@material-ui/icons/NavigateNext'
-import BlogCard from "../components/blog/blog_card";
+import BlogCard from "../components/blog/blog_card"
 import { Link } from "gatsby"
 import { graphql } from "gatsby"
 import "../styles/scss/main.scss"
@@ -48,7 +48,7 @@ const Blog = ({data: {allContentfulBlogPost}}) => {
           {allContentfulBlogPost.edges.map(({node}) => (
             <BlogCard
                 node={{...node, slug: `${node.slug}`}}
-                key={node.id}
+                key={node.slug}
             />
           ))}
       </div>
@@ -74,6 +74,7 @@ export const query = graphql`
         category
         published(difference: "")
         created
+        shortDescription
       }
     }
   }
