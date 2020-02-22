@@ -1,16 +1,20 @@
-import React from 'react'
-import { Link } from 'gatsby' 
+import React from "react"
+import { Link } from "gatsby"
 
-export default function BlogCard({ node: { title, createdAt, slug, category, created, image } }) {
+export default function BlogCard({
+  node: { title, createdAt, slug, category, created, image },
+}) {
+  return (
+    <Link to={`blog/${slug}`} className="blog_card">
+      <img src={image.file.url} alt="Blog" />
 
-    return (
-        <div>
-            <p>{title}</p>
-            <p>{createdAt}</p>
-            <p>{category}</p>
-            <p>{created}</p>
-            <Link to={`blog/${slug}`}>{slug}</Link>
-            <img src={image.file.url} />
-        </div>
-    )
+      <p className="blog_card-title">{title}</p>
+
+      <div className="blog_card-info">
+        <p className="blog_card-info_cat">{category}</p>
+        <p className="blog_card-info_date">{createdAt}</p>
+        <p className="blog_card-info_created">Опубликовано {created}</p>
+      </div>
+    </Link>
+  )
 }

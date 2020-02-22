@@ -5,7 +5,7 @@ export default function Post({ data }) {
     return (
         <Layout>
             <h1>{data.contentfulBlogPost.title}</h1>
-            <img src={data.contentfulBlogPost.image.file.url} />
+            <img src={data.contentfulBlogPost.image.file.url} alt="Post" />
         </Layout>
     )
 }

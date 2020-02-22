@@ -21,9 +21,9 @@ const ContactsContent = () => {
                     <span className="contacts_wrap-item_inner-item-text">Адрес:</span>
                   </div>
                   <div className="contacts_wrap-item_inner-item">
-                        <span className="contacts_wrap-item_inner-item-desc">
-                            115230 Россия, Москва, Варшавское шоссе, дом, 36, строение 8, 2-й подъезд, этаж 2, офис 1578
-                        </span>
+                    <span className="contacts_wrap-item_inner-item-desc">
+                        115230 Россия, Москва, Варшавское шоссе, дом, 36, строение 8, 2-й подъезд, этаж 2, офис 1578
+                    </span>
                   </div>
                 </div>
               </div>
@@ -92,18 +92,18 @@ const ContactsContent = () => {
                     <div className="contacts_wrap-item_inner-inputs-wrap">
 
                       <div className="contacts_wrap-item_inner-item_form_control-input">
-                        <label className="contacts_wrap-item_inner-item_form_control-input-label">Имя</label>
+                        <label htmlfor="feedback[name]" className="contacts_wrap-item_inner-item_form_control-input-label">Имя</label>
                         <input type="text" name="feedback[name]" placeholder="Имя"/>
                       </div>
 
                       <div className="contacts_wrap-item_inner-item_form_control-input">
-                        <label className="contacts_wrap-item_inner-item_form_control-input-label">Фамилия</label>
-                        <input type="text" name="feedback[name]" placeholder="Фамилия"/>
+                        <label htmlfor="feedback[lastname]"  className="contacts_wrap-item_inner-item_form_control-input-label">Фамилия</label>
+                        <input type="text" name="feedback[lastname]" placeholder="Фамилия"/>
                       </div>
                     </div>
 
                     <div className="contacts_wrap-item_inner-item_form_control-heading">
-                      <label className="contacts_wrap-item_inner-item_form_control-input-label">Тема обращения</label>
+                      <span className="contacts_wrap-item_inner-item_form_control-input-label">Тема обращения</span>
                     </div>
 
                     <div className="contacts_wrap-item_inner-item_form_control-options">

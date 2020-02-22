@@ -2,23 +2,11 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import HitsHero from "../components/hits/hits_hero"
-
 import { Link } from "gatsby"
-
-import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography'
 import Breadcrumbs from '@material-ui/core/Breadcrumbs'
 import NavigateNextIcon from '@material-ui/icons/NavigateNext';
-
 import "../styles/scss/main.scss"
-
-const useStyles = makeStyles(theme => ({
-  root: {
-    '& > * + *': {
-      marginTop: theme.spacing(2),
-    },
-  },
-}));
 
 const Hits = () => (
   <Layout>

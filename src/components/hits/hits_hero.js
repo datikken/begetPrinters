@@ -5,7 +5,7 @@ export default function HitsHero() {
         <>
         <div className="hits_hero">
             <div className="hits_hero-wrap">
-                <img src={'/hits/hits.svg'}></img>
+                <img src={'/hits/hits.svg'} alt="Hits"></img>
             </div>
         </div>
 
@@ -185,7 +185,7 @@ export default function HitsHero() {
 
                 <div className="hits-items_column-item">
                     <div className="hits-items_column-item-image">
-                        <img src={'/hits/hits_printer.svg'} />
+                        <img src={'/hits/hits_printer.svg'} alt="Hits"/>
                     </div>
                 </div>
 
@@ -256,7 +256,7 @@ export default function HitsHero() {
 
                 <div className="hits-items_column-item">
                     <div className="hits-items_column-item-image">
-                        <img src={'/hits/hits_printer2.svg'} />
+                        <img src={'/hits/hits_printer2.svg'} alt="Hits" />
                     </div>
                 </div>
 
