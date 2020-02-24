@@ -13,6 +13,7 @@ import CatalogFiltersMob from "../components/filters/catalog_filters_mob"
 import ProductsGrid from "../components/products/products_grid"
 
 const Catalog = () => (
+
   <Layout>
     <SEO title="Catalog" />
     <div className="crumbs_wrap">
@@ -37,34 +38,15 @@ const Catalog = () => (
           </div>
         </div> 
 
+        <div class="right_column">
+            <CatalogFiltersMob/>
 
-
-<div class="right_column">
-    <CatalogFiltersMob/>
-
-    <div class="products_grid">
-
-
-        <ProductsGrid/>
-    </div>
-
-
-
-
-
-
-
-
-
-</div>
-
-
-
-
-
+            <div class="products_grid">
+                <ProductsGrid/>
+            </div>
+        </div>
       </div>
     </div>
-
 
   </Layout>
 )
