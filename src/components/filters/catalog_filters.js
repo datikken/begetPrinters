@@ -1,54 +1,27 @@
 import React from "react"
-import Checkbox from "@material-ui/core/Checkbox"
+import CatalogFiltersVariants from './catalog_filters_variants'
+import Tip from "../tips/tip"
 
 export default function CatalogFilters() {
-  const [checked, setChecked] = React.useState(true)
 
   return (
     <div class="filters">
       <div class="filters_wrapper">
         <div class="filters_wrapper-item">
           <div class="filters_wrapper-item_text">Тип принтера</div>
-          <ul class="filters_wrapper-item_list">
-            <li class="filters_wrapper-item_list-text">
-              <Checkbox
-                size="small"
-                value="small"
-                inputProps={{ "aria-label": "checkbox with small size" }}
-              />
-              <span>Струйный</span>
-            </li>
-            <li class="filters_wrapper-item_list-text">
-            <Checkbox
-                size="small"
-                value="small"
-                inputProps={{ "aria-label": "checkbox with small size" }}
-              />
-              <span>Лазерный</span>
-            </li>
-            <li class="filters_wrapper-item_list-text">
-            <Checkbox
-                size="small"
-                value="small"
-                inputProps={{ "aria-label": "checkbox with small size" }}
-              />
-              <span>Факс</span>
-            </li>
-            <li class="filters_wrapper-item_list-text">
-            <Checkbox
-                size="small"
-                value="small"
-                inputProps={{ "aria-label": "checkbox with small size" }}
-              />
-              <span>Название</span>
-            </li>
-          </ul>
+          <img src={'/icons/arrow_right.svg'} />
+          <Tip />
         </div>
+          
+        <CatalogFiltersVariants/>
+
         <div class="filters_wrapper-item">
           <div class="filters_wrapper-item_text">Бренд</div>
+          <img src={'/icons/arrow_right.svg'} />
         </div>
         <div class="filters_wrapper-item">
           <div class="filters_wrapper-item_text">Модель</div>
+          <img src={'/icons/arrow_right.svg'} />
         </div>
       </div>
     </div>

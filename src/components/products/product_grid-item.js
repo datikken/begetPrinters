@@ -1,9 +1,10 @@
 import React from 'react'
+import {Link} from 'gatsby'
 
 export default function ProductGridItem() {
     return (
         <div className="product">
-                <a href="/catalog/id1">
+                <Link to="/product">
                     <div className="product_wrapper">
                         <div className="product_wrapper-item">
                             <div className="product_wrapper-item_heading"><span className="product_wrapper-item_heading-item">IC-HLOR70A</span></div>
@@ -28,7 +29,7 @@ export default function ProductGridItem() {
                             <div className="product_wrapper-item_cart"></div>
                         </div>
                     </div>
-                </a>
+                </Link>
             </div>  
     )
 }

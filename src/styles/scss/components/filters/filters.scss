@@ -1,7 +1,7 @@
 .filters {
   max-width: 270px;
   border: 1px solid $light_gray;
-  padding: 10px 20px 0 20px;
+  padding: 0px 20px 0 20px;
   margin-bottom: 50px;
   display: none;
   @include breakpoint($phone) {
@@ -11,10 +11,14 @@
   &_wrapper {
     &-item {
       border-bottom: 1px solid $light_gray;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
       cursor: pointer;
       padding: 15px 0 15px 0;
+
       &:first-child {
-        padding: 10px 0 0 0;
+        border-top:none;
       }
       &:last-child {
         border: none;
@@ -46,7 +50,8 @@
         padding: 0;
         margin: 0;
         list-style: none;
-        // margin-left: 20px;
+        border-bottom: 1px solid $light_gray;
+
         &-text {
           border-bottom: 1px solid $light_gray;
           font-family: $font;
@@ -54,21 +59,12 @@
           line-height: 14px;
           letter-spacing: 0.02em;
           color: $dblack;
-          // padding: 15px 0;
           display: flex;
           align-items: center;
+
           &:last-child {
             border: none;
           }
-          // &:before {
-          //   content: "";
-          //   display: block;
-          //   @include bg(contain, center);
-          //   background-image: url("/img/icons/bullet.svg");
-          //   width: 10px;
-          //   height: 10px;
-          //   margin-right: 10px;
-          // }
         }
       }
     }
