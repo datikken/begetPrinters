@@ -10,8 +10,6 @@ import { graphql } from "gatsby"
 import "../styles/scss/main.scss"
 
 const Blog = ({data: {allContentfulBlogPost}}) => {
-  console.log(allContentfulBlogPost)
-
   return (
     <Layout>
       <SEO title="Blog" /> 

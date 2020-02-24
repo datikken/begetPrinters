@@ -48,7 +48,7 @@ export default function Post({ data }) {
 }
 
 export const query = graphql`
-  query lessonQuery($slug: String!) {
+  query lessonQuery($slug: String) {
     contentfulBlogPost(slug: { eq: $slug }) {
       title
       createdAt

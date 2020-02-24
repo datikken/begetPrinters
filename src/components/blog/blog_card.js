@@ -10,7 +10,8 @@ export default function BlogCard({
 
   return (
     <Link to={`blog/${slug}`} className="blog_card">
-      <img src={image.file.url} alt="Blog" />
+      
+      <img src={image ? image.file.url : '/header/LOGO.png'} alt="Blog" />
 
       <p className="blog_card-title">{title}</p>
   

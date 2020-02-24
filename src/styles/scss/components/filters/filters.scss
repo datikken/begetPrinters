@@ -46,7 +46,7 @@
         padding: 0;
         margin: 0;
         list-style: none;
-        margin-left: 20px;
+        // margin-left: 20px;
         &-text {
           border-bottom: 1px solid $light_gray;
           font-family: $font;
@@ -54,23 +54,27 @@
           line-height: 14px;
           letter-spacing: 0.02em;
           color: $dblack;
-          padding: 15px 0;
+          // padding: 15px 0;
           display: flex;
           align-items: center;
           &:last-child {
             border: none;
           }
-          &:before {
-            content: "";
-            display: block;
-            @include bg(contain, center);
-            background-image: url("/img/icons/bullet.svg");
-            width: 10px;
-            height: 10px;
-            margin-right: 10px;
-          }
+          // &:before {
+          //   content: "";
+          //   display: block;
+          //   @include bg(contain, center);
+          //   background-image: url("/img/icons/bullet.svg");
+          //   width: 10px;
+          //   height: 10px;
+          //   margin-right: 10px;
+          // }
         }
       }
     }
   }
+}
+
+.MuiSvgIcon-fontSizeSmall {
+  font-size: 1rem!important;
 }

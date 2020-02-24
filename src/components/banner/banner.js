@@ -1,6 +1,6 @@
 import React from "react"
 
-const News = () => (
+const Banner = () => (
   <div className="banner">
     <div className="banner-wrapper">
       <div className="banner-wrapper_image">
@@ -20,4 +20,4 @@ const News = () => (
   </div>
 )
 
-export default News
+export default Banner

@@ -3,9 +3,8 @@
  *
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
-const path = require("path")
-
 // You can delete this file if you're not using it
+const path = require("path")
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
   const productTemplate = path.resolve(`src/templates/post.js`)
@@ -25,14 +24,12 @@ exports.createPages = ({ graphql, actions }) => {
       throw result.errors
     }
 
-    console.log(result)
-
     result.data.allContentfulBlogPost.edges.forEach(edge => {
       createPage({
         path: `/blog/${edge.node.slug}`,
         component: productTemplate,
         context: {
-          slug: edge.node.slug,
+          slug: edge.node.slug
         },
       })
     })
