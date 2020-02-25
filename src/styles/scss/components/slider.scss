@@ -44,34 +44,24 @@
   }
 }
 
-.swiper-button-next,
-.swiper-button-prev {
-  height: 30px;
-  width: 30px;
-  top: 51%;
-  //display: none;
-  @include breakpoint($phone) {
-    display: block;
-  }
-  @include bg(contain, center);
-  &:before,
-  &:after {
-    display: none;
-  }
-}
 .swiper-button-next {
-  background-image: url("/img/swiper/rightArr.svg");
-  right: 20px;
+  width: 17.25px !important;
+  height: 25px !important;
+  right: 20%!important;
+  top: 52.1%!important;
 }
 .swiper-button-prev {
-  background-image: url("/img/swiper/leftArr.svg");
-  left: 21px;
-  top: 51.5%;
+  width: 17.25px !important;
+  height: 25px !important;
+  top:52%!important;
+  left: 20%!important;
 }
+
 .swiper-pagination {
   bottom: 38px !important;
-  top: 50% !important;
-  
+  top: 87.5% !important;
+  left: 14px!important;
+
   @include breakpoint($phone) {
     top: initial!important;
   }
@@ -79,7 +69,8 @@
 .swiper-pagination-bullet {
   margin: 10px;
   height: 5px;
-  width: 5px;
+  width: 11px!important;
+  height: 11px!important;
 
   @include breakpoint($phone) {
     height: 10px;
@@ -88,5 +79,6 @@
   }
 }
 .swiper-pagination-bullet-active {
-  background-color: $yellow;
+  background: #40404C!important;
+  box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.7);
 }

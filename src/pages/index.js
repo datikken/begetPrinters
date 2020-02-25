@@ -22,13 +22,13 @@ const IndexPage = ({ data: { allContentfulSwiper } }) => {
     renderPrevButton: () => (
       <img
         className="swiper-button-next swiper-next"
-        src={"/header/LOGO.png"}
+        src={"/icons/swiper_right.svg"}
       />
     ),
     renderNextButton: () => (
       <img
         className="swiper-button-prev swiper-prev"
-        src={"/header/LOGO.png"}
+        src={"/icons/swiper_left.svg"}
       />
     ),
     pagination: {
@@ -57,9 +57,9 @@ const IndexPage = ({ data: { allContentfulSwiper } }) => {
 
       <div className="columns desktop-layout">
         <div className="left_column">
-          <News />
           <Banner />
           <Viewed />
+          <News />
         </div>
 
         <div className="main_column">

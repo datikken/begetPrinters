@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[13],{Cdlu:function(e,t,n){"use strict";n.r(t);var a=n("q1tI"),l=n.n(a),r=n("Bl7J"),u=n("vrFN");n("N4Ls");t.default=function(){return l.a.createElement(r.a,null,l.a.createElement(u.a,{title:"Product"}),l.a.createElement("h1",null,"Product page"))}}}]);
-//# sourceMappingURL=component---src-pages-product-js-d88d63bc2d0f48e42877.js.map
