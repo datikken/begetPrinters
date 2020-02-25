@@ -26,7 +26,7 @@ const Sales = () => (
       <div className="sales-wrapper_item">
         <div className="sales-wrapper_item-inner">
           <div className="sales-wrapper_item-inner_image image2">
-            <img src={'/sales/item2.png'} alt=""/>
+            <img src={'/sales/item.png'} alt=""/>
           </div>
           <div className="sales-wrapper_item-inner_info">
             <div className="sales-wrapper_item-inner_info-text">
