@@ -141,8 +141,8 @@ const Menu = () => {
                 </li>
                 <li
                   className="menu_wrapper-item-main_menu-item"
-                  onMouseOver={() => setShowed(true)}
                   onMouseLeave={() => setShowed(false)}
+                  onMouseOver={() => setShowed(true)}
                 >
                   <span className="menu_wrapper-item-main_menu-item-text">
                     <Link to="/information">Информация</Link>
