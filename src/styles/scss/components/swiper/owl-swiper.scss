@@ -1,9 +1,14 @@
-.owl-swiper {
-      .swiper-wrapper {
-        overflow: hidden;
-        
-        .swiper-slide  {
-            max-width: 270px;
+.owl-wrapper {
+    .swiper-container {
+        .swiper-wrapper {
+            .swiper-slide {
+                max-width: 270px!important;
+            }
         }
+    }
+}
+.carousel_card-wrapper_item {
+    &:nth-child(3) {
+        height: 270px;
     }
 }

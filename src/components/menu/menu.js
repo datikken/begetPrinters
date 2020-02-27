@@ -207,7 +207,7 @@ const Menu = () => {
               </div>
               <div className="menu_wrapper-item_cart_value">56834</div>
               <div className="menu_wrapper-item_cart_currency">
-                <img src={"/menu/rub.svg"} alt="" />
+                <img src={"/menu/rub.svg"} alt="rub" />
               </div>
             </Link>
           </div>

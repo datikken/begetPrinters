@@ -8,7 +8,7 @@ export default function Owl() {
         spaceBetween: 10,
         loop: true,
         autoplay: {
-            delay: 500,
+            delay: 1500,
             disableOnInteraction: false
           },
         breakpoints: {
