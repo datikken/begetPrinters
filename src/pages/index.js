@@ -11,6 +11,7 @@ import Sales from "../components/sales/sales"
 import SalesSlider from "../components/sales/sales_slider"
 import SalesEco from "../components/sales/sales_eco"
 import SalesBest from "../components/sales/sales_best"
+import Owl from "../components/owl/owl"
 import "../styles/scss/main.scss"
 
 const IndexPage = ({ data: { allContentfulSwiper } }) => {
@@ -21,12 +22,14 @@ const IndexPage = ({ data: { allContentfulSwiper } }) => {
     },
     renderPrevButton: () => (
       <img
+        alt="icon"
         className="swiper-button-next swiper-next"
         src={"/icons/swiper_right.svg"}
       />
     ),
     renderNextButton: () => (
       <img
+        alt="icon"
         className="swiper-button-prev swiper-prev"
         src={"/icons/swiper_left.svg"}
       />
@@ -69,6 +72,11 @@ const IndexPage = ({ data: { allContentfulSwiper } }) => {
           <SalesBest />
         </div>
       </div>
+
+      <div className="owl-wrapper">
+        <Owl />
+      </div>
+              
     </Layout>
   )
 }

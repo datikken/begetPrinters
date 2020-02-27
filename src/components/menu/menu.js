@@ -9,7 +9,7 @@ const Menu = () => {
       <div className="menu_wrapper">
         <div className="menu_wrapper-item">
           <div className="menu_wrapper-item_hamburger">
-            <img src={"/menu/hamburger.svg"} alt="" />
+            <img src={"/menu/hamburger.svg"} alt="hamburger" />
           </div>
           <div className="menu_wrapper-item_secondary">
             <div className="menu_Wrapper-item_secondary-item">
@@ -90,6 +90,7 @@ const Menu = () => {
             <img
               src={"/icons/menu_decor.svg"}
               className="menu_wrapper-item_menuText-decor"
+              alt="decor"
             />
 
             <div className="menu_wrapper-item_menuText-header">
@@ -169,14 +170,14 @@ const Menu = () => {
               />
             </div>
             <div className="menu_wrapper-item_search_button">
-              <img src={"/menu/zoomin.svg"} alt="" />
+              <img src={"/menu/zoomin.svg"} alt="icon" />
             </div>
           </div>
         </div>
         <div className="menu_wrapper-item">
           <Link to="/tracking" className="menu_wrapper-item_tracking">
             <div className="menu_wrapper-item_tracking_icon">
-              <img src={"/menu/tracking.svg"} alt="" />
+              <img src={"/menu/tracking.svg"} alt="icon" />
             </div>
             <div className="menu_wrapper-item_tracking_text">
               <span>Трекинг заказа</span>

@@ -2,7 +2,7 @@ import React from 'react'
 import Checkbox from "@material-ui/core/Checkbox"
 
 export default function CatalogFiltersVariants() {
-  const [checked, setChecked] = React.useState(true)
+  // const [checked, setChecked] = React.useState(true)
 
     return (
         <ul class="filters_wrapper-item_list">

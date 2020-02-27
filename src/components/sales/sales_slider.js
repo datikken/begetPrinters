@@ -11,12 +11,14 @@ const SalesSlider = () => {
     },
     renderPrevButton: () => (
       <img
+        alt="icon"
         className="swiper-button-next swiper-next"
         src={"/sales/arrow_right.svg"}
       />
     ),
     renderNextButton: () => (
       <img
+        alt="icon"
         className="swiper-button-prev swiper-prev"
         src={"/sales/arrow_left.svg"}
       />
@@ -34,8 +36,8 @@ const SalesSlider = () => {
   
         <Swiper {...params}>
   
-          <img src={'/sales/sales_slider.png'} alt=""/>
-          <img src={'/sales/sales_slider2.png'} alt=""/>
+          <img src={'/sales/sales_slider.png'} alt="icon" />
+          <img src={'/sales/sales_slider2.png'} alt="icon" />
         
         </Swiper>
   
@@ -48,7 +50,7 @@ const SalesSlider = () => {
             <span>(Аналог HP CF280A)</span>
           </div>
           <div className="sales_slider-wrapper_ctas-timer">
-            <img src={'/sales/timer.png'} alt=""/>
+            <img src={'/sales/timer.png'} alt="icon" />
           </div>
           <div className="sales_slider-wrapper_ctas-button">
             <span>успеть купить</span>

@@ -9,7 +9,7 @@ export default function CatalogFilters() {
       <div class="filters_wrapper">
         <div class="filters_wrapper-item">
           <div class="filters_wrapper-item_text">Тип принтера</div>
-          <img src={'/icons/arrow_right.svg'} />
+          <img src={'/icons/arrow_right.svg'} alt="icon" />
           <Tip />
         </div>
           
@@ -17,11 +17,11 @@ export default function CatalogFilters() {
 
         <div class="filters_wrapper-item">
           <div class="filters_wrapper-item_text">Бренд</div>
-          <img src={'/icons/arrow_right.svg'} />
+          <img src={'/icons/arrow_right.svg'} alt="icon" />
         </div>
         <div class="filters_wrapper-item">
           <div class="filters_wrapper-item_text">Модель</div>
-          <img src={'/icons/arrow_right.svg'} />
+          <img src={'/icons/arrow_right.svg'} alt="icon" />
         </div>
       </div>
     </div>
