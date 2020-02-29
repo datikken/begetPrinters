@@ -107,6 +107,11 @@
         line-height: 17px;
         letter-spacing: 0.02em;
         color: $dblack;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        color: $dblack;
+        padding: 5px;
+        display: block;
 
         @include breakpoint($phone) {
           margin-left: 0px;
@@ -115,9 +120,6 @@
           margin-left: 25px;
         }
 
-        font-weight: 500;
-        letter-spacing: 0.02em;
-        color: $dblack;
       }
     }
   }

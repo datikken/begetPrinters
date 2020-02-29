@@ -88,8 +88,11 @@
     }
 }
 .sales_swiper {
-  height: 360px;
   overflow: hidden!important;
+  height: 100%;
+  @include  breakpoint($medium) {
+    height: 360px;
+  }
   .swiper-pagination {
     display: none!important;
   }
