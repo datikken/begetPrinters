@@ -63,13 +63,6 @@
               border-radius: 30px;
             }
           }
-          .menu_wrapper-item_search_button {
-            position: absolute;
-            top: 0;
-            right: 0;
-            max-width: 34px;
-            border-radius: 50%;
-          }
         }
       }
 
@@ -321,25 +314,24 @@
           }
         }
         &_button {
+          width: 30px;
+          position: absolute;
+          top: 0;
+          right: 0;
           border-radius: 50%;
-          width: 30px!important;
-
-          @include  breakpoint($medium) {
-            width: 40px;
-          }
-
           position: absolute;
           right: 0;
           height: 100%;
           background: #40404c;
-          border-top-right-radius: 50px;
-          border-bottom-right-radius: 50px;
           color: #fff;
           cursor: pointer;
           max-height: 30px;
 
           @include breakpoint($phone) {
             width: 70px;
+            border-radius: 0;
+            border-top-right-radius: 50px;
+            border-bottom-right-radius: 50px;
           }
 
           img {
