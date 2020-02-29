@@ -1,5 +1,4 @@
 .columns {
-
   @include breakpoint($phone) {
     width: 100%;
     max-width: $layoutw;
@@ -26,7 +25,10 @@
 }
 .catalog_columns {
   overflow: hidden;
-  padding-top: 20px;
+  
+  @include  breakpoint($medium) {
+    padding-top: 20px;
+  }
 }
 
 .mobile-layout {

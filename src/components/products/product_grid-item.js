@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'gatsby'
+import BuyBtn from '../../components/btn/buy_btn'
 
 export default function ProductGridItem() {
     return (
@@ -8,7 +9,10 @@ export default function ProductGridItem() {
                     <div className="product_wrapper">
                         <div className="product_wrapper-item">
                             <div className="product_wrapper-item_heading"><span className="product_wrapper-item_heading-item">IC-HLOR70A</span></div>
-                            <div className="product_wrapper-item_amount"><span className="product_wrapper-item_amount-item">Много</span></div>
+                            <div className="product_wrapper-item_amount">
+                                <img src={"/icons/alot.svg"} alt="amount"/>
+                                <span className="product_wrapper-item_amount-item">Много</span>
+                            </div>
                         </div>
                         <div className="product_wrapper-item">
                             <div className="product_wrapper-item_image">
@@ -24,8 +28,13 @@ export default function ProductGridItem() {
                         </div>
                         <div className="product_wrapper-item">
                             <div className="product_wrapper-item_head"><span className="product_wrapper-item_price-item">IC-HLOR70A</span></div>
-                            <div className="product_wrapper-item_price"><span className="product_wrapper-item_price-item">29900</span></div>
-                            <div className="product_wrapper-item_btn"><span className="product_wrapper-item_price-item">Купить</span></div>
+                            <div className="product_wrapper-item_price">
+                                <span className="product_wrapper-item_price-item">29900</span>
+                                <img src={"/icons/rub.svg"} alt="cur" />
+                            </div>
+
+                            <BuyBtn text={"Купить"}/>
+
                             <div className="product_wrapper-item_cart"></div>
                         </div>
                     </div>

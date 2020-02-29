@@ -57,7 +57,7 @@
       &:nth-child(3) {
         display: flex;
         flex-direction: column;
-        flex-basis: 50%;
+        flex-basis: 70%;
         align-items: center;
         justify-content: center;
         padding-top: 5px;
@@ -99,12 +99,9 @@
         display: flex;
         align-items: center;
 
-        &:before {
-          background-image: url("/img/icons/alot.svg");
+        img {
           width: 10px;
           height: 10px;
-          display: block;
-          content: "";
           margin-right: 10px;
         }
       }
@@ -153,17 +150,12 @@
         margin-bottom: 20px;
         display: flex;
 
-        &:after {
-          display: block;
-          content: "";
-          background-image: url("/img/menu/rub.svg");
-          background-repeat: no-repeat;
-          background-size: contain;
-          background-position: center;
+        img {
           margin: 14px 0 0 3px;
           height: 10px;
           width: 8px;
         }
+
         @include breakpoint($phone) {
           margin-bottom: 0;
         }
@@ -184,7 +176,6 @@
         text-align: center;
         text-transform: uppercase;
         color: #000;
-        min-width: 97px;
         background: $yellow;
         border-radius: 30px;
         @include btnShadow();
@@ -194,6 +185,15 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        width: 120px;
+        height: 30px;
+
+        img {
+          height: 15px;
+          width: 15px;
+          margin-left: 15px;
+        }
+
       }
       &_cart {
         display: none;

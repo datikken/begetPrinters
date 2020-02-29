@@ -16,7 +16,8 @@ const Catalog = () => (
 
   <Layout>
     <SEO title="Catalog" />
-    <div className="crumbs_wrap">
+
+    <div className="crumbs_wrap mobile-hide">
       <Breadcrumbs
         separator={<NavigateNextIcon fontSize="small" />}
         aria-label="breadcrumb"
@@ -26,9 +27,10 @@ const Catalog = () => (
         </Link>
         <Typography color="textPrimary">Каталог</Typography>
       </Breadcrumbs>
+    </div>
 
       <div class="columns catalog_columns">
-        <div class="left_column">
+        <div class="left_column mobile-hide">
 
           <CatalogFilters/>
           <CatalogBanner/>
@@ -46,7 +48,6 @@ const Catalog = () => (
             </div>
         </div>
       </div>
-    </div>
 
   </Layout>
 )

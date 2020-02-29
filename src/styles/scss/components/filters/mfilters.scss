@@ -5,16 +5,14 @@
     column-gap: 7px;
     align-items: center;
     justify-content: space-around;
-    margin: 0 5px;
+    margin: 0 15px;
     position: relative;
 
     &-item {
-      margin-top: 20px;
-      margin-bottom: 30px;
+      margin: 20px 0;
       border: 1px solid $light_gray;
       min-width: 50px;
       min-height: 25px;
-      // position: relative;
 
       &-holder {
         background: red;
@@ -23,16 +21,6 @@
         height: 500px;
         z-index: 99;
         display: none;
-      }
-
-      &:after {
-        content: "";
-        display: block;
-        height: 100%;
-        border-right: 1px solid $light_gray;
-        position: absolute;
-        right: 0;
-        top: 0;
       }
     }
   }
