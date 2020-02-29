@@ -78,7 +78,9 @@ const ContactsContent = () => {
 
             <div className="contacts_wrap-item contacts_feedback">
               <div className="contacts_wrap-item_inner">
-                <div className="contacts_wrap-item_inner-feedback"></div>
+                <div className="contacts_wrap-item_inner-feedback">
+                    <img src={"/icons/feedback.svg"} alt="feedback" />
+                </div>
               </div>
               <div className="contacts_wrap-item_inner">
 
