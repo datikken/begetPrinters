@@ -32,32 +32,38 @@ export default function Owl() {
       }
   
     return (
-        <Swiper {...params}>
-            <div>
-                <OwlCard/>
+        <div className="owl-wrapper">
+            <div className="owl-controls-heading">
+                <div className="owl-wrapper_heading-item">Новинки</div>
             </div>
-            <div>
-                <OwlCard/>
-            </div>
-            <div>
-                <OwlCard/>
-            </div>
-            <div>
-                <OwlCard/>
-            </div>
-            <div>
-                <OwlCard/>
-            </div>
-            <div>
-                <OwlCard/>
-            </div>
-            <div>
-                <OwlCard/>
-            </div>
-            <div>
-                <OwlCard/>
-            </div>
+            <Swiper {...params}>
+                <div>
+                    <OwlCard/>
+                </div>
+                <div>
+                    <OwlCard/>
+                </div>
+                <div>
+                    <OwlCard/>
+                </div>
+                <div>
+                    <OwlCard/>
+                </div>
+                <div>
+                    <OwlCard/>
+                </div>
+                <div>
+                    <OwlCard/>
+                </div>
+                <div>
+                    <OwlCard/>
+                </div>
+                <div>
+                    <OwlCard/>
+                </div>
 
-        </Swiper>
+            </Swiper>
+        </div>
+
     )
 }

@@ -116,15 +116,13 @@
           position: relative;
           cursor: pointer;
 
-          &:after {
-            content: "";
-            display: block;
-            background-image: url("/img/menu/rub.svg");
-            height: 10px;
-            width: 8px;
-            @include bg(contain, center);
-            margin-left: 5px;
+          img {
+            margin-left: 3px;
+            width: 7px;
+            height: 9.87px;
           }
+
+
           &:before {
             content: "";
             display: block;

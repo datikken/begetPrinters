@@ -1,6 +1,8 @@
 .banners {
   width: 100%;
   height: 200px;
+  margin-bottom: 10px;
+
   @include breakpoint($phone) {
     display: none;
   }
@@ -85,17 +87,17 @@
           width: 67%;
           margin: 0 auto;
           height: 96%;
-          background-image: url("/img/unnecessary/product_mob.png");
           background-size: contain;
           background-position: bottom;
           background-repeat: no-repeat;
+          display: flex;
+          align-items: flex-end;
           //safari
           @media not all and (min-resolution:.001dpcm) {
             background-position: center;
           }
         }
         .banners_wrap-item_inner_img2 {
-          background-image: url("/img/unnecessary/product_mob2.png");
         }
         &_text {
           // height: 100%;
@@ -120,16 +122,6 @@
 
             &-title {
               color: $yellow;
-            }
-            &:after {
-              height: 30px;
-              width: 30px;
-              content: "";
-              display: block;
-              background-image: url("/img/icons/details_btn.svg");
-              @include bg(contain, center);
-              background-repeat: no-repeat;
-              cursor: pointer;
             }
           }
         }

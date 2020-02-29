@@ -68,12 +68,14 @@
             top: 0;
             right: 0;
             max-width: 34px;
+            border-radius: 50%;
           }
         }
       }
 
       &:first-child {
         display: flex;
+        align-items:center;
         margin-left: 10px;
 
         .menu_wrapper-item_menuText {
@@ -272,13 +274,27 @@
         }
       }
       &_search {
-        @include flex(center, space-between, wrap);
-        position: relative;
+        background:$yellow;
+        position: absolute;
+        right: 3.5rem;
+        top:50%;
+        transform: translate(0,-50%);
+        width: 100px!important;
+        padding-bottom:0!important;
+        @include flex(center, flex-end, wrap);
+
+        @include breakpoint($medium) {
+          @include flex(center, space-between, wrap);
+          position: initial;
+          rigth: initial;
+          transform: none;
+          width: initial!important;
+        }
 
         &_input {
           input {
+            margin-right: 1rem;
             padding-left: 10px;
-            width: 500px;
             height: 30px;
             border-radius: 38px;
             border: none;
@@ -287,10 +303,12 @@
             -webkit-appearance: none;
             position: relative;
             font-size: 12px;
+            width:0;
 
             @include breakpoint($medium) {
               padding-left: 30px;
               font-size: 12px;
+              width: 500px;
             }
 
             &::placeholder {
@@ -303,7 +321,13 @@
           }
         }
         &_button {
-          width: 40px;
+          border-radius: 50%;
+          width: 30px!important;
+
+          @include  breakpoint($medium) {
+            width: 40px;
+          }
+
           position: absolute;
           right: 0;
           height: 100%;
@@ -329,6 +353,16 @@
         height: 15px;
         width: 15px;
         cursor: pointer;
+        display: flex;
+        height: 100%;
+
+        &-logo {
+          margin-left: 1rem;
+
+          @include  breakpoint($medium) {
+            display: none;
+          }
+        }
       }
       &_menuText {
         font-style: normal;
@@ -344,7 +378,18 @@
         align-items: center;
         height: 50px;
 
+        &-header {
+          display: none;
+          @include  breakpoint($medium) {
+            display: block;
+          }
+        }
+
         &-decor {
+          display: none;
+          @include  breakpoint($medium) {
+            display: block;
+          }
           order: 2;
           margin-left: 30px;
           opacity: 0.5;

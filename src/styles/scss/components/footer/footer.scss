@@ -35,6 +35,13 @@ footer {
         }
       }
 
+      &:nth-child(3) {
+        margin-left: 50px;
+        @include  breakpoint($medium) {
+          margin-left: 0;
+        }
+      }
+
       @include breakpoint($phone) {
         &:first-child {
           margin-bottom: 0;

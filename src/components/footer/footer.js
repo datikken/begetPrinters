@@ -41,6 +41,7 @@ const Footer = ({ siteTitle }) => (
                     <div className="footer_cat-item">
                         <div className="footer_cat-item_heading">
                             <span>Категории</span>
+                            <img src={'/icons/arrow_right.svg'} alt={""} className="footer_cat-item_heading-arrow" />
                         </div>
                     </div>
                     <div className="footer_cat-item">
@@ -73,6 +74,7 @@ const Footer = ({ siteTitle }) => (
                     <div className="footer_cat-item">
                         <div className="footer_cat-item_heading">
                             <span>Поддержка</span>
+                            <img src={'/icons/arrow_right.svg'} alt={""} className="footer_cat-item_heading-arrow" />
                         </div>
                     </div>
                     <div className="footer_cat-item">
@@ -92,13 +94,5 @@ const Footer = ({ siteTitle }) => (
         </div>
     </footer>
 )
-
-Footer.propTypes = {
-    siteTitle: PropTypes.string,
-}
-
-Footer.defaultProps = {
-    siteTitle: ``,
-}
 
 export default Footer

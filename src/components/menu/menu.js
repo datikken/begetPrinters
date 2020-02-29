@@ -9,7 +9,9 @@ const Menu = () => {
       <div className="menu_wrapper">
         <div className="menu_wrapper-item">
           <div className="menu_wrapper-item_hamburger">
-            <img src={"/menu/hamburger.svg"} alt="hamburger" />
+            <img src={"/menu/Mhamburger.svg"} alt="hamburger"className="desktop-hide" />
+            <img src={"/menu/hamburger.svg"} alt="hamburger" className="mobile-hide" />
+            <img src={'/header/MLOGO.png'} alt="logo" className="menu_wrapper-item_hamburger-logo" />
           </div>
           <div className="menu_wrapper-item_secondary">
             <div className="menu_Wrapper-item_secondary-item">

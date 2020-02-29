@@ -18,6 +18,7 @@ const Viewed = () => (
           </div>
           <div className="viewed_wrapper-item_text-price">
             <span>759</span>
+              <img src={'/icons/rub.svg'} alt="rub" />
           </div>
         </div>
       </div>
@@ -32,6 +33,7 @@ const Viewed = () => (
           </div>
           <div className="viewed_wrapper-item_text-price">
             <span>759</span>
+              <img src={'/icons/rub.svg'} alt="rub" />
           </div>
         </div>
       </div>
@@ -46,6 +48,7 @@ const Viewed = () => (
           </div>
           <div className="viewed_wrapper-item_text-price">
             <span>759</span>
+              <img src={'/icons/rub.svg'} alt="rub" />
           </div>
         </div>
       </div>
@@ -60,6 +63,7 @@ const Viewed = () => (
           </div>
           <div className="viewed_wrapper-item_text-price">
             <span>759</span>
+            <img src={'/icons/rub.svg'} alt="rub" />
           </div>
         </div>
       </div>
@@ -74,6 +78,7 @@ const Viewed = () => (
           </div>
           <div className="viewed_wrapper-item_text-price">
             <span>759</span>
+              <img src={'/icons/rub.svg'} alt="rub" />
           </div>
         </div>
       </div>
@@ -88,6 +93,7 @@ const Viewed = () => (
           </div>
           <div className="viewed_wrapper-item_text-price">
             <span>759</span>
+              <img src={'/icons/rub.svg'} alt="rub" />
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { graphql } from "gatsby"
+import {graphql} from "gatsby"
 import News from "../components/news/news"
 import Banner from "../components/banner/banner"
 import Viewed from "../components/viewed/viewed"
@@ -12,90 +12,112 @@ import SalesSlider from "../components/sales/sales_slider"
 import SalesEco from "../components/sales/sales_eco"
 import SalesBest from "../components/sales/sales_best"
 import Owl from "../components/owl/owl"
+import BannersMob from "../components/banner/banners_mob"
 import "../styles/scss/main.scss"
 
-const IndexPage = ({ data: { allContentfulSwiper } }) => {
-  const params = {
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    renderPrevButton: () => (
-      <img
-        alt="icon"
-        className="swiper-button-next swiper-next"
-        src={"/icons/swiper_right.svg"}
-      />
-    ),
-    renderNextButton: () => (
-      <img
-        alt="icon"
-        className="swiper-button-prev swiper-prev"
-        src={"/icons/swiper_left.svg"}
-      />
-    ),
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-  }
+const IndexPage = ({data: {allContentfulSwiper}}) => {
+    let params, paramsHorizontal;
 
-  return (
-    <Layout>
-      <SEO title="Home" />
+    params = {
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        renderPrevButton: () => (
+            <img
+                alt="icon"
+                className="swiper-button-next swiper-next"
+                src={"/icons/swiper_right.svg"}
+            />
+        ),
+        renderNextButton: () => (
+            <img
+                alt="icon"
+                className="swiper-button-prev swiper-prev"
+                src={"/icons/swiper_left.svg"}
+            />
+        ),
+        slidesPerView: 1,
+        spaceBetween: 30,
+        mousewheel: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    }
 
-      <Helmet>
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css"
-        />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js" />
-      </Helmet>
+    paramsHorizontal = {
+        ...params,
+        direction: 'vertical'
+    }
 
-      <Swiper {...params}>
-        {allContentfulSwiper.edges.map(({ node }) => (
-          <div style={{ backgroundImage: `url(${node.image.file.url})` }}></div>
-        ))}
-      </Swiper>
+    return (
+        <Layout>
+            <SEO title="Home"/>
 
-      <div className="columns desktop-layout">
-        <div className="left_column">
-          <Banner />
-          <Viewed />
-          <News />
-        </div>
+            <Helmet>
+                <link
+                    rel="stylesheet"
+                    href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css"
+                />
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"/>
+            </Helmet>
 
-        <div className="main_column">
-          <Sales />
-          <SalesSlider />
-          <SalesEco />
-          <SalesBest />
-        </div>
-      </div>
+            <div className="desktop-hide">
+                <Swiper {...paramsHorizontal}>
+                    {allContentfulSwiper.edges.map(({node}) => (
+                        <div style={{backgroundImage: `url(${node.image.file.url})`}}></div>
+                    ))}
+                </Swiper>
+            </div>
 
-      <div className="owl-wrapper">
-        <Owl />
-      </div>
-              
-    </Layout>
-  )
+            <div className="mobile-hide">
+                <Swiper {...params}>
+                    {allContentfulSwiper.edges.map(({node}) => (
+                        <div style={{backgroundImage: `url(${node.image.file.url})`}}></div>
+                    ))}
+                </Swiper>
+            </div>
+
+            <BannersMob />
+
+            <div className="columns desktop-layout">
+                <div className="left_column">
+                    <Banner/>
+                    <Viewed/>
+                    <News/>
+                </div>
+
+                <div className="main_column">
+                    <Sales/>
+                    <SalesSlider/>
+                    <SalesEco/>
+                    <SalesBest/>
+                </div>
+            </div>
+
+            <Owl/>
+
+
+        </Layout>
+    )
 }
 
 export const query = graphql`
-  {
-    allContentfulSwiper {
-      edges {
-        node {
-          image {
-            file {
-              url
+    {
+        allContentfulSwiper {
+            edges {
+                node {
+                    image {
+                        file {
+                            url
+                        }
+                    }
+                    title
+                }
             }
-          }
-          title
         }
-      }
     }
-  }
 `
 
 export default IndexPage

@@ -1,4 +1,5 @@
 .sales_eco {
+  //display: none;
   width: 100%;
   margin-bottom: 20px;
   height: 173px;
@@ -7,11 +8,14 @@
     height: 400px;
     display: block;
   }
-  
+
   &-wrapper {
+    height: 100%;
+    width: 100%;
+    @include bg(contain, center);
+    cursor: pointer;
+    img {
       height: 100%;
-      width: 100%;
-      @include bg(contain,center);
-      cursor: pointer;
+    }
   }
 }

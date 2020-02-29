@@ -23,16 +23,9 @@
       max-width: 270px;
       cursor: pointer;
 
-      &:after {
-        content: "";
-        display: block;
-        width: 5px;
-        height: 8.11px;
-        @include bg(contain, center);
-        background-repeat: no-repeat;
-        background-image: url("/img/icons/arrow_right.svg");
+      &-arrow {
         transform: rotate(90deg);
-        @include breakpoint($phone) {
+        @include  breakpoint($medium) {
           display: none;
         }
       }
