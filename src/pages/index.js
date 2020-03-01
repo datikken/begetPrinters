@@ -81,6 +81,7 @@ const IndexPage = ({data: {allContentfulSwiper}}) => {
 
             <BannersMob />
 
+
             <div className="desktop-hide">
                 <SalesSlider/>
             </div>
@@ -104,14 +105,14 @@ const IndexPage = ({data: {allContentfulSwiper}}) => {
                     <Sales/>
 
                     <div className="mobile-hide">
+                        <SalesSlider/>
+                    </div>
+
+                    <div className="mobile-hide">
                         <SalesEco/>
                     </div>
 
                     <SalesBest/>
-
-                    <div className="mobile-hide">
-                        <SalesSlider/>
-                    </div>
 
                 </div>
             </div>
