@@ -27,7 +27,7 @@
             cursor: pointer;
 
             &_text {
-                transition: color .2s;
+                transition: color $transition;
                 color: $breadcrumb;
             
             }

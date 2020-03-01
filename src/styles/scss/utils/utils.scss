@@ -60,7 +60,7 @@
     bottom: -4px;
     background: #fff;
     left: 0;
-    transition: width 0.2s;
+    transition: width $transition;
   }
 
   &:hover {
@@ -93,7 +93,7 @@
     background: linear-gradient(90deg, #d935fd 19.91%, #3559fd 100%);
     left: -11px;
     top: 30px;
-    transition: width 0.2s;
+    transition: width $transition;
   }
   &:hover {
     &:before {
@@ -110,7 +110,7 @@
     background: linear-gradient(90deg, #d935fd 19.91%, #3559fd 100%);
     left: $left;
     top: 30px;
-    transition: width 0.2s;
+    transition: width $transition;
   }
   &:hover {
     &:before {
@@ -135,7 +135,6 @@
   &:after {
     content: "";
     position: absolute;
-    background-image: url("/img/menu/rub.svg");
     height: 10px;
     width: 8px;
     @include bg(contain, center);
@@ -150,7 +149,6 @@
   &:after {
     content: "";
     position: absolute;
-    background-image: url("/img/icons/rubFat.svg");
     height: 15px;
     width: 10px;
     @include bg(contain, center);
@@ -174,4 +172,10 @@
       margin: 0;
       padding: 0;
     }
+}
+.menu_visible {
+  height: 100vh!important;
+}
+.overflow {
+  overflow: hidden!important;
 }

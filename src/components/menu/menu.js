@@ -4,69 +4,77 @@ import React, {useState} from "react"
 const Menu = () => {
     const [showed, setShowed] = useState(false)
     const [search, openSearch] = useState(false)
+    const [drawer, openDrawer] = useState(false)
+
+    const handler = () => {
+        let body = document.querySelector("body").classList.toggle('overflow');
+        openDrawer(!drawer)
+    }
 
     return (
         <div className="menu">
             <div className="menu_wrapper">
                 <div className="menu_wrapper-item">
+
                     <div className="menu_wrapper-item_hamburger">
-                        <img src={"/menu/Mhamburger.svg"} alt="hamburger" className="desktop-hide"/>
+                        <img src={"/menu/Mhamburger.svg"} alt="hamburger" className="desktop-hide" onClick={() => handler() }/>
                         <img src={"/menu/hamburger.svg"} alt="hamburger" className="mobile-hide"/>
                         <img src={'/header/MLOGO.png'} alt="logo" className="menu_wrapper-item_hamburger-logo"/>
                     </div>
-                    <div className="menu_wrapper-item_secondary">
+
+                    <div className={`menu_wrapper-item_secondary ${drawer ? "menu_visible" : ""}`}>
                         <div className="menu_Wrapper-item_secondary-item">
                             <ul className="menu_Wrapper-item_secondary-item_list">
                                 <li className="menu_Wrapper-item_secondary-item_list-item">
                                     <Link to="/catalog">
-                    <span className="menu_Wrapper-item_secondary-item_list-item-text">
-                      Каталог
-                    </span>
+                                        <span className="menu_Wrapper-item_secondary-item_list-item-text">
+                                          Каталог
+                                        </span>
                                     </Link>
                                 </li>
                                 <li className="menu_Wrapper-item_secondary-item_list-item">
-                  <span className="menu_Wrapper-item_secondary-item_list-item-text">
-                    Акции
-                  </span>
+                                      <span className="menu_Wrapper-item_secondary-item_list-item-text">
+                                        Акции
+                                      </span>
                                 </li>
                                 <li className="menu_Wrapper-item_secondary-item_list-item">
-                  <span className="menu_Wrapper-item_secondary-item_list-item-text">
-                    О нас
-                  </span>
+                                  <span className="menu_Wrapper-item_secondary-item_list-item-text">
+                                    О нас
+                                  </span>
                                 </li>
                                 <li className="menu_Wrapper-item_secondary-item_list-item">
-                  <span className="menu_Wrapper-item_secondary-item_list-item-text">
-                    Блог
-                  </span>
+                                  <span className="menu_Wrapper-item_secondary-item_list-item-text">
+                                    Блог
+                                  </span>
                                 </li>
                                 <li className="menu_Wrapper-item_secondary-item_list-item">
                                     <Link to="/contacts">
-                    <span className="menu_Wrapper-item_secondary-item_list-item-text">
-                      Контакты
-                    </span>
+                                        <span className="menu_Wrapper-item_secondary-item_list-item-text">
+                                          Контакты
+                                        </span>
                                     </Link>
                                 </li>
                                 <li className="menu_Wrapper-item_secondary-item_list-item">
                                     <Link to="/information">
-                    <span className="menu_Wrapper-item_secondary-item_list-item-text">
-                      Информация
-                    </span>
+                                    <span className="menu_Wrapper-item_secondary-item_list-item-text">
+                                      Информация
+                                    </span>
                                     </Link>
                                 </li>
                                 <li className="menu_Wrapper-item_secondary-item_list-item">
-                  <span className="menu_Wrapper-item_secondary-item_list-item-text">
-                    Хит - парад принтеров
-                  </span>
+                                  <span className="menu_Wrapper-item_secondary-item_list-item-text">
+                                    Хит - парад принтеров
+                                  </span>
                                 </li>
                                 <li className="menu_Wrapper-item_secondary-item_list-item">
-                  <span className="menu_Wrapper-item_secondary-item_list-item-text">
-                    Трекинг заказа
-                  </span>
+                                  <span className="menu_Wrapper-item_secondary-item_list-item-text">
+                                    Трекинг заказа
+                                  </span>
                                 </li>
                                 <li className="menu_Wrapper-item_secondary-item_list-item">
-                  <span className="menu_Wrapper-item_secondary-item_list-item-text">
-                    Личный кабинет
-                  </span>
+                                  <span className="menu_Wrapper-item_secondary-item_list-item-text">
+                                    Личный кабинет
+                                  </span>
                                 </li>
                                 <li className="menu_Wrapper-item_secondary-item_list-item">
                                   <span className="menu_Wrapper-item_secondary-item_list-item-text">
@@ -89,7 +97,6 @@ const Menu = () => {
                             </ul>
                         </div>
                     </div>
-
 
                     <Link to="/">
                         <div className="menu_wrapper-item_menuText">

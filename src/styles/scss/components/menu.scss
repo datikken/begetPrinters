@@ -50,7 +50,7 @@
             width: 85%;
             font-size: 12px;
             padding-bottom: 4px;
-            transition: width .2s;
+            transition: width $transition;
 
             @media screen and(min-width: 350px) {
               width: 100px;
@@ -99,12 +99,12 @@
         width: 200px;
         overflow: hidden;
         display: none;
-        transition: visibility 0.2s;
+        transition: visibility $transition;
         box-shadow: $menu_shadow;
 
         &-item {
           background-color: #fff;
-          transition: background-color 0.2s;
+          transition: background-color $transition;
           margin-bottom: 0;
 
           a {
@@ -144,7 +144,7 @@
             display: flex;
             justify-content: space-between;
             width: 88%;
-            transition: all .2s;
+            transition: all $transition;
 
             &_secondary {
               background: #fff;
@@ -354,7 +354,7 @@
       &_hamburger {
         @include bg(contain, center);
         height: 15px;
-        width: 15px;
+        width: 30px;
         cursor: pointer;
         display: flex;
         height: 100%;
