@@ -5,7 +5,7 @@
     column-gap: 7px;
     align-items: center;
     justify-content: space-around;
-    margin: 0 15px;
+    margin: 0 10px;
     position: relative;
 
     &-item {
@@ -13,8 +13,33 @@
       border: 1px solid $light_gray;
       min-width: 50px;
       min-height: 25px;
+      position: relative;
 
-
+      &:after {
+        content: '';
+        display: block;
+        height: 100%;
+        border-right: 1px solid $light_gray;
+        position: absolute;
+        top:0;
+        right:0;
+      }
+      select {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        font-weight: 500;
+        border:none;
+        font-size: 12px;
+        line-height: 16px;
+        color: $black;
+        width: $select-width;
+        height: $select-height;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        padding-left: 10px;
+      }
 
       &-holder {
         background: red;
@@ -33,19 +58,7 @@
   visibility: hidden;
   padding-right: 10px;
 }
-.select {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  color: $black;
-  width: $select-width;
-  height: $select-height;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-}
+
 .select-styled {
   position: absolute;
   top: 0;
