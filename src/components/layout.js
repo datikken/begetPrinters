@@ -5,7 +5,7 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
+import React, {useEffect} from "react"
 import PropTypes from "prop-types"
 
 import Header from "./header/header"
@@ -15,6 +15,10 @@ import Payments from "./footer/payments"
 import Subscriptions from "./subscription/subscription"
 
 const Layout = ({ children }) => {
+    useEffect(() => {
+        document.querySelector("body").classList.toggle('overflow');
+    });
+
   return (
     <>
       <Header siteTitle="test" />
