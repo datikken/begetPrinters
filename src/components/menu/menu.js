@@ -4,11 +4,11 @@ import React, {useState} from "react"
 const Menu = () => {
     const [showed, setShowed] = useState(false)
     const [search, openSearch] = useState(false)
-    const [drawer, openDrawer] = useState(false)
+    const [menu, openMenu] = useState(false)
 
     const handler = () => {
-        let body = document.querySelector("body").classList.toggle('overflow');
-        openDrawer(!drawer)
+        document.querySelector("body").classList.toggle('overflow');
+        openMenu(!menu)
     }
 
     return (
@@ -22,7 +22,7 @@ const Menu = () => {
                         <img src={'/header/MLOGO.png'} alt="logo" className="menu_wrapper-item_hamburger-logo"/>
                     </div>
 
-                    <div className={`menu_wrapper-item_secondary ${drawer ? "menu_visible" : ""}`}>
+                    <div className={`menu_wrapper-item_secondary ${menu ? "menu_visible" : ""}`}>
                         <div className="menu_Wrapper-item_secondary-item">
                             <ul className="menu_Wrapper-item_secondary-item_list">
                                 <li className="menu_Wrapper-item_secondary-item_list-item">
