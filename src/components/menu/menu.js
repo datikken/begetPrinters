@@ -34,21 +34,27 @@ const Menu = () => {
                                     <img src={"/icons/arrow_right.svg"} alt="right" />
                                 </li>
                                 <li className="menu_Wrapper-item_secondary-item_list-item">
+                                    <Link to="/sales">
                                       <span className="menu_Wrapper-item_secondary-item_list-item-text">
                                         Акции
                                       </span>
+                                    </Link>
                                     <img src={"/icons/arrow_right.svg"} alt="right" />
                                 </li>
                                 <li className="menu_Wrapper-item_secondary-item_list-item">
-                                  <span className="menu_Wrapper-item_secondary-item_list-item-text">
-                                    О нас
-                                  </span>
+                                    <Link to="/about">
+                                      <span className="menu_Wrapper-item_secondary-item_list-item-text">
+                                        О нас
+                                      </span>
+                                    </Link>
                                     <img src={"/icons/arrow_right.svg"} alt="right" />
                                 </li>
                                 <li className="menu_Wrapper-item_secondary-item_list-item">
-                                  <span className="menu_Wrapper-item_secondary-item_list-item-text">
-                                    Блог
-                                  </span>
+                                    <Link to="/blog">
+                                      <span className="menu_Wrapper-item_secondary-item_list-item-text">
+                                        Блог
+                                      </span>
+                                    </Link>
                                     <img src={"/icons/arrow_right.svg"} alt="right" />
                                 </li>
                                 <li className="menu_Wrapper-item_secondary-item_list-item">
@@ -61,37 +67,45 @@ const Menu = () => {
                                 </li>
                                 <li className="menu_Wrapper-item_secondary-item_list-item">
                                     <Link to="/information">
-                                    <span className="menu_Wrapper-item_secondary-item_list-item-text">
-                                      Информация
-                                    </span>
+                                        <span className="menu_Wrapper-item_secondary-item_list-item-text">
+                                          Информация
+                                        </span>
                                     </Link>
                                     <img src={"/icons/arrow_right.svg"} alt="right" />
                                 </li>
                                 <li className="menu_Wrapper-item_secondary-item_list-item">
-                                  <span className="menu_Wrapper-item_secondary-item_list-item-text">
-                                    Хит - парад принтеров
-                                  </span>
+                                    <Link to="/hits">
+                                         <span className="menu_Wrapper-item_secondary-item_list-item-text">
+                                            Хит - парад принтеров
+                                         </span>
+                                    </Link>
                                     <img src={"/icons/arrow_right.svg"} alt="right" />
                                 </li>
                                 <li className="menu_Wrapper-item_secondary-item_list-item vip-item">
                                   <img src={"/menu/tracking.svg"} alt="tracking" />
-                                  <span className="menu_Wrapper-item_secondary-item_list-item-text">
-                                    Трекинг заказа
-                                  </span>
+                                    <Link to="/tracking">
+                                      <span className="menu_Wrapper-item_secondary-item_list-item-text">
+                                        Трекинг заказа
+                                      </span>
+                                    </Link>
                                     <img src={"/icons/arrow_right.svg"} alt="right" className="arrow_right"/>
                                 </li>
                                 <li className="menu_Wrapper-item_secondary-item_list-item vip-item">
                                     <img src={"/menu/login.svg"} alt="login" />
-                                    <span className="menu_Wrapper-item_secondary-item_list-item-text">
-                                    Личный кабинет
-                                  </span>
-                                  <img src={"/icons/arrow_right.svg"} alt="right" className="arrow_right"/>
+                                    <Link to="/cabinet">
+                                       <span className="menu_Wrapper-item_secondary-item_list-item-text">
+                                        Личный кабинет
+                                      </span>
+                                    </Link>
+                                    <img src={"/icons/arrow_right.svg"} alt="right" className="arrow_right"/>
                                 </li>
                                 <li className="menu_Wrapper-item_secondary-item_list-item vip-item">
                                     <img src={"/menu/cart.svg"} alt="cart" />
-                                    <span className="menu_Wrapper-item_secondary-item_list-item-text">
-                                    Корзина
-                                  </span>
+                                    <Link to="/cart">
+                                     <span className="menu_Wrapper-item_secondary-item_list-item-text">
+                                        Корзина
+                                      </span>
+                                    </Link>
                                     <img src={"/icons/arrow_right.svg"} alt="right" className="arrow_right"/>
                                 </li>
                                 <li className="menu_Wrapper-item_secondary-item_list-item vip-item">
