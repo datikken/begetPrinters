@@ -322,16 +322,6 @@
                   color: $dblack;
                   position: relative;
                   margin-right: 15px;
-
-                  &:after {
-                    top: 10px;
-                    background-image: url("/img/icons/rubFat.svg") !important;
-
-                    @include breakpoint($phone) {
-                      display: none;
-                    }
-                  }
-                  @include rub();
                 }
 
                 span {
@@ -349,9 +339,8 @@
               &_img {
                 width: 100px;
                 height: 100px;
-                @include bg(contain, center);
-                background-image: url("/img/unnecessary/product_cart.svg");
-                // background-color: $light_gray;
+                display: flex;
+                align-items: center;
               }
               &_desc {
                 flex-basis: 80%;
