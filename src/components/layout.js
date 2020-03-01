@@ -16,7 +16,9 @@ import Subscriptions from "./subscription/subscription"
 
 const Layout = ({ children }) => {
     useEffect(() => {
-        document.querySelector("body").classList.toggle('overflow');
+    let body = document.querySelector("body");
+
+        body.classList.contains('overflow') && body.classList.toggle('overflow');
     });
 
   return (
