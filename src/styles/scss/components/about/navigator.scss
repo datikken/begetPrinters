@@ -1,0 +1,35 @@
+.navigator {
+    position: relative;
+
+    &_wrap {
+      margin: 25px 0 10px 0;
+
+      &-line {
+        background: $gradient;
+        height: 5px;
+        margin: 0 15px;
+        position: absolute;
+        width: 83%;
+        top: -10px;
+      }
+
+      &-items {
+        display: flex;
+        overflow: scroll;
+        margin-right: 10px;
+
+        &-item {
+          margin: 0 10px;
+          padding: 10px 0;
+
+          font-family: $font;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 14px;
+          letter-spacing: 0.02em;
+          color: $dblack;
+        }
+      }
+    }
+}
