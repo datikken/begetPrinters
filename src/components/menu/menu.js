@@ -31,21 +31,25 @@ const Menu = () => {
                                           Каталог
                                         </span>
                                     </Link>
+                                    <img src={"/icons/arrow_right.svg"} alt="right" />
                                 </li>
                                 <li className="menu_Wrapper-item_secondary-item_list-item">
                                       <span className="menu_Wrapper-item_secondary-item_list-item-text">
                                         Акции
                                       </span>
+                                    <img src={"/icons/arrow_right.svg"} alt="right" />
                                 </li>
                                 <li className="menu_Wrapper-item_secondary-item_list-item">
                                   <span className="menu_Wrapper-item_secondary-item_list-item-text">
                                     О нас
                                   </span>
+                                    <img src={"/icons/arrow_right.svg"} alt="right" />
                                 </li>
                                 <li className="menu_Wrapper-item_secondary-item_list-item">
                                   <span className="menu_Wrapper-item_secondary-item_list-item-text">
                                     Блог
                                   </span>
+                                    <img src={"/icons/arrow_right.svg"} alt="right" />
                                 </li>
                                 <li className="menu_Wrapper-item_secondary-item_list-item">
                                     <Link to="/contacts">
@@ -53,6 +57,7 @@ const Menu = () => {
                                           Контакты
                                         </span>
                                     </Link>
+                                    <img src={"/icons/arrow_right.svg"} alt="right" />
                                 </li>
                                 <li className="menu_Wrapper-item_secondary-item_list-item">
                                     <Link to="/information">
@@ -60,30 +65,39 @@ const Menu = () => {
                                       Информация
                                     </span>
                                     </Link>
+                                    <img src={"/icons/arrow_right.svg"} alt="right" />
                                 </li>
                                 <li className="menu_Wrapper-item_secondary-item_list-item">
                                   <span className="menu_Wrapper-item_secondary-item_list-item-text">
                                     Хит - парад принтеров
                                   </span>
+                                    <img src={"/icons/arrow_right.svg"} alt="right" />
                                 </li>
-                                <li className="menu_Wrapper-item_secondary-item_list-item">
+                                <li className="menu_Wrapper-item_secondary-item_list-item vip-item">
+                                  <img src={"/menu/tracking.svg"} alt="tracking" />
                                   <span className="menu_Wrapper-item_secondary-item_list-item-text">
                                     Трекинг заказа
                                   </span>
+                                    <img src={"/icons/arrow_right.svg"} alt="right" className="arrow_right"/>
                                 </li>
-                                <li className="menu_Wrapper-item_secondary-item_list-item">
-                                  <span className="menu_Wrapper-item_secondary-item_list-item-text">
+                                <li className="menu_Wrapper-item_secondary-item_list-item vip-item">
+                                    <img src={"/menu/login.svg"} alt="login" />
+                                    <span className="menu_Wrapper-item_secondary-item_list-item-text">
                                     Личный кабинет
                                   </span>
+                                  <img src={"/icons/arrow_right.svg"} alt="right" className="arrow_right"/>
                                 </li>
-                                <li className="menu_Wrapper-item_secondary-item_list-item">
-                                  <span className="menu_Wrapper-item_secondary-item_list-item-text">
+                                <li className="menu_Wrapper-item_secondary-item_list-item vip-item">
+                                    <img src={"/menu/cart.svg"} alt="cart" />
+                                    <span className="menu_Wrapper-item_secondary-item_list-item-text">
                                     Корзина
                                   </span>
+                                    <img src={"/icons/arrow_right.svg"} alt="right" className="arrow_right"/>
                                 </li>
-                                <li className="menu_Wrapper-item_secondary-item_list-item">
+                                <li className="menu_Wrapper-item_secondary-item_list-item vip-item">
+                                  <img src={"/header/contact.svg"} alt="contact" className="contact_image"/>
                                   <span className="menu_Wrapper-item_secondary-item_list-item-text">
-                                    <span className="menu_Wrapper-item_secondary-item_list-item-text_inner">
+                                  <span className="menu_Wrapper-item_secondary-item_list-item-text_inner">
                                       <span>+7 (495) 775 50 53</span>
                                       <span>пн-пт 10:00 - 19:00</span>
                                     </span>

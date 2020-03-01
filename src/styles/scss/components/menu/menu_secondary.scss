@@ -12,143 +12,53 @@
   overflow: hidden;
   z-index: 99999;
 
-  &-item {
+  .menu_Wrapper-item_secondary-item {
     &_list {
-      height: 91vh;
-      overflow-y: auto;
-        // safari
-      @media not all and (min-resolution:.001dpcm) {
-        height: 503px;
-      }
-      @include breakpoint($phone) {
-        height: initial;
-      }
+       list-style: none;
+       padding:0;
+       margin: 0;
 
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      overflow: auto;
+      .vip-item {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+        background: #e9e9ea;
+
+        .menu_Wrapper-item_secondary-item_list-item-text_inner {
+          display: flex;
+          flex-direction: column;
+        }
+        .contact_image {
+          width: 30px;
+          height: 30px;
+        }
+        .arrow_right {
+          position: absolute;
+          right: -4px;
+        }
+
+        img {
+          display: block;
+          width: 20px;
+          height: 12.38px;
+          margin-right: 10px;
+        }
+      }
       &-item {
-        padding: 15px 0;
-        margin: 0 15px;
-        font-family: $font;
+        padding: 15px;
+        font-family: "Montserrat", sans-serif;
         font-weight: 600;
         font-size: 12px;
         line-height: 14px;
         letter-spacing: 0.02em;
         color: #40404c;
-        border-bottom: 1px solid $light_gray;
-         a{
-           color: $black!important;
-         }
+        border-bottom: 1px solid #e9e9ea;
+        display: flex;
+        justify-content: space-between;
 
-        &:nth-child(2),
-        &:nth-child(3),
-        &:nth-child(4),
-        &:nth-child(12),
-        &:nth-child(5) {
-          .menu_Wrapper-item_secondary-item_list-item-text {
-            &:after {
-              display: none;
-            }
-          }
-        }
-        &:nth-child(7) {
-          border-bottom: 0;
-        }
-
-        &:nth-child(8) {
-          display: flex;
-          align-items: center;
-          background: $light_gray;
-          margin: 0;
-
-          &:before {
-            content: "";
-            display: block;
-            @include bg(contain, center);
-            width: 20px;
-            height: 12.38px;
-            margin-right: 10px;
-            margin-left: 15px;
-          }
-        }
-
-        &:nth-child(9) {
-          display: flex;
-          align-items: center;
-          background: $light_gray;
-          margin: 0;
-          border-bottom: $breadcrumb;
-
-          &:before {
-            content: "";
-            display: block;
-            @include bg(contain, center);
-            width: 20px;
-            height: 12.38px;
-            margin-right: 10px;
-            margin-left: 15px;
-          }
-        }
-
-        &:nth-child(10) {
-          display: flex;
-          align-items: center;
-          background: $light_gray;
-          margin: 0;
-
-          &:before {
-            content: "";
-            display: block;
-            @include bg(contain, center);
-            width: 20px;
-            height: 12.38px;
-            margin-right: 10px;
-            margin-left: 15px;
-          }
-        }
-
-        &:nth-child(11) {
-          margin: 0;
-          .menu_Wrapper-item_secondary-item_list-item-text {
-            &:after {
-              display: none;
-            }
-            &:before {
-              content: "";
-              display: block;
-              width: 30px;
-              height: 30px;
-              margin-left: 15px;
-            }
-            &_inner {
-              display: flex;
-              flex-direction: column;
-              margin-left: 10px;
-              span {
-                &:first-child {
-                  font-family: $semifont !important;
-                  font-weight: 600;
-                }
-              }
-            }
-          }
-        }
-
-        &-text {
-          width: 100%;
-          @include flex(center, flex-start, wrap);
-
-          &:after {
-            content: "";
-            display: block;
-            @include bg(contain, center);
-            background-repeat: no-repeat;
-            width: 6.17px;
-            height: 10px;
-            margin-left: 10px;
-          }
+        & a {
+          color: $dblack;
         }
       }
     }
