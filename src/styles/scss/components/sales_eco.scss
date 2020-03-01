@@ -1,12 +1,13 @@
 .sales_eco {
   //display: none;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   height: 173px;
 
   @include breakpoint($phone) {
     height: 400px;
     display: block;
+    margin-bottom: 20px;
   }
 
   &-wrapper {
