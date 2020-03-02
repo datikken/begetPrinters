@@ -1,5 +1,7 @@
 .navigator {
     position: relative;
+    max-width: $layoutw;
+    margin: 0 auto;
 
     &_content {
       margin: 0 50px;

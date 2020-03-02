@@ -1,5 +1,8 @@
 .mission {
   background: $light_gray;
+  @include  breakpoint($medium) {
+    display: none;
+  }
 
   &_wrap {
     display: flex;
