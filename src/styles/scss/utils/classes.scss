@@ -61,3 +61,7 @@ a:hover {
 #___gatsby {
   overflow-x: hidden;
 }
+
+.active_border {
+  border-bottom: 1px solid $yellow;
+}

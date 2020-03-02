@@ -1,27 +1,53 @@
 import React from 'react'
 
 export default function AboutNavigator({}) {
-    let data = ['2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021'];
+    let data = ['2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020'];
+
+    let handler = (i) => {
+        let nav = document.querySelector('.navigator')
+        let el = nav.querySelector(`.per_${i}`);
+        let heading = nav.querySelector('.navigator_content-wrap_item-heading-item');
+        let line = nav.querySelector('.navigator_wrap-line');
+        let items = nav.querySelectorAll('.navigator_wrap-items-item');
+        let block = nav.querySelector('.navigator_wrap-items');
+        let width = el.getBoundingClientRect().left;
+
+        block.addEventListener('scroll', function() {
+            line.style.width = 0;
+        })
+
+        items.forEach((el) => {
+            el.classList.contains('active_border') && el.classList.remove('active_border')
+        });
+
+        line.style.width = `${width}px`;
+        el.classList.add('active_border');
+
+        heading.textContent = i;
+    }
 
     return (
         <>
         <div className="navigator">
             <div className="navigator_wrap">
-                <div className="navigator_wrap-line"></div>
 
                 <div className="navigator_wrap-items">
+                    <div className="navigator_wrap-line"></div>
                     {data.map((i) =>
-                        <div className="navigator_wrap-items-item" key={i}>{i}</div>
+                        <div
+                            onClick={() => handler(i)}
+                            className={`navigator_wrap-items-item per_${i}`}
+                            key={i}>
+                          {i}</div>
                     )}
                 </div>
             </div>
-        </div>
 
             <div className="navigator_content">
                 <div className="navigator_content-wrap">
                     <div className="navigator_content-wrap_item">
                         <div className="navigator_content-wrap_item-heading">
-                            <h1>2017</h1>
+                            <h1 className="navigator_content-wrap_item-heading-item">2017</h1>
                         </div>
                     </div>
 
@@ -55,6 +81,7 @@ export default function AboutNavigator({}) {
                     </div>
                 </div>
             </div>
+        </div>
         </>
     )
 }
