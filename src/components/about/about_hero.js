@@ -4,7 +4,6 @@ export default function AboutHero() {
 
     return (
         <div className="about_hero">
-            <h1>Hello</h1>
             <div className="about_hero-wrap">
                 <div className="about_hero-wrap_item">
                     <img

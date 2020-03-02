@@ -60,6 +60,12 @@
           line-height: 14px;
           letter-spacing: 0.02em;
           color: $dblack;
+          cursor: pointer;
+
+          @include breakpoint($medium) {
+            min-width: 70px;
+            text-align: center;
+          }
         }
       }
     }

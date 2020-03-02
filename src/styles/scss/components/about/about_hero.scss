@@ -1,8 +1,7 @@
 .about_hero {
   display: none;
-
-  @include  breakpoint($medium) {
-    diplay: block;
+  @include breakpoint($medium) {
+    display: block;
   }
   &-wrap {
     position: relative;

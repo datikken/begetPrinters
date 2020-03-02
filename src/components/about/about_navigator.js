@@ -1,16 +1,19 @@
 import React from 'react'
 
 export default function AboutNavigator({}) {
-    let data = ['2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020'];
+    let data = ['2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020'];
 
     let handler = (i) => {
         let nav = document.querySelector('.navigator')
         let el = nav.querySelector(`.per_${i}`);
         let heading = nav.querySelector('.navigator_content-wrap_item-heading-item');
+        let descline = nav.querySelector('.descline')
         let line = nav.querySelector('.navigator_wrap-line');
         let items = nav.querySelectorAll('.navigator_wrap-items-item');
         let block = nav.querySelector('.navigator_wrap-items');
-        let width = el.getBoundingClientRect().left;
+
+        let width = el.offsetLeft + 20;
+        let mobWidth = el.getBoundingClientRect().left;
 
         block.addEventListener('scroll', function() {
             line.style.width = 0;
@@ -20,7 +23,9 @@ export default function AboutNavigator({}) {
             el.classList.contains('active_border') && el.classList.remove('active_border')
         });
 
-        line.style.width = `${width}px`;
+        line.style.width = `${mobWidth}px`;
+        descline.style.width = `${width}px`;
+
         el.classList.add('active_border');
 
         heading.textContent = i;
@@ -30,9 +35,13 @@ export default function AboutNavigator({}) {
         <>
         <div className="navigator">
             <div className="navigator_wrap">
-
                 <div className="navigator_wrap-items">
-                    <div className="navigator_wrap-line"></div>
+                    <div className="desktop-hide">
+                        <div className="navigator_wrap-line"></div>
+                    </div>
+                    <div className="mobile-hide">
+                        <div className="navigator_wrap-line descline"></div>
+                    </div>
                     {data.map((i) =>
                         <div
                             onClick={() => handler(i)}
