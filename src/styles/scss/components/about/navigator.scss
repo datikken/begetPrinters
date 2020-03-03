@@ -11,14 +11,22 @@
         position: relative;
 
         &_delimeter {
+          display: none;
+          @include  breakpoint($medium) {
+            display: block;
+          }
+
           position: absolute;
           left: 50%;
           top: 46px;
         }
         &_item {
           display: grid;
-          grid-template-columns: 1fr 1fr;
           min-height: 376px;
+
+          @include breakpoint($medium) {
+            grid-template-columns: 1fr 1fr;
+          }
 
           &:nth-child(2) {
             display: none;
@@ -34,12 +42,28 @@
             letter-spacing: 0.02em;
             color: $dblack;
             max-width: 350px;
+            padding-top: 0;
+            @include breakpoint($medium) {
+              //padding-top: 2.4rem;
+            }
 
             &-item {
               display: flex;
               p {
-                text-align: right;
-                margin-right: 20px;
+                text-align: left;
+                margin-left:0!important;
+                margin: 0 0 20px 0;
+
+                @include breakpoint($medium) {
+                  text-align: right;
+                }
+              }
+              img {
+                display: none;
+
+                @include breakpoint($medium) {
+                  display: block;
+                }
               }
             }
           }
@@ -52,7 +76,8 @@
             color: $dblack;
             display: flex;
             align-items: flex-end;
-            margin-bottom: 15px;
+            margin-left:0!important;
+            margin-bottom: 30px;
 
             &-item {
               font-family: $font;
@@ -70,6 +95,10 @@
               border-bottom: 1px solid $yellow;
               width: 100%;
               height: 45px;
+              display: none;
+              @include  breakpoint($medium) {
+                display: block;
+              }
             }
           }
         }

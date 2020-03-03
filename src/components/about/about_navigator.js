@@ -102,7 +102,7 @@ export default function AboutNavigator({}) {
                                     <div className="navigator_content-wrap_item-heading-decor"></div>
                                 </div>
 
-                                <div className="navigator_content-wrap_item-paragraph" style={{float: "right",paddingTop: "2.4rem"}}>
+                                <div className="navigator_content-wrap_item-paragraph" style={{float: "right"}}>
                                     <div className="navigator_content-wrap_item-paragraph-item">
                                         <p>
                                             Об изменении условий логистики и финансовых выгод нашим Оптовым Партнёрам.
@@ -174,8 +174,10 @@ export default function AboutNavigator({}) {
                             </div>
 
                             <div className="navigator_content-wrap_item-wrap">
-                                <div className="navigator_content-wrap_item-heading" style={{marginRight: "75px"}}>
-                                    <div className="navigator_content-wrap_item-heading-decor"></div>
+                                <div className="mobile-hide">
+                                    <div className="navigator_content-wrap_item-heading" style={{marginRight: "75px"}}>
+                                        <div className="navigator_content-wrap_item-heading-decor"></div>
+                                    </div>
                                 </div>
 
                                 <div className="navigator_content-wrap_item-paragraph" style={{float: "right",paddingTop: "2.4rem"}}>
