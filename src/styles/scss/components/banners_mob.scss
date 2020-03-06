@@ -8,7 +8,9 @@
   &_wrap {
     height: 100%;
     margin: 0 10px;
-    @include flex(center, space-between, no-wrap);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
 
     &-item {
       height: 100%;
