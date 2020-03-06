@@ -82,7 +82,6 @@ const IndexPage = ({data: {allContentfulSwiper}}) => {
 
             <BannersMob />
 
-
             <div className="desktop-hide">
                 <SalesSlider/>
                 <BestPrintersSlider />
@@ -109,8 +108,6 @@ const IndexPage = ({data: {allContentfulSwiper}}) => {
                     <div className="mobile-hide">
                         <SalesSlider/>
                     </div>
-
-
 
                     <div className="mobile-hide">
                         <SalesEco/>

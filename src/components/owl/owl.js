@@ -4,30 +4,12 @@ import OwlCard from './owl_card'
 
 export default function Owl() {
     const params = {
-        slidesPerView: 5,
+        slidesPerView: 2,
         spaceBetween: 10,
         loop: true,
         autoplay: {
-            delay: 1500,
-            disableOnInteraction: false
-          },
-        breakpoints: {
-          1024: {
-            slidesPerView: 4,
-            spaceBetween: 10
-          },
-          768: {
-            slidesPerView: 3,
-            spaceBetween: 10
-          },
-          640: {
-            slidesPerView: 2,
-            spaceBetween: 10
-          },
-          320: {
-            slidesPerView: 1,
-            spaceBetween: 10
-          }
+          delay: 2500,
+          disableOnInteraction: false
         }
       }
   
@@ -37,30 +19,19 @@ export default function Owl() {
                 <div className="owl-wrapper_heading-item">Новинки</div>
             </div>
             <Swiper {...params}>
-                <div>
-                    <OwlCard/>
-                </div>
-                <div>
-                    <OwlCard/>
-                </div>
-                <div>
-                    <OwlCard/>
-                </div>
-                <div>
-                    <OwlCard/>
-                </div>
-                <div>
-                    <OwlCard/>
-                </div>
-                <div>
-                    <OwlCard/>
-                </div>
-                <div>
-                    <OwlCard/>
-                </div>
-                <div>
-                    <OwlCard/>
-                </div>
+
+              <div>
+                <OwlCard/>
+              </div>
+              <div>
+                <OwlCard/>
+              </div>
+              <div>
+                <OwlCard/>
+              </div>
+              <div>
+                <OwlCard/>
+              </div>
 
             </Swiper>
         </div>
