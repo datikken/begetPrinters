@@ -13,6 +13,7 @@ import SalesEco from "../components/sales/sales_eco"
 import SalesBest from "../components/sales/sales_best"
 import Owl from "../components/owl/owl"
 import BannersMob from "../components/banner/banners_mob"
+import BestPrintersSlider from "../components/bestPrinters/BestPrintersSlider"
 import "../styles/scss/main.scss"
 
 const IndexPage = ({data: {allContentfulSwiper}}) => {
@@ -84,6 +85,7 @@ const IndexPage = ({data: {allContentfulSwiper}}) => {
 
             <div className="desktop-hide">
                 <SalesSlider/>
+                <BestPrintersSlider />
             </div>
 
             <div className="columns desktop-layout">
@@ -107,6 +109,8 @@ const IndexPage = ({data: {allContentfulSwiper}}) => {
                     <div className="mobile-hide">
                         <SalesSlider/>
                     </div>
+
+
 
                     <div className="mobile-hide">
                         <SalesEco/>

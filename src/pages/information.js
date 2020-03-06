@@ -9,9 +9,9 @@ const Information = () => {
   return (
     <Layout>
       <SEO title="Information"/>
-      
 
       <InformationContent/>
+      
     </Layout>
   )
 }

@@ -1,14 +1,18 @@
 .action_btn {
   background: $yellow;
   border-radius: 30px;
-  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 30px;
   cursor: pointer;
-  width: 170px;
   box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+  height: 30px;
+  width: 160px;
+  
+  @include breakpoint($medium) {
+    height: 40px;
+    width: 170px;
+  }
 
   &-item {
     font-family: $semifont;

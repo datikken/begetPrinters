@@ -2,10 +2,8 @@
 @import "/variables/variables";
 @import "/utils/classes";
 @import "/components/header";
-
 @import "/components/menu.scss";
 @import "/components/menu/menu_secondary";
-
 @import "/components/subscription.scss";
 @import "/components/footer/footer";
 @import "/components/footer/footer_categories";
@@ -51,6 +49,7 @@
 @import "/components/about/mission";
 @import "/components/about/navigator";
 @import "/components/about/about_hero";
+@import "/components/bestPrinters/bestPrinters";
 
 html {
   scroll-behavior: smooth;

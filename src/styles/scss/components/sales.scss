@@ -90,14 +90,20 @@
 .sales_swiper {
   overflow: hidden!important;
   height: 100%;
+  margin: 0 10px;
   @include  breakpoint($medium) {
     height: 360px;
+    margin: 0px;
   }
   .swiper-pagination {
     display: none!important;
   }
   .swiper-wrapper {
-    background: red!important;
+      img {
+        object-fit: contain;
+        object-position: center;
+        width: 100%;
+      }
   }
   .swiper-button-prev,
   .swiper-button-next

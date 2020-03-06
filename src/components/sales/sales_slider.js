@@ -2,7 +2,6 @@ import React from "react"
 import Swiper from "react-id-swiper"
 
 const SalesSlider = () => {
-
   const params = {
     containerClass: 'sales_swiper',
     navigation: {

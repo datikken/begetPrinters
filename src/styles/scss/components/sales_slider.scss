@@ -1,7 +1,6 @@
 .sales_slider {
   width: 100%;
   height:166px;
-  margin-bottom: 10px;
 
   @include breakpoint($phone) {
     margin-bottom: 50px;
@@ -17,8 +16,6 @@
 
     &_ctas {
       display: none;
-
-
       position: absolute;
       @include absCenter();
       left: 60%;

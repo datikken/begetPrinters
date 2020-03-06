@@ -1,9 +1,8 @@
 .banners {
   width: 100%;
   height: 200px;
-  margin-bottom: 10px;
-
   @include breakpoint($phone) {
+    margin-bottom: 10px;
     display: none;
   }
   &_wrap {
