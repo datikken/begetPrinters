@@ -174,7 +174,8 @@
     }
 }
 .menu_visible {
-  height: 100vh!important;
+  height: 90vh!important;
+  overflow-y: scroll!important;
 }
 .overflow {
   overflow: hidden!important;
