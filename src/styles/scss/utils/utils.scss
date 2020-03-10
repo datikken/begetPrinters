@@ -176,6 +176,8 @@
 .menu_visible {
   height: 90vh!important;
   overflow-y: scroll!important;
+  -webkit-overflow-scrolling: touch;
+  max-height: 505px;
 }
 .overflow {
   overflow: hidden!important;
