@@ -3,7 +3,6 @@ import CatalogFiltersVariants from './catalog_filters_variants'
 import Tip from "../tips/tip"
 
 export default function CatalogFilters() {
-
   return (
     <div class="filters">
       <div class="filters_wrapper">
