@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle="test" />
       <Menu/>
-      <main>{children}</main>
+      <main className="main">{children}</main>
       
       <Subscriptions/>
       <Footer/>

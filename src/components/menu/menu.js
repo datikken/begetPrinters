@@ -6,9 +6,9 @@ const Menu = () => {
     const [search, openSearch] = useState(false)
     const [menu, openMenu] = useState(false)
 
-    const handler = () => {
+    const handler = (e) => {
         document.querySelector("body").classList.toggle('overflow');
-        openMenu(!menu)
+        openMenu(!menu);
     }
 
     return (
@@ -17,7 +17,7 @@ const Menu = () => {
                 <div className="menu_wrapper-item">
 
                     <div className="menu_wrapper-item_hamburger">
-                        <img src={"/menu/Mhamburger.svg"} alt="hamburger" className="desktop-hide" onClick={() => handler() }/>
+                        <img src={"/menu/Mhamburger.svg"} alt="hamburger" className="desktop-hide" onClick={(e) => handler(e) }/>
                         <img src={"/menu/hamburger.svg"} alt="hamburger" className="mobile-hide"/>
                         <img src={'/header/MLOGO.png'} alt="logo" className="menu_wrapper-item_hamburger-logo"/>
                     </div>
@@ -127,7 +127,7 @@ const Menu = () => {
                         </div>
                     </div>
 
-                    <Link to="/">
+                    <Link to="/" className="menu_wrapper-item_menuText-link">
                         <div className="menu_wrapper-item_menuText">
                             <img
                                 src={"/icons/menu_decor.svg"}
