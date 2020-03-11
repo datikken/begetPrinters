@@ -5,6 +5,7 @@ import BuyBtn from '../../components/btn/buy_btn'
 export default function ProductGridItem() {
     return (
         <div className="product">
+            {console.log('ya')}
                 <Link to="/product">
                     <div className="product_wrapper">
                         <div className="product_wrapper-item">
