@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function SalesSliderItem() {
+export default function SalesSliderItem({title}) {
     return (
         <div className="sales_slider-card">
         <img src={'/sales/salesBackground.svg'} alt="icon" />
@@ -14,7 +14,7 @@ export default function SalesSliderItem() {
         <div className="sales_slider-card_items">
 
           <div className="sales_slider-card_items-heading">Картридж</div>
-          <div className="sales_slider-card_items-title">T2 TC-H80A</div>
+          <div className="sales_slider-card_items-title">{title}</div>
           <div className="sales_slider-card_items-desc">(Аналог HP CF280A)</div>
 
           <div className="sales_slider-card_items-nums">

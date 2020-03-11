@@ -36,10 +36,10 @@ const SalesSlider = () => {
   
           <Swiper {...params}>
               <div>
-                <SalesSliderItem />
+                <SalesSliderItem title="T2 TC-H80A" />
               </div>
               <div>
-                <SalesSliderItem />
+                <SalesSliderItem title="THOTIANA"/>
               </div>
           </Swiper>
     
