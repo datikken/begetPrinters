@@ -21,12 +21,13 @@
   }
 
   &_wrapper {
-    padding: 20px;
     display: flex;
     position: relative;
+    padding: 10px;
 
     @include breakpoint($phone) {
       display: block;
+      padding: 20px;
     }
 
     &-item {
@@ -38,6 +39,7 @@
       overflow: hidden;
       cursor: pointer;
       padding-top: 30px;
+   
 
       &:first-child {
         position: absolute;
@@ -58,11 +60,13 @@
         display: flex;
         flex-direction: column;
         flex-basis: 70%;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
         padding-top: 5px;
+        margin-left: 20px!important;
         
         @include breakpoint($phone) {
+          margin-left: 0px!important;
           display: flex;
           flex-direction: row;
           justify-content: space-between;
@@ -111,9 +115,12 @@
       &_image {
         background-image: url("/img/unnecessary/product1.png");
         @include bg(contain, center);
-        width: 167px;
-        height: 122px;
+        width: 177px;
+        height: 100px;
         margin: 0 auto;
+        img {
+          width: 177px;
+        }
       }
       &_overlay {
         width: 100%;
@@ -147,8 +154,13 @@
         line-height: 26px;
         text-transform: uppercase;
         color: #3559fd;
-        margin-bottom: 20px;
+        margin-bottom: 8px;
         display: flex;
+        margin-left: 10px;
+
+        @include breakpoint($medium) {
+          margin-left: 0;
+        }
 
         img {
           margin: 14px 0 0 3px;
@@ -165,6 +177,23 @@
         font-family: $semifont;
         margin-bottom: 5px;
         font-weight: 500;
+        margin-bottom: 25px;
+        margin-left: 10px;
+        @include breakpoint($medium) {
+          margin-left: 0;
+        }
+
+        &-item {
+          &:nth-child(1) {
+            font-family: $font;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 11px;
+            line-height: 17px;
+            letter-spacing: 0.02em;
+            color: #292930;
+          }
+        }
         @include breakpoint($phone) {
           display: none;
         }

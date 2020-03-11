@@ -4,22 +4,22 @@ import Tip from "../tips/tip"
 
 export default function CatalogFilters() {
   return (
-    <div class="filters">
-      <div class="filters_wrapper">
-        <div class="filters_wrapper-item">
-          <div class="filters_wrapper-item_text">Тип принтера</div>
+    <div className="filters">
+      <div className="filters_wrapper">
+        <div className="filters_wrapper-item">
+          <div className="filters_wrapper-item_text">Тип принтера</div>
           <img src={'/icons/arrow_right.svg'} alt="icon" />
           <Tip />
         </div>
           
         <CatalogFiltersVariants/>
 
-        <div class="filters_wrapper-item">
-          <div class="filters_wrapper-item_text">Бренд</div>
+        <div className="filters_wrapper-item">
+          <div className="filters_wrapper-item_text">Бренд</div>
           <img src={'/icons/arrow_right.svg'} alt="icon" />
         </div>
-        <div class="filters_wrapper-item">
-          <div class="filters_wrapper-item_text">Модель</div>
+        <div className="filters_wrapper-item">
+          <div className="filters_wrapper-item_text">Модель</div>
           <img src={'/icons/arrow_right.svg'} alt="icon" />
         </div>
       </div>

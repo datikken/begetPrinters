@@ -67,7 +67,7 @@ const IndexPage = ({data: {allContentfulSwiper}}) => {
             <div className="desktop-hide">
                 <Swiper {...paramsHorizontal}>
                     {allContentfulSwiper.edges.map(({node}) => (
-                        <div style={{backgroundImage: `url(${node.image.file.url})`}}></div>
+                        <div key={node} style={{backgroundImage: `url(${node.image.file.url})`}}></div>
                     ))}
                 </Swiper>
             </div>
@@ -75,7 +75,7 @@ const IndexPage = ({data: {allContentfulSwiper}}) => {
             <div className="mobile-hide">
                 <Swiper {...params}>
                     {allContentfulSwiper.edges.map(({node}) => (
-                        <div style={{backgroundImage: `url(${node.image.file.url})`}}></div>
+                        <div key={node} style={{backgroundImage: `url(${node.image.file.url})`}}></div>
                     ))}
                 </Swiper>
             </div>

@@ -8,7 +8,9 @@ export default function ProductGridItem() {
                 <Link to="/product">
                     <div className="product_wrapper">
                         <div className="product_wrapper-item">
-                            <div className="product_wrapper-item_heading"><span className="product_wrapper-item_heading-item">IC-HLOR70A</span></div>
+                            <div className="product_wrapper-item_heading">
+                                <span className="product_wrapper-item_heading-item">IC-HLOR70A</span>
+                            </div>
                             <div className="product_wrapper-item_amount">
                                 <img src={"/icons/alot.svg"} alt="amount"/>
                                 <span className="product_wrapper-item_amount-item">Много</span>
@@ -27,7 +29,10 @@ export default function ProductGridItem() {
                             </div>
                         </div>
                         <div className="product_wrapper-item">
-                            <div className="product_wrapper-item_head"><span className="product_wrapper-item_price-item">IC-HLOR70A</span></div>
+                            <div className="product_wrapper-item_head">
+                                <span className="product_wrapper-item_head-item">Картридж</span><br/>
+                                <span className="product_wrapper-item_head-item">IC-HLOR70A</span>
+                            </div>
                             <div className="product_wrapper-item_price">
                                 <span className="product_wrapper-item_price-item">29900</span>
                                 <img src={"/icons/rub.svg"} alt="cur" />

@@ -6,11 +6,11 @@ const Header = () => (
     <div className="header">
         <div className="header_wrapper">
             <div className="header_wrapper-item">
-                <a href="/">
+                <Link to="/">
                     <div className="header_wrapper-item_logo">
                         <img className="header_wrapper-item_logo-item" src={'/header/LOGO.png'} alt="Logo"/>
                     </div>
-                </a>
+                </Link>
             </div>
             <div className="header_wrapper-item">
                 <ul className="header_wrapper-item_menu">
@@ -51,7 +51,7 @@ const Header = () => (
                     <div className="header_wrapper-item_contacts-icon">
                         <img className="header_wrapper-item_contacts-icon-item" src={'/header/contact.svg'} alt="Logo"/>
                     </div>
-                    <a href="tel:88005556633" className="header_wrapper-item_contacts-tel">8 800 555 66 33</a>
+                    <Link to="tel:88005556633" className="header_wrapper-item_contacts-tel">8 800 555 66 33</Link>
                     <div className="header_wrapper-item_contacts-email">kakayatopochta@gmail.com</div>
                 </div>
             </div>

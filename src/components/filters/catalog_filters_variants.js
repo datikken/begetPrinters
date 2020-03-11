@@ -4,8 +4,8 @@ import Checkbox from "@material-ui/core/Checkbox"
 export default function CatalogFiltersVariants() {
 
     return (
-        <ul class="filters_wrapper-item_list">
-        <li class="filters_wrapper-item_list-text">
+        <ul className="filters_wrapper-item_list">
+        <li className="filters_wrapper-item_list-text">
           <Checkbox
             size="small"
             value="small"
@@ -13,7 +13,7 @@ export default function CatalogFiltersVariants() {
           />
           <span>Струйный</span>
         </li>
-        <li class="filters_wrapper-item_list-text">
+        <li className="filters_wrapper-item_list-text">
         <Checkbox
             size="small"
             value="small"
@@ -21,7 +21,7 @@ export default function CatalogFiltersVariants() {
           />
           <span>Лазерный</span>
         </li>
-        <li class="filters_wrapper-item_list-text">
+        <li className="filters_wrapper-item_list-text">
         <Checkbox
             size="small"
             value="small"
@@ -29,7 +29,7 @@ export default function CatalogFiltersVariants() {
           />
           <span>Факс</span>
         </li>
-        <li class="filters_wrapper-item_list-text">
+        <li className="filters_wrapper-item_list-text">
         <Checkbox
             size="small"
             value="small"

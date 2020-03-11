@@ -7,18 +7,18 @@ import CartHeading from "./cart_heading"
 
 export default function CartContent({ text }) {
     return (
-        <div class="cart">
-            <div class="cart_wrap">
+        <div className="cart">
+            <div className="cart_wrap">
 
                 <CartProcess />
 
-                <div class="cart_wrap-item">
+                <div className="cart_wrap-item">
 
                     <CartTableHeading />
 
-                    <div class="cart_wrap-item_inner">
+                    <div className="cart_wrap-item_inner">
 
-                        <div class="cart_wrap-item_inner-table">
+                        <div className="cart_wrap-item_inner-table">
 
                             <CartItem />
                             <CartItem />

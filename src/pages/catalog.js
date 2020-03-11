@@ -29,21 +29,21 @@ const Catalog = () => (
       </Breadcrumbs>
     </div>
 
-      <div class="columns catalog_columns">
-        <div class="left_column mobile-hide">
+      <div className="columns catalog_columns">
+        <div className="left_column mobile-hide">
 
           <CatalogFilters/>
           <CatalogBanner/>
 
-          <div class="mobile-hide">
+          <div className="mobile-hide">
             <Viewed />
           </div>
         </div> 
 
-        <div class="right_column">
+        <div className="right_column">
             <CatalogFiltersMob/>
 
-            <div class="products_grid">
+            <div className="products_grid">
                 <ProductsGrid/>
             </div>
         </div>

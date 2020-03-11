@@ -15,11 +15,11 @@ export default function CatalogFiltersMob() {
   }
 
   return (
-    <div class="desktop-hide">
-      <div class="mfilters">
-        <div class="mfilters_wrap">
+    <div className="desktop-hide">
+      <div className="mfilters">
+        <div className="mfilters_wrap">
           <div
-            class="mfilters_wrap-item"
+            className="mfilters_wrap-item"
             onClick={() => {
               setShowed(!show)
             }}
@@ -34,7 +34,7 @@ export default function CatalogFiltersMob() {
             </div>
           </div>
           <div
-            class="mfilters_wrap-item"
+            className="mfilters_wrap-item"
             onClick={() => {
               setShowed(!show)
             }}
@@ -49,7 +49,7 @@ export default function CatalogFiltersMob() {
             </div>
           </div>
           <div
-            class="mfilters_wrap-item"
+            className="mfilters_wrap-item"
             onClick={() => {
               setShowed(!show)
             }}
