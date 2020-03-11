@@ -8,7 +8,7 @@ const Menu = () => {
 
     const handler = (e) => {
         document.querySelector("body").classList.toggle('overflow');
-        openMenu(!menu);
+        openMenu(!menu)
     }
 
     return (

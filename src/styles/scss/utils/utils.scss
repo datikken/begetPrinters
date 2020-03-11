@@ -176,6 +176,7 @@
 .menu_visible {
   height: 90vh!important;
   overflow-y: scroll!important;
+  z-index: 99999999!important;
   -webkit-overflow-scrolling: touch;
 
   @media not all and (min-resolution:.001dpcm) {
@@ -188,4 +189,8 @@
 p {
   text-align: justify;
   padding: 0;
+}
+.selected_filter {
+    background-color: $dblack!important;
+    color: #fff!important;
 }
