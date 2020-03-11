@@ -11,6 +11,7 @@ import CatalogFilters from "../components/filters/catalog_filters"
 import Viewed from "../components/viewed/viewed"
 import CatalogFiltersMob from "../components/filters/catalog_filters_mob"
 import ProductsGrid from "../components/products/products_grid"
+import OrderHistory from "../components/history/OrderHistory"
 
 const Catalog = () => (
 
@@ -46,6 +47,8 @@ const Catalog = () => (
             <div className="products_grid">
                 <ProductsGrid/>
             </div>
+            
+            <OrderHistory />
         </div>
       </div>
 

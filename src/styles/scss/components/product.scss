@@ -118,6 +118,10 @@
         width: 177px;
         height: 100px;
         margin: 0 auto;
+        @include breakpoint($medium) {
+          height: initial;
+        }
+        
         img {
           width: 177px;
         }
