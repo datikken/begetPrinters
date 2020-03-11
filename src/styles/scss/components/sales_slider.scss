@@ -123,11 +123,10 @@
 
   &_prod {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 12px;
+    left: 10px;
     width: 156px;
-    height: calc(100% - 20px);
-    margin: 10px;
+    height: calc(100% - 25px);
     
     &-item {
       height: 100%;
@@ -181,7 +180,7 @@
       align-items: center;
       letter-spacing: 0.02em;
       color: #292930;
-      margin-bottom: 20px;
+      margin-bottom: 18px;
     }
 
     &-nums {
