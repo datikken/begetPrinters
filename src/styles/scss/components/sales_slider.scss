@@ -1,12 +1,14 @@
 .sales_slider {
   width: 100%;
   height:166px;
+  margin: 10px 0;
 
   @include breakpoint($phone) {
     margin-bottom: 50px;
     display: block;
     width: 870px;
     height: 360px;
+    display: none;
   }
 
   &-wrapper {
@@ -113,6 +115,113 @@
         height: 360px;
       }
 
+    }
+  }
+}
+.sales_slider-card {
+  position: relative;
+
+  &_prod {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 156px;
+    height: calc(100% - 20px);
+    margin: 10px;
+    
+    &-item {
+      height: 100%;
+      width: 100%;
+      background: #fff;
+      position: relative;
+
+      img {
+        position: absolute;
+        @include absCenter();
+        top: 58%;
+        width: 110px!important;
+      }
+    }
+  }
+
+  &_items {
+    position: absolute;
+    right: .42rem;
+    top: 1.5rem;
+
+    &-heading {
+      font-family: $font;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.02em;
+      color: #292930;
+      margin-bottom: 10px;
+    }
+
+    &-title {
+      font-family: $font;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 18px;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.02em;
+      color: #3559FD;
+    }
+    &-desc {
+      font-family: $font;
+      font-size: 11px;
+      line-height: 17px;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.02em;
+      color: #292930;
+      margin-bottom: 7px;
+    }
+
+    &-nums {
+      display: flex;
+
+      &_num {
+          width: 35px;
+          height: 60px;
+          position: relative;
+          margin: 0 2px;
+
+          &_back {
+            object-fit: cover!important;
+          }
+          &-dec {
+            object-fit: contain!important;
+            position: absolute;
+            width: 35px;
+            height: 5px;
+            left: 0;
+            top: -4px;
+          }
+
+          &-item {
+            font-family: $font;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 26px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FDD935;
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+      }
     }
   }
 }

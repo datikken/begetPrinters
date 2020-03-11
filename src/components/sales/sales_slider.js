@@ -1,5 +1,6 @@
 import React from "react"
 import Swiper from "react-id-swiper"
+import SalesSliderItem from "./sales_slider_item"
 
 const SalesSlider = () => {
   const params = {
@@ -33,27 +34,15 @@ const SalesSlider = () => {
       <div className="sales_slider-wrapper">
         <div className="sales_slider-wrapper_background">
   
-        <Swiper {...params}>
-  
-          <img src={'/sales/sales_slider.png'} alt="icon" />
-          <img src={'/sales/sales_slider2.png'} alt="icon" />
-        
-        </Swiper>
-  
-  
-        </div>
-        <div className="sales_slider-wrapper_ctas">
-          <div className="sales_slider-wrapper_ctas-heading">
-            <span>Картридж<br/></span>
-            <span>T2 TC-H80A<br/></span>
-            <span>(Аналог HP CF280A)</span>
-          </div>
-          <div className="sales_slider-wrapper_ctas-timer">
-            <img src={'/sales/timer.png'} alt="icon" />
-          </div>
-          <div className="sales_slider-wrapper_ctas-button">
-            <span>успеть купить</span>
-          </div>
+          <Swiper {...params}>
+              <div>
+                <SalesSliderItem />
+              </div>
+              <div>
+                <SalesSliderItem />
+              </div>
+          </Swiper>
+    
         </div>
       </div>
     </div>

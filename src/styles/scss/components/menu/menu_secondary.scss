@@ -58,6 +58,13 @@
         display: flex;
         justify-content: space-between;
 
+        &:last-child {
+          justify-content: flex-start;
+          img {
+            margin-right: 10px;
+          }
+        }
+
         &:nth-child(11) {
           background: #fff!important;
         }

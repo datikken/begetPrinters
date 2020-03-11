@@ -118,6 +118,7 @@ const Menu = () => {
                                   </span>
                                 </li>
                                 <li className="menu_Wrapper-item_secondary-item_list-item">
+                                  <img src={"/header/Mail.svg"} alt="mailer" />
                                   <span className="menu_Wrapper-item_secondary-item_list-item-text">
                                     kakayatopochta@gmail.com
                                   </span>

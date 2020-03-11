@@ -177,7 +177,10 @@
   height: 90vh!important;
   overflow-y: scroll!important;
   -webkit-overflow-scrolling: touch;
-  max-height: 505px;
+
+  @media not all and (min-resolution:.001dpcm) {
+    max-height: 505px;
+  }
 }
 .overflow {
   overflow: hidden!important;
