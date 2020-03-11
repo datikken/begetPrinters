@@ -39,6 +39,9 @@ const SalesSlider = () => {
                 <SalesSliderItem title="T2 TC-H80A" />
               </div>
               <div>
+                <SalesSliderItem title="T3 TC-H80A"/>
+              </div>
+              <div>
                 <SalesSliderItem title="THOTIANA"/>
               </div>
           </Swiper>
