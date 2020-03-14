@@ -1,42 +1,20 @@
-import React from 'react'
+import React from "react"
 import Checkbox from "@material-ui/core/Checkbox"
 
-export default function CatalogFiltersVariants() {
-
-    return (
-        <ul className="filters_wrapper-item_list">
-        <li className="filters_wrapper-item_list-text">
-          <Checkbox
-            size="small"
-            value="small"
-            inputProps={{ "aria-label": "checkbox with small size" }}
-          />
-          <span>Струйный</span>
-        </li>
-        <li className="filters_wrapper-item_list-text">
+export default function CatalogFiltersVariants({values}) {
+  return (
+    <ul className="filters_wrapper-item_list">
+      {values.map((el) => (
+        <li className="filters_wrapper-item_list-text" key={el}>
         <Checkbox
-            size="small"
-            value="small"
-            inputProps={{ "aria-label": "checkbox with small size" }}
-          />
-          <span>Лазерный</span>
+          size="small"
+          color="yellow"
+          value="small"
+          inputProps={{ "aria-label": "checkbox with small size" }}
+        />
+        <span>{el}</span>
         </li>
-        <li className="filters_wrapper-item_list-text">
-        <Checkbox
-            size="small"
-            value="small"
-            inputProps={{ "aria-label": "checkbox with small size" }}
-          />
-          <span>Факс</span>
-        </li>
-        <li className="filters_wrapper-item_list-text">
-        <Checkbox
-            size="small"
-            value="small"
-            inputProps={{ "aria-label": "checkbox with small size" }}
-          />
-          <span>Название</span>
-        </li>
-      </ul>
-    )
+      ))}
+    </ul>
+  )
 }

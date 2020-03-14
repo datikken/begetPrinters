@@ -94,7 +94,7 @@
         z-index: 9999;
         list-style: none;
         padding: 0;
-        left: -2px;
+        left: -18px;
         top: 38px;
         width: 200px;
         overflow: hidden;
@@ -155,8 +155,8 @@
               z-index: 99;
               z-index: 99;
               width: 130px;
-              top: 12.4rem;
-              right: -11.1rem;
+              top: 12.5rem;
+              right: -11rem;
               font-weight: 300;
 
               &-text {
@@ -165,10 +165,16 @@
                 position: relative;
                 border-bottom: 1px solid $light_gray;
                 margin-bottom: 0;
+                a {
+                  text-decoration: none;
+                  color: $dblack;
+                }
 
                 &:hover {
                   background-color: $black;
-                  color: #fff;
+                  a {
+                    color: #fff;
+                  }
                 }
               }
             }

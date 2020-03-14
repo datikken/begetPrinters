@@ -1,27 +1,35 @@
 import React from "react"
-import CatalogFiltersVariants from './catalog_filters_variants'
-import Tip from "../tips/tip"
+import CatalogFilterItem from "./catalog_filters_item"
 
 export default function CatalogFilters() {
+  const filters = [
+    {
+      title: "Тип принтера",
+      values: ["Струйный", "Лазерный", "Факс"],
+      tip: true
+    },
+    {
+      title: "Бренд",
+      values: ["Kawasaki", "Harley", "BMW"],
+      tip: false
+    },
+    {
+      title: "Модель",
+      values: ["тип 1", "тип 2", "тип 3"],
+      tip: false
+    }
+  ]
+
   return (
     <div className="filters">
       <div className="filters_wrapper">
-        <div className="filters_wrapper-item">
-          <div className="filters_wrapper-item_text">Тип принтера</div>
-          <img src={'/icons/arrow_right.svg'} alt="icon" />
-          <Tip />
-        </div>
-          
-        <CatalogFiltersVariants/>
-
-        <div className="filters_wrapper-item">
-          <div className="filters_wrapper-item_text">Бренд</div>
-          <img src={'/icons/arrow_right.svg'} alt="icon" />
-        </div>
-        <div className="filters_wrapper-item">
-          <div className="filters_wrapper-item_text">Модель</div>
-          <img src={'/icons/arrow_right.svg'} alt="icon" />
-        </div>
+        {filters.map(el => (
+          <CatalogFilterItem 
+              key={el.title}
+              title={el.title} 
+              values={el.values} 
+              tip={el.tip} />
+        ))}
       </div>
     </div>
   )

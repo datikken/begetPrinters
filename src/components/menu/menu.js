@@ -11,6 +11,13 @@ const Menu = () => {
         openMenu(!menu)
     }
 
+    const menuHandler = (e) => {
+        e.persist();
+        e.preventDefault();
+
+        setShowed(!showed);
+    }
+
     return (
         <div className="menu">
             <div className="menu_wrapper">
@@ -138,15 +145,21 @@ const Menu = () => {
                             <div className="menu_wrapper-item_menuText-header">
                                 <div>МЕНЮ</div>
                                 {showed && (
-                                    <ul className="menu_wrapper-item-main_menu-item-text_secondary">
+                                    <ul className="menu_wrapper-item-main_menu-item-text_secondary" onMouseLeave={() => setShowed(!showed)}>
                                         <li className="menu_wrapper-item-main_menu-item-text_secondary-text">
-                                            <span>Оплата</span>
+                                            <Link to="/information#payments">
+                                                <span>Оплата</span>
+                                            </Link>
                                         </li>
                                         <li className="menu_wrapper-item-main_menu-item-text_secondary-text">
-                                            <span>Доставка</span>
+                                            <Link to="/information#delivery">
+                                                <span>Доставка</span>
+                                            </Link>
                                         </li>
                                         <li className="menu_wrapper-item-main_menu-item-text_secondary-text">
-                                            <span>Гарантия</span>
+                                            <Link to="/information#guaranty">
+                                                <span>Гарантия</span>
+                                            </Link>
                                         </li>
                                     </ul>
                                 )}
@@ -184,11 +197,10 @@ const Menu = () => {
                                     </li>
                                     <li
                                         className="menu_wrapper-item-main_menu-item"
-                                        onMouseLeave={() => setShowed(false)}
-                                        onMouseOver={() => setShowed(true)}
+                                        onClick={(e) => menuHandler(e)}
                                     >
                                           <span className="menu_wrapper-item-main_menu-item-text">
-                                            <Link to="/information">Информация</Link>
+                                            <span>Информация</span>
                                             <img src={"/icons/arrow_right.svg"} alt="arrow"/>
                                           </span>
                                     </li>
