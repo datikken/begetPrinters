@@ -1,4 +1,6 @@
-import React from 'react';
+import React from 'react'
+import Img from "gatsby-image"
+import { useStaticQuery, graphql } from 'gatsby-image'
 
 export default function HitsHero() {
     return (
