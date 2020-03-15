@@ -16,6 +16,7 @@ exports.components = {
   "component---src-pages-hits-js": hot(preferDefault(require("/Users/tikken/Sites/printers/site/src/pages/hits.js"))),
   "component---src-pages-index-js": hot(preferDefault(require("/Users/tikken/Sites/printers/site/src/pages/index.js"))),
   "component---src-pages-information-js": hot(preferDefault(require("/Users/tikken/Sites/printers/site/src/pages/information.js"))),
+  "component---src-pages-landing-js": hot(preferDefault(require("/Users/tikken/Sites/printers/site/src/pages/landing.js"))),
   "component---src-pages-product-js": hot(preferDefault(require("/Users/tikken/Sites/printers/site/src/pages/product.js"))),
   "component---src-pages-sales-js": hot(preferDefault(require("/Users/tikken/Sites/printers/site/src/pages/sales.js"))),
   "component---src-pages-tracking-js": hot(preferDefault(require("/Users/tikken/Sites/printers/site/src/pages/tracking.js")))

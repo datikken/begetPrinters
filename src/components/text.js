@@ -3,8 +3,8 @@ import PropTypes from "prop-types"
 import React from "react"
 
 const Text = ({ node: { title, slug, image, description } }) => (
-  <a
-    href={slug}
+  <Link
+    to={slug}
     style={{
       background: `rebeccapurple`,
       marginBottom: `1.45rem`,
@@ -29,7 +29,7 @@ const Text = ({ node: { title, slug, image, description } }) => (
         </Link>
       </h1>
     </div>
-  </a>
+  </Link>
 )
 
 Text.propTypes = {
