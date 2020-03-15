@@ -4,6 +4,7 @@ import SEO from '../components/seo'
 import Lenta from '../components/landing/Lenta'
 import Video from '../components/landing/Video'
 import Heading from '../components/landing/Heading'
+import Block from '../components/landing/Block'
 
 export default function Landing() {
     return (
@@ -13,6 +14,7 @@ export default function Landing() {
         <Lenta />
         <Video />
         <Heading />
+        <Block />
         
       </Layout>
     )
