@@ -1,32 +1,32 @@
 import React from 'react'
 
-export default function Block() {
+export default function Block({image, lie, truth, desc, footer, cartoon}) {
     return (
         <div className="land">
             <div className="land_block">
                 <div className="land_block-item">
                     <div className="land_block-item_icon">
-                        <img src={"/landing/printerIcon.svg"} alt="Icon"/>
+                        <img src={image} alt="Icon"/>
                     </div>
                 </div>
                 <div className="land_block-item">
                     <div className="land_block-item_text">
                         <div className="land_block-item_text-false">
-                            <span className="land_block-item_text-false_item">Портят</span>
+                            <span className="land_block-item_text-false_item">{lie}</span>
                         </div>
                         <div className="land_block-item_text-heading">
-                            <span className="land_block-item_text-heading_item">Не портят принтеры</span>
+                            <span className="land_block-item_text-heading_item">{truth}</span>
                         </div>
                         <div className="land_block-item_text-text">
-                            <span className="land_block-item_text-text_item">В России много дешёвых картриджей сомнительного качества. Мы бы и сами не рискнули поставить их в свои принтеры. А по данным многочисленных исследований, до 30% «оригинальных» картриджей на самом деле подделка.</span>
-                            <span className="land_block-item_text-text_item">Мы создаём картриджи из дорогих японских, американских и южно-корейских комплектующих. Наши сотрудники принимают и тестируют каждую партию прямо на заводе. Мы уверены в своих картриджах и гарантируем, что они не сломают принтер.</span>
+                            <span className="land_block-item_text-text_item">{desc}</span>
+                            <span className="land_block-item_text-text_item">{footer}</span>
                         </div>
                     </div>
                 </div>
 
                 <div className="land_block-item">
                     <div className="land_block-item_image">
-                        <img src={"/landing/printer.svg"} alt="Icon"/>
+                        <img src={cartoon} alt="Icon"/>
                     </div>
                 </div>
             </div>

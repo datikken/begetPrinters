@@ -9,8 +9,15 @@
     margin: 0 auto;
 
     &-item {
+      &_icon {
+        img {
+          width: 86px;
+          height: 86px;
+        }
+      }
       &_image {
         margin-left: 130px;
+        margin-top: 2.5rem;
       }
 
       &_text {
