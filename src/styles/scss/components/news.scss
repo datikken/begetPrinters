@@ -112,7 +112,17 @@
         margin-right: 10px;
         @include breakpoint($phone) {
           margin-right: 0;
-          margin-bottom: 34px;
+          margin-bottom: 28px;
+
+          &:after {
+            content: '';
+            display: block;
+            border-bottom: 1px solid $gray;
+            width: 50%;
+            position: absolute;
+            bottom: -14px;
+            left: 0;
+          }
         }
 
         &_image {

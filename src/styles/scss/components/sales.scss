@@ -3,7 +3,9 @@
   height: 180px;
   margin-bottom: 30px;
   display: none;
+
   @include breakpoint($phone)  {
+    margin-bottom: 20px;
     display: block;
   }
 
@@ -12,6 +14,12 @@
       display: flex;
       justify-content: space-between;
 
+      @include breakpoint($medium) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+      }
+      
       &_item {
         background: $yellow;
         width: 430px;

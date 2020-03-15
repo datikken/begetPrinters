@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import News from "../components/news/news"
 import Banner from "../components/banner/banner"
 import Viewed from "../components/viewed/viewed"
@@ -78,10 +78,11 @@ const IndexPage = ({ data: { allContentfulSwiper } }) => {
       <div className="mobile-hide">
         <Swiper {...params}>
           {allContentfulSwiper.edges.map(({ node }) => (
-            <div
+            <Link
+              to="/landing"
               key={node}
               style={{ backgroundImage: `url(${node.image.file.url})` }}
-            ></div>
+            ></Link>
           ))}
         </Swiper>
       </div>
