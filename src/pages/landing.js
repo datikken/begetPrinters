@@ -44,21 +44,28 @@ const Landing = () => {
       <Video />
       <Heading />
 
-      {data.map((el) => (
         <Block 
-          image={el.image} 
-          lie={el.lie} 
-          truth={el.truth} 
-          cartoon={el.cartoon}
-          desc={el.desc} 
-          footer={el.footer} 
+          image={data[0].image} 
+          lie={data[0].lie} 
+          truth={data[0].truth} 
+          cartoon={data[0].cartoon}
+          desc={data[0].desc} 
+          footer={data[0].footer} 
           />
-      ))}
 
       <Feedback />
 
+       <Block 
+          image={data[1].image} 
+          lie={data[1].lie} 
+          truth={data[1].truth} 
+          cartoon={data[1].cartoon}
+          desc={data[1].desc} 
+          footer={data[1].footer} 
+          />
+          
       <LandingSwiper />
-     
+
      <Block 
         image={"/landing/printerIcon3.svg"} 
         lie={'Не сохраняют'} 
