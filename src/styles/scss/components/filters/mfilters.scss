@@ -6,13 +6,13 @@
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 0.02em;
-    color: #000000;
+    color: black;
     margin: 0 10px 10px 10px;
     position: absolute;
     z-index: 9999999;
     width: calc(100% - 20px);
     top: 3.7rem;
-    background: #fff;
+    background: $white;
     box-shadow: $menu_shadow;
 
     &-item {
@@ -69,7 +69,7 @@
         font-size: 12px;
         line-height: 16px;
         letter-spacing: 0.02em;
-        color: #000000;
+        color: black;
         display: block;
       }
 
@@ -97,7 +97,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: #fff;
+  background-color: $white;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -114,11 +114,11 @@
     right: 10px;
   }
   &:hover {
-    background-color: #fff;
+    background-color: $white;
   }
   &:active,
   &.active {
-    background-color: #fff;
+    background-color: $white;
     &:after {
       top: 9px;
       border-color: transparent transparent $black transparent;
@@ -136,7 +136,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  background-color: #fff;
+  background-color: $white;
   li {
     margin: 0;
     padding: 12px 0;
@@ -144,7 +144,7 @@
     border-bottom: 1px solid $light_gray;
 
     &:hover {
-      color: #fff;
+      color: $white;
       background: $black;
     }
     &[rel="hide"] {

@@ -17,7 +17,7 @@
   padding-bottom: 30px;
 
   @include breakpoint($phone) {
-    border-top: 1px solid #d4d4d5;
+    border-top: 1px solid $gray;
     position: relative;
     margin-bottom: 50px;
     z-index: 0;
@@ -100,7 +100,7 @@
     content: "";
     width: 170px;
     position: absolute;
-    border-bottom: 1px solid #fdd935;
+    border-bottom: 1px solid $yellow;
     bottom: 0;
     left: 0;
     top: 28px;
@@ -125,7 +125,7 @@
     content: "";
     width: 1px;
     height: 100%;
-    border-left: 1px solid #e9e9ea;
+    border-left: 1px solid $light_gray;
     position: absolute;
     right: -22px;
     top: 50px;
@@ -176,7 +176,7 @@
           font-size: 24px;
           line-height: 26px;
           text-transform: uppercase;
-          color: #3559fd;
+          color: $blue;
           position: relative;
        
           &-currency {
@@ -190,7 +190,7 @@
       }
       &:nth-child(3) {
         padding: 10px;
-        border: 1px solid #e9e9ea;
+        border: 1px solid $light_gray;
         max-width: 264px;
         display: flex;
         align-items: center;

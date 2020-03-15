@@ -138,7 +138,7 @@
               font-size: 11px;
               line-height: 17px;
               letter-spacing: 0.02em;
-              color: #d4d4d5;
+              color: $gray;
             }
             @include breakpoint($phone) {
               width: 830px;

@@ -38,7 +38,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        color: #fff;
+        color: $white;
         cursor: pointer;
         @include btnShadow();
         font-size: $btn_fs;
@@ -53,7 +53,7 @@
           text-align: center;
           letter-spacing: 0.02em;
           text-transform: uppercase;
-          color: #FFFFFF;
+          color: $white;
           text-transform: uppercase;
         }
       }
@@ -87,7 +87,7 @@
             align-items: center;
             letter-spacing: -0.02em;
             text-transform: uppercase;
-            color: #3559FD;
+            color: $blue;
             margin-bottom: 5px;
           }
 
@@ -131,7 +131,7 @@
     &-item {
       height: 100%;
       width: 100%;
-      background: #fff;
+      background: $white;
       position: relative;
 
       img {
@@ -157,7 +157,7 @@
       display: flex;
       align-items: center;
       letter-spacing: 0.02em;
-      color: #292930;
+      color: $dblack;
       margin-bottom: 15px;
     }
 
@@ -170,7 +170,7 @@
       display: flex;
       align-items: center;
       letter-spacing: 0.02em;
-      color: #3559FD;
+      color: $blue;
     }
     &-desc {
       font-family: $font;
@@ -179,7 +179,7 @@
       display: flex;
       align-items: center;
       letter-spacing: 0.02em;
-      color: #292930;
+      color: $dblack;
       margin-bottom: 19px;
     }
 
@@ -214,7 +214,7 @@
             align-items: center;
             text-align: center;
             text-transform: uppercase;
-            color: #FDD935;
+            color: $yellow;
             position: absolute;
             top: 45%;
             left: 50%;

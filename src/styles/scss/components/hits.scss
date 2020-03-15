@@ -83,14 +83,14 @@
     .second-hits_recs-row {
       .hits_recs-item_inner-item {
         &:first-child {
-          background: #fff;
+          background: $white;
           color: black;
         }
         &:nth-child(2) {
           border-top-right-radius: 30px;
           border-bottom-right-radius: 30px;
           background: $dblack;
-          color: #fff;
+          color: $white;
         }
       }
     }
@@ -131,7 +131,7 @@
           border-top-left-radius: 30px;
           border-bottom-left-radius: 30px;
           background: $dblack;
-          color: #fff;
+          color: $white;
         }
         &:nth-child(3) {
           border-left: 0;
@@ -221,7 +221,7 @@
         line-height: 100%;
         letter-spacing: -0.02em;
         text-transform: uppercase;
-        color: #3559fd;
+        color: $blue;
 
         &-small {
           font-family: $font;

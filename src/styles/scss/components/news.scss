@@ -59,7 +59,7 @@
           content: "";
           display: block;
           width: 170px;
-          border-bottom: 1px solid #fdd935;
+          border-bottom: 1px solid $yellow;
           margin-top: 15px;
         }
       }
@@ -106,7 +106,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #e9e9ea;
+        background-color: $light_gray;
         padding: 10px;
         margin-bottom: 10px;
         margin-right: 10px;
@@ -121,7 +121,7 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          background: #fff;
+          background: $white;
 
           &-inner {
             @include bg(contain, center);
@@ -162,7 +162,7 @@
             border-radius: 30px;
             width: 100px;
             height: 20px;
-            border: 1px solid #3559fd;
+            border: 1px solid $blue;
             box-sizing: border-box;
             border-radius: 30px;
             display: flex;
@@ -177,7 +177,7 @@
               align-items: center;
               text-align: center;
               letter-spacing: 0.02em;
-              color: #3559fd;
+              color: $blue;
             }
           }
         }

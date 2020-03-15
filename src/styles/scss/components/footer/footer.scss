@@ -69,11 +69,11 @@ footer {
         line-height: 100%;
         letter-spacing: -0.02em;
         text-transform: uppercase;
-        color: #ffffff;
+        color: $white;
         margin-bottom: 10px;
         cursor: pointer;
         a {
-          color: #fff;
+          color: $white;
         }
       }
       &_tel {
@@ -81,14 +81,14 @@ footer {
         font-size: 18px;
         line-height: 18px;
         letter-spacing: 0.02em;
-        color: #ffffff;
+        color: $white;
         @include flex(center, flex-start, wrap);
         margin-bottom: 20px;
 
         span {
           a {
             text-decoration: none;
-            color: #fff !important;
+            color: $white !important;
           }
         }
 
@@ -105,7 +105,7 @@ footer {
         font-size: 12px;
         line-height: 20px;
         letter-spacing: 0.02em;
-        color: #ffffff;
+        color: $white;
         margin-bottom: 15px;
         font-weight: 300;
       }

@@ -46,7 +46,7 @@
         transform: translate(-50%, -50%);
         background: $black;
         height: 100%;
-        color: #fff;
+        color: $white;
         display: flex;
         align-items: center;
         border-top-right-radius: 50px;
@@ -63,7 +63,7 @@
           line-height: 14px;
           letter-spacing: 0.02em;
           text-transform: uppercase;
-          color: #ffffff;
+          color: $white;
           padding: 0 10px;
         }
       }

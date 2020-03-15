@@ -30,7 +30,7 @@
             font-size: 11px;
             line-height: 17px;
             letter-spacing: 0.02em;
-            color: #FFFFFF;
+            color: $white;
         }
         &-title {
             font-family: $font;
@@ -38,7 +38,7 @@
             font-size: 18px;
             line-height: 18px;
             letter-spacing: 0.02em;
-            color: #FFFFFF;
+            color: $white;
             text-transform: uppercase;
         }
         &-heading {
@@ -48,7 +48,7 @@
             display: flex;
             align-items: flex-end;
             letter-spacing: 0.02em;
-            color: #FFFFFF;
+            color: $white;
         }
     }
 }
@@ -63,12 +63,12 @@
             width: 5px!important;
             height: 5px!important;
             background: transparent!important;
-            border: 1px solid #fff!important;
+            border: 1px solid $white!important;
             box-shadow: none;
             opacity: 1;
         }
         .swiper-pagination-bullet-active {
-            background: #fff!important;
+            background: $white!important;
         }
     }
 }

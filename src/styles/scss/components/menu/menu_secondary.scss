@@ -2,7 +2,7 @@
   position: absolute;
   height: 0;
   left: 0;
-  background: #fff;
+  background: $white;
   box-shadow: 50px 10px 50px rgba(0, 0, 0, 0.1);
   transition: visibility $transition;
   z-index: 99;
@@ -23,7 +23,7 @@
         justify-content: flex-start;
         align-items: center;
         position: relative;
-        background: #e9e9ea;
+        background: $feedItem;
 
 
         .menu_Wrapper-item_secondary-item_list-item-text_inner {
@@ -53,8 +53,8 @@
         font-size: 12px;
         line-height: 14px;
         letter-spacing: 0.02em;
-        color: #40404c;
-        border-bottom: 1px solid #e9e9ea;
+        color: $black;
+        border-bottom: 1px solid $feedItem;
         display: flex;
         justify-content: space-between;
 
@@ -66,7 +66,7 @@
         }
 
         &:nth-child(11) {
-          background: #fff!important;
+          background: $white!important;
         }
 
         & a {

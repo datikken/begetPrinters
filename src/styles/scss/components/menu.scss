@@ -1,6 +1,6 @@
 .menu {
   width: 100%;
-  background-color: #fdd935;
+  background-color: $yellow;
   height: 50px;
 
   &_wrapper {
@@ -103,7 +103,7 @@
         box-shadow: $menu_shadow;
 
         &-item {
-          background-color: #fff;
+          background-color: $white;
           transition: background-color $transition;
           margin-bottom: 0;
 
@@ -120,11 +120,11 @@
               border: none;
             }
             span {
-              color: #fff;
+              color: $white;
             }
             span {
               a {
-                color: #fff;
+                color: $white;
               }
             }
           }
@@ -147,7 +147,7 @@
             transition: all $transition;
 
             &_secondary {
-              background: #fff;
+              background: $white;
               color: black;
               position: absolute;
               list-style: none;
@@ -155,13 +155,13 @@
               z-index: 99;
               z-index: 99;
               width: 130px;
-              top: 12.5rem;
+              top: 12.4rem;
               right: -11rem;
               font-weight: 300;
 
               &-text {
                 padding: 12.5px;
-                color: #000;
+                color: black;
                 position: relative;
                 border-bottom: 1px solid $light_gray;
                 margin-bottom: 0;
@@ -173,7 +173,7 @@
                 &:hover {
                   background-color: $black;
                   a {
-                    color: #fff;
+                    color: $white;
                   }
                 }
               }
@@ -206,7 +206,7 @@
           }
 
           &-amount {
-            color: #fff;
+            color:$white;
             z-index: 99;
             left: 61%;
             top: 50%;
@@ -218,7 +218,7 @@
             width: 23px;
             height: 23px;
             position: absolute;
-            background: #d935fd;
+            background: $purple2;
             border-radius: 50%;
             @include absCenter();
             margin-left: 4px;
@@ -232,7 +232,7 @@
           letter-spacing: 0.02em;
           text-transform: capitalize;
           margin-left: 20px;
-          color: #3559fd;
+          color: $blue;
         }
         &_currency {
           @include bg(contain, center);
@@ -338,8 +338,8 @@
           position: absolute;
           right: 0;
           height: 100%;
-          background: #40404c;
-          color: #fff;
+          background: $black;
+          color: $white;
           cursor: pointer;
           max-height: 30px;
 

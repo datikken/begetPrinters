@@ -45,7 +45,7 @@
           justify-content: flex-end;
           padding-right: 10px;
           margin-right: 2px;
-          background: #e9e9ea;
+          background: $light_gray;
 
           &:last-child {
             width: 100%;
@@ -232,7 +232,7 @@
           &-selected {
             background-color: $black;
             .history_wrapper-item_row-item_val {
-              color: #fff;
+              color: $white;
             }
           }
           &-header {

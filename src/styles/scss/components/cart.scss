@@ -110,7 +110,7 @@
             font-size: 12px;
             line-height: 14px;
             letter-spacing: 0.02em;
-            color: #40404c;
+            color: $black;
             margin-bottom: 10px;
 
             &-item {
@@ -123,7 +123,7 @@
                 font-size: 24px;
                 line-height: 26px;
                 text-transform: uppercase;
-                color: #40404c;
+                color: $black;
                 font-weight: 600;
                 position: relative;
 
@@ -172,7 +172,7 @@
               font-size: 12px;
               line-height: 14px;
               letter-spacing: 0.02em;
-              color: #40404c;
+              color: $black;
             }
 
             @include breakpoint($phone) {
@@ -206,7 +206,7 @@
               border-bottom: 1px solid $light_gray;
 
               &:last-child {
-                background: #e9e9ea;
+                background: $light_gray;
                 padding: 20px 10px;
 
                 @include breakpoint($phone) {
@@ -235,7 +235,7 @@
                 font-size: 12px;
                 line-height: 14px;
                 letter-spacing: 0.02em;
-                color: #40404c;
+                color: $black;
               }
 
               @include breakpoint($phone) {
@@ -332,7 +332,7 @@
                     font-size: 12px;
                     line-height: 14px;
                     letter-spacing: 0.02em;
-                    color: #40404c;
+                    color: $black;
                   }
                 }
               }
@@ -360,7 +360,7 @@
                   line-height: 100%;
                   letter-spacing: 0.02em;
                   text-transform: uppercase;
-                  color: #40404c;
+                  color: $black;
                   margin-bottom: 10px;
                 }
                 &-head {
@@ -370,7 +370,7 @@
                   line-height: 14px;
                   letter-spacing: 0.02em;
                   text-transform: uppercase;
-                  color: #40404c;
+                  color: $black;
                   margin-bottom: 10px;
                 }
               }
@@ -380,7 +380,7 @@
                 font-size: 12px;
                 line-height: 14px;
                 letter-spacing: 0.02em;
-                color: #40404c;
+                color: $black;
               }
             }
           }

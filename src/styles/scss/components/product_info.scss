@@ -23,7 +23,7 @@
           line-height: 14px;
           text-align: center;
           letter-spacing: 0.02em;
-          color: #292930;
+          color: $dblack;
         }
       }
     }
@@ -45,7 +45,7 @@
       text-align: center;
       letter-spacing: 0.02em;
       text-transform: uppercase;
-      color: #292930;
+      color: $dblack;
 
       &-arrow {
         display: block;
@@ -89,7 +89,7 @@
         color: $dblack;
         outline: none;
         padding-left: 20px;
-        background-color: #fff;
+        background-color: $white;
       }
     }
   }
