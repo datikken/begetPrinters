@@ -14,7 +14,6 @@ import ProductsGrid from "../components/products/products_grid"
 import OrderHistory from "../components/history/OrderHistory"
 
 const Catalog = () => (
-
   <Layout>
     <SEO title="Catalog" />
 
