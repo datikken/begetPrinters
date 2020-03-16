@@ -1,49 +1,33 @@
 import React from "react"
+import Swiper from 'react-id-swiper'
+import SalesBestItem from './sales_best_item'
 
-const SalesEco = () => (
-  <div className="sales_best">
-    <div className="sales_best-wrapper">
-      <div className="sales_best-wrapper_item">
-        <div className="sales_best-wrapper_item-decor">
-          <img src={'/sales/decor.svg'} alt=""/>
-        </div>
-        <div className="sales_best-wrapper_item-bullets">
-          <span className="active_bullet"></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+const SalesEco = () => {
+  let params = {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    mousewheel: true,
+    direction: "vertical",
+    containerClass: 'swiper-container best_printers_swipe mobile-hide',
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  };
+
+  return (
+    <Swiper {...params}>
+      <div>
+        <SalesBestItem title={'1'} />
       </div>
-      <div className="sales_best-wrapper_item">
-        <div className="sales_best-wrapper_item-content">
-          <div className="sales_best-wrapper_item-content_heading">
-            <span>Рейтинг лучших принтеров</span>
-          </div>
-          <div className="sales_best-wrapper_item-content_inner">
-
-            <div className="sales_best-wrapper_item-content_inner-text">
-              <div className="sales_best-wrapper_item-content_inner-text-heading">
-                <span>НАЗВАНИЕ<br/></span><span>ПРИНТЕРА</span>
-              </div>
-              <div className="sales_best-wrapper_item-content_inner-text-description">
-                <span> Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.</span>
-              </div>
-
-              <div className="sales_best-wrapper_item-content_inner-text-cta">
-                <span>ПОДРОБНЕЕ</span>
-              </div>
-            </div>
-
-            <div className="sales_best-wrapper_item-content_inner-image">
-              <img src={'/sales/sales_best.png'} alt=""/>
-            </div>
-
-          </div>
-        </div>
+      <div>
+        <SalesBestItem title={'2'} />
       </div>
-    </div>
-  </div>
-)
+      <div>
+        <SalesBestItem title={'3'} />
+      </div>
+    </Swiper>
+  );
+}
 
 export default SalesEco
