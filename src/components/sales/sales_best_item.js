@@ -4,17 +4,10 @@ export default function SalesBestItem({title}) {
     return (
         <div className="sales_best">
         <div className="sales_best-wrapper">
-          <div className="sales_best-wrapper_item">
-            <div className="sales_best-wrapper_item-decor">
-              <img src={'/sales/decor.svg'} alt=""/>
-            </div>
-            <div className="sales_best-wrapper_item-bullets"></div>
-          </div>
+          <div className="sales_best-wrapper_item"></div>
           <div className="sales_best-wrapper_item">
             <div className="sales_best-wrapper_item-content">
-              <div className="sales_best-wrapper_item-content_heading">
-                <span>Рейтинг лучших принтеров</span>
-              </div>
+              
               <div className="sales_best-wrapper_item-content_inner">
     
                 <div className="sales_best-wrapper_item-content_inner-text">

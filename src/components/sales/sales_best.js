@@ -16,17 +16,27 @@ const SalesEco = () => {
   };
 
   return (
-    <Swiper {...params}>
-      <div>
-        <SalesBestItem title={'1'} />
+    <div className="best_printers">
+      <div className="best_printers_swipe-decor">
+        <img src={'/sales/decor.svg'} alt=""/>
       </div>
-      <div>
-        <SalesBestItem title={'2'} />
+
+      <div className="best_printers_swipe-heading">
+        <span>Рейтинг лучших принтеров</span>
       </div>
-      <div>
-        <SalesBestItem title={'3'} />
-      </div>
-    </Swiper>
+
+      <Swiper {...params}>
+        <div>
+          <SalesBestItem title={'1'} />
+        </div>
+        <div>
+          <SalesBestItem title={'2'} />
+        </div>
+        <div>
+          <SalesBestItem title={'3'} />
+        </div>
+      </Swiper>
+    </div>
   );
 }
 
