@@ -16,7 +16,14 @@ import Subscriptions from "./subscription/subscription"
 
 const Layout = ({ children }) => {
     useEffect(() => {
-    let body = document.querySelector("body");
+    const body = document.querySelector("body");
+    let path = window.location.pathname;
+
+        if(path === '/404/') {
+          body.classList.add('graybg');
+        } else {
+          body.classList.remove('graybg');
+        }
 
         body.classList.contains('overflow') && body.classList.toggle('overflow');
     });

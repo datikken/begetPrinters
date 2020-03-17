@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function SalesSliderItem({title}) {
     return (
-        <div className="sales_slider-card">
+        <div className="sales_slider-card" style={{backgroundImage:(``)}}>
         <img src={'/sales/salesBackground.svg'} alt="icon" />
 
         <div className="sales_slider-card_prod">

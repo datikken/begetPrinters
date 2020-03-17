@@ -27,6 +27,7 @@
   &_wrapper {
     display: flex;
     overflow-x: scroll;
+    position: relative;
 
     &::-webkit-scrollbar {
       display: none;
@@ -51,30 +52,33 @@
     &-item {
       display: flex;
       padding-top: 35px;
-      
+      position: relative;
+    
       @include breakpoint($phone) {
         padding-top: 0;
+        height: 110px;
+        align-items: center;
       }
-
+  
       &_image {
         width: 100px;
         margin-left: 15px;
         @include bg(contain, center);
         cursor: pointer;
         border: none;
-        @include breakpoint($phone) {
-          margin-left: 0;
-          width: initial;
-        }
-
         max-width: 100px;
         height: 100px;
         left: 375px;
         top: 1161px;
-        box-sizing: border-box;
-        margin-bottom: 20px;
         flex-basis: 50%;
         @include flex(center, center, no-wrap);
+        margin-bottom: 20px;
+        
+        @include breakpoint($phone) {
+          margin-left: 0;
+          margin-bottom: 0px;
+          width: initial;
+        }
 
         img {
           width: 100%;
@@ -84,6 +88,16 @@
       &_text {
         margin-left: 16px;
         flex-basis: 65%;
+
+        &:after {
+          content: '';
+          display: block;
+          position: absolute;
+          width: 50%;
+          bottom: -1px;
+          right: 35px;
+          border-bottom: 1px solid $feedItem;
+        }
 
         &-heading {
           font-family: $font;
@@ -97,6 +111,10 @@
           margin-bottom: 10px;
           padding-top: 19px;
 
+          @include breakpoint($medium) {
+            padding-top: 0;
+          }
+
           &-item {
             font-weight: bold!important;
             font-size: 14px;
@@ -109,6 +127,7 @@
             }
           }
         }
+
         &-price {
           font-family: $font;
           font-weight: 600;
@@ -138,7 +157,7 @@
         @include breakpoint($phone) {
           position: relative;
           left: initial;
-          height: initial;
+          height: 35px!important;
         }
         &-text {
           font-weight: 500;

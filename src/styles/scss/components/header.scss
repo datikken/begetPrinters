@@ -2,6 +2,7 @@
   display: none;
   font-family: $semifont;
   font-weight: 600;
+  background-color: $white;
 
   @include breakpoint($medium) {
     display: block;
