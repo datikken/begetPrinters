@@ -8,9 +8,10 @@ import Block from "../components/landing/Block"
 import Feedback from "../components/landing/Feedback"
 import LandingSwiper from "../components/landing/LandingSwiper"
 import BlockSlider from "../components/landing/BlockSlider"
+import {graphql} from 'gatsby'
 import Helmet from "react-helmet"
 
-const Landing = () => {
+const Landing = ({data: {allContentfulSrokSluzbiRub}}) => {
   const data = [
     {
       image: "/landing/printerIcon.svg",
@@ -35,6 +36,12 @@ const Landing = () => {
       cartoon: '/landing/robot.svg',
       desc: 'Некоторые производители принтеров пугают, что откажут в гарантии, если использовать совместимые картриджи. Однако отказать в гарантии в таком случае — противозаконно. Многие производители уже согласились с этим и подтвердили свою готовность обслуживать по гарантии.',
       footer: 'Производители обещают, что примут гарантийный принтер на диагностику. Если проблема не в совместимом картридже, его отремонтируют по гарантии. Если же принтер сломается по вине картриджа Т2, на него действует наша собственная гарантия: мы сами, за свой счёт, отремонтируем ваш принтер. Без вопросов.'
+    },
+    {
+      image: '/landing/printerIcon4.svg',
+      truth: 'Выгода и цена владения',
+      desc: 'Цена принтера — лишь малая часть стоимости владения. Производители предлагают нам принтеры по цене часто ниже себестоимости и потом долго зарабатывают на дорогих картриджах. Так как покупаем мы их нечасто, мы не замечаем, что в итоге стоимость владения принтером во много раз выше, чем его цена в магазине.',
+      footer: 'Теперь, когда мы готовы смотреть на картриджи как на конкурентов, и знаем, что у совместимых нет проблем с гарантией, мы можем рационально их сравнить. При одинаковом качестве печати картриджи Т2 дают экономию от 30 до 50%. Воспользовавшись нашим калькулятором, вы наглядно поймете стоимость владения принтером.' 
     }
   ];
 
@@ -84,10 +91,28 @@ const Landing = () => {
           footer={data[2].footer} 
           />
 
-    <BlockSlider/>
+      <BlockSlider 
+          image={data[3].image} 
+          truth={data[3].truth} 
+          desc={data[3].desc} 
+          footer={data[3].footer} 
+          sroki={allContentfulSrokSluzbiRub.edges} />
 
     </Layout>
   )
 }
+
+
+export const query = graphql`
+{
+    allContentfulSrokSluzbiRub {
+        edges {
+            node {
+            cost
+            }
+        }
+    }
+}
+`;
 
 export default Landing
