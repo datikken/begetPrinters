@@ -112,7 +112,9 @@ const IndexPage = ({ data: { allContentfulSwiper } }) => {
         <div className="main_column">
           <Sales />
 
-          <SalesSlider />
+          <div className="mobile-hide">
+            <SalesSlider />
+          </div>
 
           <SalesBest />
 

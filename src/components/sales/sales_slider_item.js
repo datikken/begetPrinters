@@ -1,6 +1,8 @@
 import React from 'react'
 import {useStaticQuery,  graphql } from "gatsby"
 import Img from "gatsby-image"
+import BackgroundImage from 'gatsby-background-image'
+
 
 export default function SalesSliderItem({title}) {
     const data = useStaticQuery(graphql`
@@ -20,9 +22,12 @@ export default function SalesSliderItem({title}) {
         }
     `);
     return (
-        <div className="sales_slider-card" style={{backgroundImage:(``)}}>
-
-        <Img fluid={data.file.childImageSharp.fluid} alt="mfka" />
+          <BackgroundImage
+            Tag="div"
+            className={'sales_slider-card'}
+            fluid={data.file.childImageSharp.fluid}
+            backgroundColor={`#e2e2e2`}
+        >
 
         <div className="sales_slider-card_prod">
             <div className="sales_slider-card_prod-item">
@@ -66,6 +71,7 @@ export default function SalesSliderItem({title}) {
               </div>
           </div>
         </div>
-      </div>
+      </BackgroundImage>
+
     )
 }
