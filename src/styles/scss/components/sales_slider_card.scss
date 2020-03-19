@@ -161,9 +161,8 @@
             color: $yellow;
             position: absolute;
             top: 45%;
-            left: 50%;
+            left: 48%;
             transform: translate(-50%, -50%);
-
 
             @include breakpoint($medium) {
                 font-family: $font;
@@ -182,4 +181,24 @@
       }
     }
   }
+}
+.sales_slider_btn {
+    width: 300px!important;
+    height: 50px!important;
+    background: #E34A02!important;
+    margin: 0 auto;
+    margin-top: 30px;
+    
+    .action_btn-item {
+        font-family: $font;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
 }

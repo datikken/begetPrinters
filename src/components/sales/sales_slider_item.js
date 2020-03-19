@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import BackgroundImage from "gatsby-background-image"
 import SalesSliderItemNum from './sales_slide_item_num'
+import TextBtn from '../btn/text_btn'
 
 export default function SalesSliderItem({ title }) {
   const data = useStaticQuery(graphql`
@@ -49,6 +50,9 @@ export default function SalesSliderItem({ title }) {
            <SalesSliderItemNum num="9" />
           </div>
 
+          <div className="mobile-hide">
+            <TextBtn text={'успеть купить'} classVal={'sales_slider_btn'} />
+          </div>
 
         </div>
       </div>
