@@ -46,7 +46,6 @@ export default function LandingSwiperItem() {
                     <img src={'/landing/swiper/decor.svg'} alt="Decor" className="landswipe_wrap-decor_item" />
                 </div>
 
-
             </div>
         </div>
     )

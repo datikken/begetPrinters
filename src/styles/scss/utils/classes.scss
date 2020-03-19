@@ -85,3 +85,16 @@ a:hover {
 .graybg {
   background-color: #e9e9ea;
 }
+
+.MuiSlider-thumb {
+  box-shadow: none!important;
+}
+.MuiSlider-thumb::after {
+  display: none!important;
+}
+.MuiSlider-thumb:hover {
+  box-shadow: none;
+}
+.PrivateValueLabel-circle-34 {
+  width: initial!important;
+}

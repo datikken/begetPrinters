@@ -12,8 +12,6 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-const iOSBoxShadow = '0 3px 1px rgba(0,0,0,0.1),0 4px 8px rgba(0,0,0,0.13),0 0 0 1px rgba(0,0,0,0.02)';
-
 const marks = [];
 const labels = () => {
     for (let step = 1; step < 10; step++) {
@@ -31,50 +29,45 @@ function valuetext(value) {
 
 const IOSSlider = withStyles({
   root: {
-    color: '#3880ff',
+    color: '#40404C',
     height: 2,
     padding: '15px 0',
   },
   thumb: {
-    height: 28,
-    width: 28,
-    backgroundColor: '#fff',
-    boxShadow: iOSBoxShadow,
-    marginTop: -14,
-    marginLeft: -14,
-    '&:focus,&:hover,&$active': {
-      boxShadow: '0 3px 1px rgba(0,0,0,0.1),0 4px 8px rgba(0,0,0,0.3),0 0 0 1px rgba(0,0,0,0.02)',
-      // Reset on touch devices, it doesn't add specificity
-      '@media (hover: none)': {
-        boxShadow: iOSBoxShadow,
-      },
-    },
+    height: 30,
+    width: 5,
+    backgroundColor: '#40404C',
+    marginRight: 5,
+    marginLeft: 0,
+    borderRadius: 0,
+    top: 11
   },
-  active: {},
   valueLabel: {
-    left: 'calc(-50% + 11px)',
+    left: 'calc(-50%)',
     top: -22,
+    width: 50,
     '& *': {
       background: 'transparent',
       color: '#000',
     },
   },
   track: {
-    height: 2,
+    height: 10
   },
   rail: {
-    height: 2,
+    height: 9,
     opacity: 0.5,
-    backgroundColor: '#bfbfbf',
+    backgroundColor: '#fff',
+    border: '1px solid black'
   },
   mark: {
     backgroundColor: '#bfbfbf',
-    height: 8,
+    height: 10,
     width: 1,
-    marginTop: -3,
+    marginTop: 0,
   },
   markActive: {
-    opacity: 1,
+    opacity: 0,
     backgroundColor: 'currentColor',
   },
 })(Slider);
@@ -82,7 +75,7 @@ const IOSSlider = withStyles({
 const labelHandler = () => {
    setTimeout(() => {
         let val = document.querySelector('.MuiSlider-thumb').getAttribute('aria-valuetext');
-        let placeholder = document.querySelector('.PrivateValueLabel-label-35').innerText = val;
+        let placeholder = document.querySelector('.PrivateValueLabel-label-34').innerText = val;
     }, 5);
 }
 
@@ -98,9 +91,10 @@ export default function CustomizedSlider() {
       <IOSSlider 
         onChange={() => labelHandler()}
         aria-label="ios slider" 
+        // marks={marks}
         valueLabelDisplay="on"
         getAriaValueText={valuetext}
-        defaultValue={5} marks={marks} min={1} max={10}/>
+        defaultValue={5} min={1} max={10}/>
     </div>
   );
 }

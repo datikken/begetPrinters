@@ -9,6 +9,9 @@
     margin: 0 auto;
 
     &-item {
+      &_slider {
+        margin-left: 70px;
+      }
       &_icon {
         img {
           width: 86px;
