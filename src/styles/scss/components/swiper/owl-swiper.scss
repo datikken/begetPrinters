@@ -6,6 +6,26 @@
     padding-top: 50px;
   }
 
+  .owl-controls-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 170px;
+
+    &_btns {
+      height: 100%;
+
+      .arrow_left, .arrow_right {
+        cursor: pointer;
+      }
+      
+      .arrow_left {
+        transform: rotate(180deg);
+        margin-right: 55px;
+      }
+    }
+  }
+
     .swiper-container {
       padding-top: 2.2rem;
       height: 100%!important;
