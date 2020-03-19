@@ -75,7 +75,7 @@ const IOSSlider = withStyles({
 const labelHandler = () => {
    setTimeout(() => {
         let val = document.querySelector('.MuiSlider-thumb').getAttribute('aria-valuetext');
-        let placeholder = document.querySelector('.PrivateValueLabel-label-34').innerText = val;
+        // let placeholder = document.querySelector('.PrivateValueLabel-label-34').innerText = val;
     }, 5);
 }
 
