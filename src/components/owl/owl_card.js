@@ -2,7 +2,7 @@ import React from "react"
 
 export default function OwlCard() {
   return (
-    <div className="owl-item cloned active">
+    <div className="owl-item">
       <div className="carousel_card">
         <div className="carousel_card-wrapper">
           <div className="carousel_card-wrapper_item">

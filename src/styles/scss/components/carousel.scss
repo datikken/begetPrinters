@@ -129,9 +129,12 @@
     position: absolute;
     right: -22px;
     top: 50px;
-    @include breakpoint($phone) {
+    display: none;
+
+    @include breakpoint($medium) {
       right: -17px;
       top: 50%;
+      display: block;
       transform: translate(-50%, -50%);
     }
   }

@@ -1,5 +1,6 @@
 .owl-wrapper {
   overflow: hidden;
+
   @include breakpoint($medium) {
     margin-bottom: 0;
     padding-top: 50px;
@@ -29,4 +30,9 @@
         height: 270px;
       }
     }
+}
+.owl_swiper {
+  @include  breakpoint($medium) {
+    padding-top: 20px;
+  }
 }

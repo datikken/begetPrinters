@@ -129,9 +129,9 @@ const IndexPage = ({ data: { allContentfulSwiper } }) => {
         <Banner />
       </div>
 
-      <div className="desktop-hide">
         <Owl />
-      </div>
+
+
     </Layout>
   )
 }
