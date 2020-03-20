@@ -36,11 +36,24 @@ exports.createPages = ({ graphql, actions }) => {
   })
 }
 
-exports.onCreateWebpackConfig = ({ actions }) => {
+exports.onCreateWebpackConfig = ({stage, loaders, actions }) => {
   const { setWebpackConfig } = actions
   setWebpackConfig({
     externals: {
       jquery: "jQuery", // important: 'Q' capitalized
     },
   })
+
+    if (stage === "build-html") {
+        actions.setWebpackConfig({
+            module: {
+                rules: [
+                    {
+                        test: /bad-module/,
+                        use: loaders.null(),
+                    },
+                ],
+            },
+        })
+    }
 }

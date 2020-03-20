@@ -11,7 +11,7 @@ import BlockSlider from "../components/landing/BlockSlider"
 import {graphql} from 'gatsby'
 import Helmet from "react-helmet"
 
-const Landing = ({data: {allContentfulSrokSluzbiRub}}) => {
+const Landing = ({data: {allContentfulSrokSluzbi}}) => {
   const data = [
     {
       image: "/landing/printerIcon.svg",
@@ -95,24 +95,29 @@ const Landing = ({data: {allContentfulSrokSluzbiRub}}) => {
           image={data[3].image} 
           truth={data[3].truth} 
           desc={data[3].desc} 
-          footer={data[3].footer} 
-          sroki={allContentfulSrokSluzbiRub.edges} />
+          footer={data[3].footer}
+          data={allContentfulSrokSluzbi.edges}
+       />
 
     </Layout>
   )
 }
 
-
 export const query = graphql`
-{
-    allContentfulSrokSluzbiRub {
-        edges {
-            node {
-            cost
+    {
+        allContentfulSrokSluzbi {
+            edges {
+                node {
+                    image {
+                        file {
+                            url
+                        }
+                    }
+                    price
+                }
             }
         }
     }
-}
 `;
 
 export default Landing

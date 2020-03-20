@@ -1,11 +1,10 @@
 import React, {useEffect} from 'react';
-import PropTypes from 'prop-types';
 import { withStyles, makeStyles } from '@material-ui/core/styles';
 import Slider from '@material-ui/core/Slider';
 
 const useStyles = makeStyles(theme => ({
   root: {
-    width: 300 + theme.spacing(3) * 2,
+    width: "100%"
   },
   margin: {
     height: theme.spacing(3),
@@ -13,25 +12,38 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const marks = [];
-const labels = () => {
+(function () {
     for (let step = 1; step < 10; step++) {
         marks.push({value: step});
-      }
-}
-labels();
+    }
+})();
+
+let words = ['год', 'года', 'лет'];
 
 function valuetext(value) {
-    let line = `${value} лет`;
-    
-    return line;
-  }
+    let line;
 
+        if(value < 2) {
+          line = `${value} ${words[0]}`
+        }
+
+        if(value >= 2) {
+          line = `${value} ${words[1]}`
+        }
+
+        if(value >= 5) {
+          line = `${value} ${words[2]}`
+        }
+
+    return line;
+}
 
 const IOSSlider = withStyles({
   root: {
     color: '#40404C',
     height: 2,
     padding: '15px 0',
+    width: '100%'
   },
   thumb: {
     height: 30,
@@ -43,8 +55,8 @@ const IOSSlider = withStyles({
     top: 11
   },
   valueLabel: {
-    left: 'calc(-50%)',
-    top: -22,
+    left: -14,
+    top: -25,
     width: 50,
     '& *': {
       background: 'transparent',
@@ -69,21 +81,24 @@ const IOSSlider = withStyles({
   markActive: {
     opacity: 0,
     backgroundColor: 'currentColor',
-  },
+  }
 })(Slider);
 
 const labelHandler = () => {
    setTimeout(() => {
         let val = document.querySelector('.MuiSlider-thumb').getAttribute('aria-valuetext');
-        // let placeholder = document.querySelector('.PrivateValueLabel-label-34').innerText = val;
-    }, 5);
+        let dest = document.querySelector('.PrivateValueLabel-label-34').innerText = val;
+    }, 1);
 }
 
 export default function CustomizedSlider() {
   const classes = useStyles();
 
   useEffect(() => {
-       labelHandler();
+      let min = document.querySelector('.land_block-item_slider-item_label-min');
+      let max = document.querySelector('.land_block-item_slider-item_label-max');
+
+      labelHandler();
   }, labelHandler);
 
   return (
@@ -91,7 +106,6 @@ export default function CustomizedSlider() {
       <IOSSlider 
         onChange={() => labelHandler()}
         aria-label="ios slider" 
-        // marks={marks}
         valueLabelDisplay="on"
         getAriaValueText={valuetext}
         defaultValue={5} min={1} max={10}/>
