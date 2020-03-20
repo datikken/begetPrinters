@@ -86,8 +86,13 @@ const IOSSlider = withStyles({
 
 const labelHandler = () => {
    setTimeout(() => {
-        let val = document.querySelector('.MuiSlider-thumb').getAttribute('aria-valuetext');
-        let dest = document.querySelector('.PrivateValueLabel-label-34').innerText = val;
+       let val, dest, min, max;
+
+       val = document.querySelector('.MuiSlider-thumb').getAttribute('aria-valuetext');
+       dest = document.querySelector('.PrivateValueLabel-label-34').innerText = val;
+       min = document.querySelector('.land_block-item_slider-item_label-min');
+       max = document.querySelector('.land_block-item_slider-item_label-max');
+
     }, 1);
 }
 
@@ -95,9 +100,6 @@ export default function CustomizedSlider() {
   const classes = useStyles();
 
   useEffect(() => {
-      let min = document.querySelector('.land_block-item_slider-item_label-min');
-      let max = document.querySelector('.land_block-item_slider-item_label-max');
-
       labelHandler();
   }, labelHandler);
 

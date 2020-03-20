@@ -1,6 +1,5 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
 import BackgroundImage from "gatsby-background-image"
 import SalesSliderItemNum from './sales_slide_item_num'
 import TextBtn from '../btn/text_btn'
