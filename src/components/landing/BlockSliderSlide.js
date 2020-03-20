@@ -94,7 +94,7 @@ const labelHandler = () => {
        factor = parseFloat(document.querySelector('.MuiSlider-thumb').getAttribute('aria-valuenow'));
        economy = document.querySelector('.land_block-item_slider-item_totalbenefit-text_item-val');
 
-       document.querySelector('.PrivateValueLabel-label-34').innerText = val;
+       document.querySelector('.jss68').innerText = val;
 
        min = document.querySelector('.land_block-item_slider-item_label-min');
        max = document.querySelector('.land_block-item_slider-item_label-max');
