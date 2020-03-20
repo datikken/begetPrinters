@@ -14,7 +14,11 @@ export default function Block({image, lie, truth, desc, footer, data}) {
                 </div>
                 <div className="land_block-item">
                     <div className="land_block-item_text">
-                        <div className="land_block-item_text-heading">
+                        <div className="land_block-item_text-heading"
+                             style={{
+                                 marginBottom: '25px',
+                                 marginTop:' 15px'
+                             }}>
                             <span className="land_block-item_text-heading_item">{truth}</span>
                         </div>
                         <div className="land_block-item_text-text">
@@ -41,7 +45,6 @@ export default function Block({image, lie, truth, desc, footer, data}) {
                         <div className="land_block-item_slider-item">
                             <div className="land_block-item_slider-item_benefit">
 
-
                                 <div className="land_block-item_slider-item_benefit-item">
                                     {
                                         reversed.map((el) => (
@@ -59,7 +62,6 @@ export default function Block({image, lie, truth, desc, footer, data}) {
                                         ))
                                     }
                                 </div>
-
 
                             </div>
                         </div>
