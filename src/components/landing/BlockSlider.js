@@ -51,7 +51,7 @@ export default function Block({image, lie, truth, desc, footer, data}) {
                                                 </div>
                                                 <div className="land_block-item_slider-item_benefit-item_card-price">
                                                     <div className="land_block-item_slider-item_benefit-item_card-price-item">
-                                                        <span>{el.node.price}</span>
+                                                        <span className="land_block-item_slider-item_benefit-item_card-price-item_val" data-price={el.node.price}>{el.node.price}</span>
                                                         <img src={'/icons/rub.svg'} alt=""/>
                                                     </div>
                                                 </div>
@@ -71,7 +71,7 @@ export default function Block({image, lie, truth, desc, footer, data}) {
                                 </div>
                                 <div className="land_block-item_slider-item_totalbenefit-text">
                                     <div className="land_block-item_slider-item_totalbenefit-text_item">
-                                        <span>50000</span>
+                                        <span className="land_block-item_slider-item_totalbenefit-text_item-val">50000</span>
                                         <img src={'/icons/rub.svg'} alt="currency" />
                                     </div>
                                 </div>
