@@ -127,15 +127,14 @@ export default function CustomizedSlider() {
   useEffect(() => {
       labelHandler();
 
-      let span = document.createElement('span');
-          span.classList.add('muiLabel');
+      // let span = document.createElement('span');
+      //     span.classList.add('muiLabel');
+      //
+      // if(!slider) {
+      //     document.querySelector('.MuiSlider-thumb').appendChild(span);
+      //     setSlider(true);
+      // }
 
-      if(!slider) {
-          document.querySelector('.MuiSlider-thumb').appendChild(span);
-          setSlider(true);
-      }
-
-      console.log(slider)
 
   }, labelHandler);
 
