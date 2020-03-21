@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect} from 'react';
 import { withStyles, makeStyles } from '@material-ui/core/styles';
 import Slider from '@material-ui/core/Slider';
 
@@ -55,7 +55,7 @@ const IOSSlider = withStyles({
     top: 11
   },
   valueLabel: {
-    left: -24,
+    left: -23,
     top: -25,
     width: 50,
     '& *': {
@@ -122,19 +122,9 @@ const labelHandler = () => {
 
 export default function CustomizedSlider() {
   const classes = useStyles();
-  const [slider, setSlider] = useState(false);
 
   useEffect(() => {
       labelHandler();
-
-      // let span = document.createElement('span');
-      //     span.classList.add('muiLabel');
-      //
-      // if(!slider) {
-      //     document.querySelector('.MuiSlider-thumb').appendChild(span);
-      //     setSlider(true);
-      // }
-
 
   }, labelHandler);
 
