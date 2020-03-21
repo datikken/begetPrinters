@@ -91,14 +91,6 @@ const Landing = ({data: {allContentfulSrokSluzbi}}) => {
           footer={data[2].footer} 
           />
 
-      <BlockSlider 
-          image={data[3].image} 
-          truth={data[3].truth} 
-          desc={data[3].desc} 
-          footer={data[3].footer}
-          data={allContentfulSrokSluzbi.edges}
-       />
-
     </Layout>
   )
 }
