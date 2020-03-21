@@ -116,8 +116,9 @@ export default function Block({image, lie, truth, desc, footer, data}) {
             setThumb();
         });
 
-
-        setInterval(setThumb, 1000);
+        if (document.readyState == "interactive") {
+            setThumb();
+        }
 
     });
 
