@@ -109,7 +109,7 @@ export default function Block({image, lie, truth, desc, footer, data}) {
             prices[1] = good;
 
             span.innerText = `${factor} лет`;
-            block.querySelector('.MuiSlider-thumb').appendChild(span);
+            // block.querySelector('.MuiSlider-thumb').appendChild(span);
         };
 
         mui.addEventListener('click', () => {
