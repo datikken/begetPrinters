@@ -86,38 +86,38 @@ const IOSSlider = withStyles({
 
 const labelHandler = () => {
 
-   setTimeout(() => {
-       let val, min, max,factor, economy;
-       let numbers = document.querySelectorAll('[data-price]');
-
-       val = document.querySelector('.MuiSlider-thumb').getAttribute('aria-valuetext');
-       factor = parseFloat(document.querySelector('.MuiSlider-thumb').getAttribute('aria-valuenow'));
-       economy = document.querySelector('.land_block-item_slider-item_totalbenefit-text_item-val');
-
-       min = document.querySelector('.land_block-item_slider-item_label-min');
-       max = document.querySelector('.land_block-item_slider-item_label-max');
-
-       let bad = parseFloat(numbers[0].getAttribute('data-price')) * factor;
-       let good = parseFloat(numbers[1].getAttribute('data-price')) * factor;
-
-       numbers[0].innerText = bad;
-       numbers[1].innerText = good;
-
-       economy.innerText = bad - good;
-
-       if(val === '1 год') {
-           min.classList.add('as-none');
-       } else {
-           min.classList.remove('as-none');
-       }
-
-       if(val === '10 лет') {
-           max.classList.add('as-none');
-       } else {
-           max.classList.remove('as-none');
-       }
-
-    }, 1);
+   // setTimeout(() => {
+   //     let val, min, max,factor, economy;
+   //     let numbers = document.querySelectorAll('[data-price]');
+   //
+   //     val = document.querySelector('.MuiSlider-thumb').getAttribute('aria-valuetext');
+   //     factor = parseFloat(document.querySelector('.MuiSlider-thumb').getAttribute('aria-valuenow'));
+   //     economy = document.querySelector('.land_block-item_slider-item_totalbenefit-text_item-val');
+   //
+   //     min = document.querySelector('.land_block-item_slider-item_label-min');
+   //     max = document.querySelector('.land_block-item_slider-item_label-max');
+   //
+   //     let bad = parseFloat(numbers[0].getAttribute('data-price')) * factor;
+   //     let good = parseFloat(numbers[1].getAttribute('data-price')) * factor;
+   //
+   //     numbers[0].innerText = bad;
+   //     numbers[1].innerText = good;
+   //
+   //     economy.innerText = bad - good;
+   //
+   //     if(val === '1 год') {
+   //         min.classList.add('as-none');
+   //     } else {
+   //         min.classList.remove('as-none');
+   //     }
+   //
+   //     if(val === '10 лет') {
+   //         max.classList.add('as-none');
+   //     } else {
+   //         max.classList.remove('as-none');
+   //     }
+   //
+   //  }, 1);
 }
 
 export default function CustomizedSlider() {
