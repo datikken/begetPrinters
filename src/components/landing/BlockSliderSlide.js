@@ -100,7 +100,7 @@ const labelHandler = () => {
        let bad = parseFloat(numbers[0].getAttribute('data-price')) * factor;
        let good = parseFloat(numbers[1].getAttribute('data-price')) * factor;
 
-       document.querySelector('.muiLabel').innerText = val
+       // document.querySelector('.muiLabel').innerText = val
 
        numbers[0].innerText = bad;
        numbers[1].innerText = good;
@@ -131,7 +131,7 @@ export default function CustomizedSlider() {
       let span = document.createElement('span')
           span.classList.add('muiLabel')
       if(!slider) {
-          document.querySelector('.MuiSlider-thumb').appendChild(span);
+          // document.querySelector('.MuiSlider-thumb').appendChild(span);
           slider = true;
       }
 
@@ -142,7 +142,8 @@ export default function CustomizedSlider() {
     <div className={classes.root}>
       <IOSSlider 
         onChange={() => labelHandler()}
-        aria-label="ios slider" 
+        aria-label="ios slider"
+        valueLabelDisplay="on"
         getAriaValueText={valuetext}
         defaultValue={5} min={1} max={10}/>
     </div>
