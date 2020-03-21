@@ -117,7 +117,7 @@ export default function Block({image, lie, truth, desc, footer, data}) {
         });
 
 
-        setInterval(setThumb, 10);
+        setInterval(setThumb, 1000);
 
     });
 
