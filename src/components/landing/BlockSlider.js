@@ -93,23 +93,33 @@ export default function Block({image, lie, truth, desc, footer, data}) {
     reversed.map((el) => prices.push(el.node.price));
 
     useEffect(() => {
+        let span = document.createElement('span');
+            span.classList.add('muiLabel');
 
-        let block = document.querySelector('.land_block-slider');
-        let factor = parseFloat(block.querySelector('.MuiSlider-thumb').getAttribute('aria-valuenow'));
-
+        let block = block.querySelector('.land_block-slider');
         let elements = block.querySelectorAll('.land_block-item_slider-item_benefit-item_card-price-item_val');
+        let mui = block.querySelector('.MuiSlider-root');
 
-        let bad = parseFloat(elements[0].innerText) * factor;
-        let good = parseFloat(elements[1].innerText) * factor;
+        let setThumb = function() {
+            let factor = parseFloat(block.querySelector('.MuiSlider-thumb').getAttribute('aria-valuenow'));
+            let bad = parseFloat(elements[0].innerText) * factor;
+            let good = parseFloat(elements[1].innerText) * factor;
 
-        let mui = block.querySelector('.MuiSlider-root')
-
-        mui.addEventListener('click', () => {
             prices[0] = bad;
             prices[1] = good;
 
+            span.innerText = `${factor} лет`;
+            block.querySelector('.MuiSlider-thumb').appendChild(span);
+
             console.log(prices, 'damn damn')
+        };
+
+        mui.addEventListener('click', () => {
+            setThumb();
         });
+
+        setThumb();
+
     });
 
     return (
@@ -149,7 +159,6 @@ export default function Block({image, lie, truth, desc, footer, data}) {
                             <div className={classes.root}>
                                 <IOSSlider
                                     aria-label="ios slider"
-                                    valueLabelDisplay="on"
                                     getAriaValueText={valuetext}
                                     defaultValue={5} min={1} max={10}/>
                             </div>
