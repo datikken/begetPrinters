@@ -116,10 +116,6 @@ export default function Block({image, lie, truth, desc, footer, data}) {
             setThumb();
         });
 
-        if (document.readyState == "interactive") {
-            setThumb();
-        }
-
     });
 
     return (
