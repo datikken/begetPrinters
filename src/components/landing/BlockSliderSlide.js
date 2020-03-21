@@ -100,8 +100,6 @@ const labelHandler = () => {
        let bad = parseFloat(numbers[0].getAttribute('data-price')) * factor;
        let good = parseFloat(numbers[1].getAttribute('data-price')) * factor;
 
-       // document.querySelector('.muiLabel').innerText = val
-
        numbers[0].innerText = bad;
        numbers[1].innerText = good;
 
@@ -128,13 +126,16 @@ export default function CustomizedSlider() {
 
   useEffect(() => {
       labelHandler();
-      let span = document.createElement('span')
-          span.classList.add('muiLabel')
+
+      let span = document.createElement('span');
+          span.classList.add('muiLabel');
+
       if(!slider) {
           document.querySelector('.MuiSlider-thumb').appendChild(span);
           setSlider(true);
       }
 
+      console.log(slider)
 
   }, labelHandler);
 
