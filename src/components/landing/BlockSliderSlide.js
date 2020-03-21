@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import { withStyles, makeStyles } from '@material-ui/core/styles';
 import Slider from '@material-ui/core/Slider';
 
@@ -124,15 +124,15 @@ const labelHandler = () => {
 
 export default function CustomizedSlider() {
   const classes = useStyles();
-  let slider = false;
+  const [slider, setSlider] = useState(false);
 
   useEffect(() => {
       labelHandler();
       let span = document.createElement('span')
           span.classList.add('muiLabel')
       if(!slider) {
-          // document.querySelector('.MuiSlider-thumb').appendChild(span);
-          slider = true;
+          document.querySelector('.MuiSlider-thumb').appendChild(span);
+          setSlider(true);
       }
 
 
