@@ -96,7 +96,7 @@ export default function Block({image, lie, truth, desc, footer, data}) {
         let span = document.createElement('span');
             span.classList.add('muiLabel');
 
-        let block = block.querySelector('.land_block-slider');
+        let block = document.querySelector('.land_block-slider');
         let elements = block.querySelectorAll('.land_block-item_slider-item_benefit-item_card-price-item_val');
         let mui = block.querySelector('.MuiSlider-root');
 
@@ -110,8 +110,6 @@ export default function Block({image, lie, truth, desc, footer, data}) {
 
             span.innerText = `${factor} лет`;
             block.querySelector('.MuiSlider-thumb').appendChild(span);
-
-            console.log(prices, 'damn damn')
         };
 
         mui.addEventListener('click', () => {
