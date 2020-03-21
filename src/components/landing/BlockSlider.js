@@ -93,28 +93,32 @@ export default function Block({image, lie, truth, desc, footer, data}) {
     reversed.map((el) => prices.push(el.node.price));
 
     useEffect(() => {
-        // let span = document.createElement('span');
-        //     span.classList.add('muiLabel');
-        //
-        // let block = document.querySelector('.land_block-slider');
-        // let elements = block.querySelectorAll('.land_block-item_slider-item_benefit-item_card-price-item_val');
-        // let mui = block.querySelector('.MuiSlider-root');
-        //
-        // let setThumb = function() {
-        //     let factor = parseFloat(block.querySelector('.MuiSlider-thumb').getAttribute('aria-valuenow'));
-        //     let bad = parseFloat(elements[0].innerText) * factor;
-        //     let good = parseFloat(elements[1].innerText) * factor;
-        //
-        //     prices[0] = bad;
-        //     prices[1] = good;
-        //
-        //     span.innerText = `${factor} лет`;
-        //     block.querySelector('.MuiSlider-thumb').appendChild(span);
-        // };
-        //
-        // mui.addEventListener('click', () => {
-        //     setThumb();
-        // });
+        let span = document.createElement('span');
+            span.classList.add('muiLabel');
+
+        let block = document.querySelector('.land_block-slider');
+        let elements = block.querySelectorAll('.land_block-item_slider-item_benefit-item_card-price-item_val');
+        let mui = block.querySelector('.MuiSlider-root');
+
+        let setThumb = function() {
+            let factor = parseFloat(block.querySelector('.MuiSlider-thumb').getAttribute('aria-valuenow'));
+            let bad = parseFloat(elements[0].innerText) * factor;
+            let good = parseFloat(elements[1].innerText) * factor;
+
+            prices[0] = bad;
+            prices[1] = good;
+
+            span.innerText = `${factor} лет`;
+            block.querySelector('.MuiSlider-thumb').appendChild(span);
+        };
+
+        mui.addEventListener('click', () => {
+            setThumb();
+        });
+
+        if (document.readyState == "interactive") {
+            setThumb();
+        }
 
     });
 
